@@ -48,21 +48,37 @@ extern "C" {
  * RDMA identifier and release all resources allocated with the device.
  */
 enum rdma_cm_event_type {
-	RDMA_CM_EVENT_ADDR_RESOLVED,
-	RDMA_CM_EVENT_ADDR_ERROR,
-	RDMA_CM_EVENT_ROUTE_RESOLVED,
-	RDMA_CM_EVENT_ROUTE_ERROR,
-	RDMA_CM_EVENT_CONNECT_REQUEST,
-	RDMA_CM_EVENT_CONNECT_RESPONSE,
-	RDMA_CM_EVENT_CONNECT_ERROR,
-	RDMA_CM_EVENT_UNREACHABLE,
-	RDMA_CM_EVENT_REJECTED,
-	RDMA_CM_EVENT_ESTABLISHED,
-	RDMA_CM_EVENT_DISCONNECTED,
-	RDMA_CM_EVENT_DEVICE_REMOVAL,
-	RDMA_CM_EVENT_MULTICAST_JOIN,
+	RDMA_CM_EVENT_ADDR_RESOLVED, //Address resolution (rdma_resolve_addr) completed successfully.
+	RDMA_CM_EVENT_ADDR_ERROR, //Address resolution (rdma_resolve_addr) failed.
+	RDMA_CM_EVENT_ROUTE_RESOLVED,//Route resolution (rdma_resolve_route) completed successfully.
+	RDMA_CM_EVENT_ROUTE_ERROR,//Route resolution (rdma_resolve_route) failed.
+	RDMA_CM_EVENT_CONNECT_REQUEST,//Generated on the passive side to notify the user of a new connection request.
+	RDMA_CM_EVENT_CONNECT_RESPONSE,//Generated on the active side to notify the user of a successful response to a connection request. It
+									// is only generated on rdma_cm_id's that do not have a QP associated with them.
+	RDMA_CM_EVENT_CONNECT_ERROR,//Indicates that an error has occurred trying to establish or a connection. May be generated on the
+								// active or passive side of a connection.
+	RDMA_CM_EVENT_UNREACHABLE,//Generated on the active side to notify the user that the remote server is not reachable or unable to
+								// respond to a connection request.
+
+	RDMA_CM_EVENT_REJECTED,//Indicates that a connection request or response was rejected by the remote end point.
+	RDMA_CM_EVENT_ESTABLISHED,//Indicates that a connection has been established with the remote end point.
+	RDMA_CM_EVENT_DISCONNECTED,//The connection has been disconnected.
+	RDMA_CM_EVENT_DEVICE_REMOVAL,//The local RDMA device associated with the rdma_cm_id has been removed. Upon receiving this
+									// event, the user must destroy the related rdma_cm_id.
+	RDMA_CM_EVENT_MULTICAST_JOIN,//The multicast join operation (rdma_join_multicast) completed successfully.
+	
+	//An error either occurred joining a multicast group, or, if the group had already been joined, on an
+	// existing group. The specified multicast group is no longer accessible and should be rejoined, if desired.
 	RDMA_CM_EVENT_MULTICAST_ERROR,
+
+	// The network device associated with this ID through address resolution changed its HW address, eg
+	// following of bonding failover. This event can serve as a hint for applications who want the links
+	// used for their RDMA sessions to align with the network stack.
 	RDMA_CM_EVENT_ADDR_CHANGE,
+
+	// The QP associated with a connection has exited its timewait state and is now ready to be re-used.
+	// After a QP has been disconnected, it is maintained in a timewait state to allow any in flight packets
+	// to exit the network. After the timewait state has completed, the rdma_cm will report this event.
 	RDMA_CM_EVENT_TIMEWAIT_EXIT
 };
 
@@ -143,31 +159,117 @@ enum {
 };
 
 struct rdma_conn_param {
+	//References a user-controlled data buffer. 
+	//The contents of the buffer are copied and transparently passed to the remote side as part of the communication request. 
+	//May be NULL if private_data is not required.
 	const void *private_data;
+
+	//Specifies the size of the user-controlled data buffer. Note
+	// that the actual amount of data transferred to the remote side
+	// is transport dependent and may be larger than that requested.
 	uint8_t private_data_len;
+
+	// The maximum number of outstanding RDMA read and atomic
+	// operations that the local side will accept from the remote
+	// side. Applies only to RDMA_PS_TCP. This value must be less
+	// than or equal to the local RDMA device attribute
+	// max_qp_rd_atom and remote RDMA device attribute
+	// max_qp_init_rd_atom. The remote endpoint can adjust this
+	// value when accepting the connection.
 	uint8_t responder_resources;
+
+	// The maximum number of outstanding RDMA read and atomic
+	// operations that the local side will have to the remote side.
+	// Applies only to RDMA_PS_TCP. This value must be less than or
+	// equal to the local RDMA device attribute max_qp_init_rd_atom
+	// and remote RDMA device attribute max_qp_rd_atom. The remote
+	// endpoint can adjust this value when accepting the
+	// connection.
 	uint8_t initiator_depth;
+
+	// Specifies if hardware flow control is available. This value
+	// is exchanged with the remote peer and is not used to
+	// configure the QP. Applies only to RDMA_PS_TCP.
 	uint8_t flow_control;
+
+	// 	The maximum number of times that a data transfer operation
+	// should be retried on the connection when an error occurs.
+	// This setting controls the number of times to retry send,
+	// RDMA, and atomic operations when timeouts occur. Applies
+	// only to RDMA_PS_TCP.
 	uint8_t retry_count;		/* ignored when accepting */
+
+	// The maximum number of times that a send operation from the
+	// remote peer should be retried on a connection after
+	// receiving a receiver not ready (RNR) error. RNR errors are
+	// generated when a send request arrives before a buffer has
+	// been posted to receive the incoming data. Applies only to
+	// RDMA_PS_TCP.
 	uint8_t rnr_retry_count;
+
 	/* Fields below ignored if a QP is created on the rdma_cm_id. */
-	uint8_t srq;
-	uint32_t qp_num;
+	// Specifies if the QP associated with the connection is using a
+	// shared receive queue. This field is ignored by the library if
+	// a QP has been created on the rdma_cm_id. Applies only to
+	// RDMA_PS_TCP.
+	uint8_t srq; //ignored if QP created on the rdma_cm_id
+
+	// Specifies the QP number associated with the connection. This
+	// field is ignored by the library if a QP has been created on
+	// the rdma_cm_id. Applies only to RDMA_PS_TCP.
+	uint32_t qp_num;//ignored if QP created on the rdma_cm_id
 };
 
 struct rdma_ud_param {
+	// References any user-specified data associated with
+	// RDMA_CM_EVENT_CONNECT_REQUEST or RDMA_CM_EVENT_ESTABLISHED
+	// events. The data referenced by this field matches that
+	// specified by the remote side when calling rdma_connect or
+	// rdma_accept. This field is NULL if the event does not include
+	// private data. The buffer referenced by this pointer is
+	// deallocated when calling rdma_ack_cm_event.
 	const void *private_data;
+
+	// The size of the private data buffer. Users should note that
+	// the size of the private data buffer may be larger than the
+	// amount of private data sent by the remote side. Any
+	// additional space in the buffer will be zeroed out.
 	uint8_t private_data_len;
+
+	// Address information needed to send data to the remote endpoint(s). Users should use this structure when allocating
+	// their address handle.
 	struct ibv_ah_attr ah_attr;
+
+	// QP number of the remote endpoint or multicast group.
 	uint32_t qp_num;
+
+	// QKey needed to send data to the remote endpoint(s).
 	uint32_t qkey;
 };
 
 struct rdma_cm_event {
-	struct rdma_cm_id	*id;
+	// The rdma_cm identifier associated with the event.
+	// If the event type is RDMA_CM_EVENT_CONNECT_REQUEST, then
+	// this references a new id for that communication.
+	struct rdma_cm_id	*id; 
+	
+	// For RDMA_CM_EVENT_CONNECT_REQUEST event types, this
+	// references the corresponding listening request identifier.
 	struct rdma_cm_id	*listen_id;
+		
+	// Specifies the type of communication event which occurred.
+	// See EVENT TYPES below.
 	enum rdma_cm_event_type	 event;
+
+	// Returns any asynchronous error information associated with
+	// an event. The status is zero unless the corresponding
+	// operation failed.
 	int			 status;
+
+	// Provides additional details based on the type of event.
+	// Users should select the conn or ud subfields based on the
+	// rdma_port_space of the rdma_cm_id associated with the event.
+	// See UD EVENT DATA and CONN EVENT DATA below.
 	union {
 		struct rdma_conn_param conn;
 		struct rdma_ud_param   ud;
@@ -180,21 +282,21 @@ struct rdma_cm_event {
 #define RAI_FAMILY		0x00000008
 
 struct rdma_addrinfo {
-	int			ai_flags;
-	int			ai_family;
-	int			ai_qp_type;
-	int			ai_port_space;
-	socklen_t		ai_src_len;
-	socklen_t		ai_dst_len;
-	struct sockaddr		*ai_src_addr;
-	struct sockaddr		*ai_dst_addr;
-	char			*ai_src_canonname;
-	char			*ai_dst_canonname;
-	size_t			ai_route_len;
-	void			*ai_route;
-	size_t			ai_connect_len;
-	void			*ai_connect;
-	struct rdma_addrinfo	*ai_next;
+	int			ai_flags; //Hint flags which control the operation. Supported flags are: RAI_PASSIVE, RAI_NUMERICHOST and RAI_NOROUTE
+	int			ai_family; // Address family for the source and destination address (AF_INET, AF_INET6, AF_IB)
+	int			ai_qp_type; //The type of RDMA QP used
+	int			ai_port_space; //RDMA port space used (RDMA_PS_UDP or RDMA_PS_TCP)
+	socklen_t		ai_src_len; //Length of the source address referenced by ai_src_addr
+	socklen_t		ai_dst_len; //Length of the destination address referenced by ai_dst_addr
+	struct sockaddr		*ai_src_addr; //Address of local RDMA device, if provided
+	struct sockaddr		*ai_dst_addr; //Address of destination RDMA device, if provided
+	char			*ai_src_canonname; //The canonical for the source
+	char			*ai_dst_canonname; //The canonical for the destination
+	size_t			ai_route_len; //Size of the routing information buffer referenced by ai_route.
+	void			*ai_route; //Routing information for RDMA transports that require routing data as part of connection establishment
+	size_t			ai_connect_len;//Size of connection information referenced by ai_connect
+	void			*ai_connect; // Data exchanged as part of the connection establishment process
+	struct rdma_addrinfo	*ai_next;//Pointer to the next rdma_addrinfo structure in the list
 };
 
 /**
@@ -209,6 +311,20 @@ struct rdma_addrinfo {
  * See also:
  *   rdma_get_cm_event, rdma_destroy_event_channel
  */
+/**
+ * [rdma_create_event_channel Event channels are used to direct all events on an rdma_cm_id. 
+ * 	For many clients, a single event channel may be sufficient, 
+ *  however, when managing a large number of connections or cm_ids,
+ *  users may find it useful to direct events for different cm_ids to different channels for processing.
+ *
+ * 	Each event channel is mapped to a file descriptor. The associated file descriptor can be used and 
+ * 	manipulated like any other fd to change its behavior. Users may make the fd non-blocking, poll or select the fd, etc. ]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:16:52+0800
+ * @return                             [A pointer to the created event channel, or NULL if the request fails. 
+ *                                        On failure, errno will be set to indicate the failure reason.]
+ */
 struct rdma_event_channel *rdma_create_event_channel(void);
 
 /**
@@ -222,6 +338,12 @@ struct rdma_event_channel *rdma_create_event_channel(void);
  *   and all returned events must be acked before calling this function.
  * See also:
  *  rdma_create_event_channel, rdma_get_cm_event, rdma_ack_cm_event
+ */
+/**
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:21:52+0800
+ * @param     channel                  [The communication channel to destroy.]
  */
 void rdma_destroy_event_channel(struct rdma_event_channel *channel);
 
@@ -246,6 +368,16 @@ void rdma_destroy_event_channel(struct rdma_event_channel *channel);
  *   rdma_create_event_channel, rdma_destroy_id, rdma_get_devices,
  *   rdma_bind_addr, rdma_resolve_addr, rdma_connect, rdma_listen,
  */
+/**
+ * PORT SPACES   		Details of the services provided by the different port spaces are outlined below.
+ * RDMA_PS_TCP 			Provides reliable, connection-oriented QP communication. Unlike TCP, the RDMA port space provides message, 
+ * 						not stream, based communication.
+ * RDMA_PS_UDP 			Provides unreliable, connection less QP communication.Supports both datagram and multicast communication.
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:23:37+0800
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
+ */
 int rdma_create_id(struct rdma_event_channel *channel,
 		   struct rdma_cm_id **id, void *context,
 		   enum rdma_port_space ps);
@@ -256,22 +388,29 @@ int rdma_create_id(struct rdma_event_channel *channel,
  *   returned.
  * @res: Result from rdma_getaddrinfo, which specifies the source and
  *   destination addresses, plus optional routing and connection information.
- * @pd: Optional protection domain.  This parameter is ignored if qp_init_attr
- *   is NULL.
+ * @pd: OPtional protection domain if a QP is associated with the 
+ * 		rdma_cm_id.  This parameter is ignored if qp_init_attr is NULL.
  * @qp_init_attr: Optional attributes for a QP created on the rdma_cm_id.
  * Description:
- *   Create an identifier and option QP used for communication.
+ *   Create an identifier and option QP used to track communication information.
  * Notes:
- *   If qp_init_attr is provided, then a queue pair will be allocated and
- *   associated with the rdma_cm_id.  If a pd is provided, the QP will be
- *   created on that PD.  Otherwise, the QP will be allocated on a default
- *   PD.
+ *   If qp_init_attr is not NULL, then a QP will be allocated and associated with the rdma_cm_id, id. 
+ *   If a protection domain (PD) is provided, then the QP will be created on that PD. Otherwise the QP
+ *   will be allocated on a default PD.
+ *   
  *   The rdma_cm_id will be set to use synchronous operations (connect,
  *   listen, and get_request).  To convert to asynchronous operation, the
  *   rdma_cm_id should be migrated to a user allocated event channel.
  * See also:
  *   rdma_create_id, rdma_create_qp, rdma_migrate_id, rdma_connect,
  *   rdma_listen
+ */
+/**
+ * [rdma_create_ep description]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:30:01+0800
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure]
  */
 int rdma_create_ep(struct rdma_cm_id **id, struct rdma_addrinfo *res,
 		   struct ibv_pd *pd, struct ibv_qp_init_attr *qp_init_attr);
@@ -299,6 +438,12 @@ void rdma_destroy_ep(struct rdma_cm_id *id);
  * See also:
  *   rdma_create_id, rdma_destroy_qp, rdma_ack_cm_event
  */
+/**
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:26:12+0800
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
+ */
 int rdma_destroy_id(struct rdma_cm_id *id);
 
 /**
@@ -313,9 +458,16 @@ int rdma_destroy_id(struct rdma_cm_id *id);
  *   Typically, this routine is called before calling rdma_listen to bind
  *   to a specific port number, but it may also be called on the active side
  *   of a connection before calling rdma_resolve_addr to bind to a specific
- *   address.
+ *   address.If used to bind to port 0, the rdma_cm will select an available port, 
+ *   which can be retrieved with rdma_get_src_port.
  * See also:
  *   rdma_create_id, rdma_listen, rdma_resolve_addr, rdma_create_qp
+ */
+/**
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:47:07+0800
+ * @return    [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
 int rdma_bind_addr(struct rdma_cm_id *id, struct sockaddr *addr);
 
@@ -331,16 +483,29 @@ int rdma_bind_addr(struct rdma_cm_id *id, struct sockaddr *addr);
  *   be bound to a local device.
  * Notes:
  *   This call is used to map a given destination IP address to a usable RDMA
- *   address.  If a source address is given, the rdma_cm_id is bound to that
+ *   address.  The IP to RDMA address mapping is done using the local routing tables, or via ARP. 
+ *   If a source address is given, the rdma_cm_id is bound to that
  *   address, the same as if rdma_bind_addr were called.  If no source
  *   address is given, and the rdma_cm_id has not yet been bound to a device,
  *   then the rdma_cm_id will be bound to a source address based on the
  *   local routing tables.  After this call, the rdma_cm_id will be bound to
  *   an RDMA device.  This call is typically made from the active side of a
  *   connection before calling rdma_resolve_route and rdma_connect.
+ *
+ * InfiniBand Specific
+ * 	 This call maps the destination and, if given, source IP addresses to GIDs. In order to perform the
+ * 	 mapping, IPoIB must be running on both the local and remote nodes.
+ * 
  * See also:
  *   rdma_create_id, rdma_resolve_route, rdma_connect, rdma_create_qp,
  *   rdma_get_cm_event, rdma_bind_addr
+ */
+/**
+ * [rdma_resolve_addr description]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:39:32+0800
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
 int rdma_resolve_addr(struct rdma_cm_id *id, struct sockaddr *src_addr,
 		      struct sockaddr *dst_addr, int timeout_ms);
@@ -349,6 +514,7 @@ int rdma_resolve_addr(struct rdma_cm_id *id, struct sockaddr *src_addr,
  * rdma_resolve_route - Resolve the route information needed to establish a connection.
  * @id: RDMA identifier.
  * @timeout_ms: Time to wait for resolution to complete.
+ * @return : 0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.
  * Description:
  *   Resolves an RDMA route to the destination address in order to establish
  *   a connection.  The destination address must have already been resolved
@@ -356,6 +522,7 @@ int rdma_resolve_addr(struct rdma_cm_id *id, struct sockaddr *src_addr,
  * Notes:
  *   This is called on the client side of a connection after calling
  *   rdma_resolve_addr, but before calling rdma_connect.
+ *   For InfiniBand connections, the call obtains a path record which is used by the connection.
  * See also:
  *   rdma_resolve_addr, rdma_connect, rdma_get_cm_event
  */
@@ -404,6 +571,7 @@ void rdma_destroy_qp(struct rdma_cm_id *id);
  * rdma_connect - Initiate an active connection request.
  * @id: RDMA identifier.
  * @conn_param: optional connection parameters.
+ * @return: 0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.
  * Description:
  *   For a connected rdma_cm_id, this call initiates a connection request
  *   to a remote destination.  For an unconnected rdma_cm_id, it initiates
@@ -411,6 +579,7 @@ void rdma_destroy_qp(struct rdma_cm_id *id);
  * Notes:
  *   Users must have resolved a route to the destination address
  *   by having called rdma_resolve_route before calling this routine.
+ *   
  *   A user may override the default connection parameters and exchange
  *   private data as part of the connection by using the conn_param parameter.
  * See also:
@@ -422,6 +591,7 @@ int rdma_connect(struct rdma_cm_id *id, struct rdma_conn_param *conn_param);
  * rdma_listen - Listen for incoming connection requests.
  * @id: RDMA identifier.
  * @backlog: backlog of incoming connection requests.
+ * @return : 0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.
  * Description:
  *   Initiates a listen for incoming connection requests or datagram service
  *   lookup.  The listen will be restricted to the locally bound source
@@ -439,7 +609,20 @@ int rdma_connect(struct rdma_cm_id *id, struct rdma_conn_param *conn_param);
 int rdma_listen(struct rdma_cm_id *id, int backlog);
 
 /**
- * rdma_get_request
+ * [rdma_get_request retrieves the next pending connection request event. 
+ * The call may only be used on listening rdma_cm_ids operating synchronously. 
+ * If the call is successful, a new rdma_cm_id (id) representing the connection request will be returned to the user. 
+ * The new rdma_cm_id will reference event information associated with the request until the user calls rdma_reject, rdma_accept,
+ * or rdma_destroy_id on the newly created identifier. For a description of the event data, see rdma_get_cm_event.
+ * 
+ * If QP attributes are associated with the listening endpoint, the returned rdma_cm_id will also reference an allocated QP.]
+ * 
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T15:25:54+0800
+ * @param     listen                   [Listening rdma_cm_id]
+ * @param     id                       [rdma_cm_id associated with the new connection]
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
 int rdma_get_request(struct rdma_cm_id *listen, struct rdma_cm_id **id);
 
@@ -447,6 +630,7 @@ int rdma_get_request(struct rdma_cm_id *listen, struct rdma_cm_id **id);
  * rdma_accept - Called to accept a connection request.
  * @id: Connection identifier associated with the request.
  * @conn_param: Optional information needed to establish the connection.
+ * @return: 0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.
  * Description:
  *   Called from the listening side to accept a connection or datagram
  *   service lookup request.
@@ -457,8 +641,6 @@ int rdma_get_request(struct rdma_cm_id *listen, struct rdma_cm_id **id);
  *   events give the user a newly created rdma_cm_id, similar to a new
  *   socket, but the rdma_cm_id is bound to a specific RDMA device.
  *   rdma_accept is called on the new rdma_cm_id.
- *   A user may override the default connection parameters and exchange
- *   private data as part of the connection by using the conn_param parameter.
  * See also:
  *   rdma_listen, rdma_reject, rdma_get_cm_event
  */
@@ -510,7 +692,9 @@ int rdma_notify(struct rdma_cm_id *id, enum ibv_event_type event);
  * @id: RDMA identifier.
  * Description:
  *   Disconnects a connection and transitions any associated QP to the
- *   error state.
+ *   error state. This action will result in any posted work requests being flushed to the completion queue.
+ *   rdma_disconnect may be called by both the client and server side of the connection. 
+ *   After successfully disconnecting, an RDMA_CM_EVENT_DISCONNECTED event will be generated on both sides of the connection.
  * See also:
  *   rdma_connect, rdma_listen, rdma_accept
  */
@@ -558,6 +742,7 @@ int rdma_leave_multicast(struct rdma_cm_id *id, struct sockaddr *addr);
  * rdma_get_cm_event - Retrieves the next pending communication event.
  * @channel: Event channel to check for events.
  * @event: Allocated information about the next communication event.
+ * @return: 0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.
  * Description:
  *   Retrieves a communication event.  If no events are pending, by default,
  *   the call will block until an event is received.
@@ -579,20 +764,56 @@ int rdma_get_cm_event(struct rdma_event_channel *channel,
  * Description:
  *   All events which are allocated by rdma_get_cm_event must be released,
  *   there should be a one-to-one correspondence between successful gets
- *   and acks.
+ *   and acks.This call frees the event structure and any memory that it references.
  * See also:
  *   rdma_get_cm_event, rdma_destroy_id
  */
 int rdma_ack_cm_event(struct rdma_cm_event *event);
-
+/**
+ * [rdma_get_src_port retrieves the local port number for an rdma_cm_id (id) which has been bound to a local address. 
+ * 	 If the id is not bound to a port, the routine will return 0.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T15:35:53+0800
+ * @param     id                       [RDMA communication identifier]
+ * @return                             [Returns the 16-bit port number associated with the local endpoint of 0 
+ *                                      if the rdma_cm_id, id, is not bound to a port]
+ */
 uint16_t rdma_get_src_port(struct rdma_cm_id *id);
+
+/**
+ * [rdma_get_dst_port retrieves the port associated with the peer endpoint. If the rdma_cm_id, id, is not connected, then the routine will return 0.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T15:36:51+0800
+ * @param     id                       [RDMA communication identifier]
+ * @return                             [Returns the 16-bit port number associated with the peer endpoint of 0 if the rdma_cm_id, id, is not connected]
+ */
 uint16_t rdma_get_dst_port(struct rdma_cm_id *id);
 
+/**
+ * [rdma_get_local_addr  retrieves the local IP address for the rdma_cm_id which has been bound to a local device.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T15:38:11+0800
+ * @param     id                       [RDMA communication identifier]
+ * @return                             [Returns a pointer to the local sockaddr address of the rdma_cm_id, id. 
+ *                                      If the id is not bound to an address, then the contents of the sockaddr structure will be set to all zeros]
+ */
 static inline struct sockaddr *rdma_get_local_addr(struct rdma_cm_id *id)
 {
 	return &id->route.addr.src_addr;
 }
 
+/**
+ * [rdma_get_peer_addr  retrieves the remote IP address of a bound rdma_cm_id.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T15:39:06+0800
+ * @param     id                       [RDMA communication identifier]
+ * @return                             [A pointer to the sockaddr address of the connected peer. 
+ *                                        If the rdma_cm_id is not connected, then the contents of the sockaddr structure will be set to all zeros]
+ */
 static inline struct sockaddr *rdma_get_peer_addr(struct rdma_cm_id *id)
 {
 	return &id->route.addr.dst_addr;
@@ -601,6 +822,7 @@ static inline struct sockaddr *rdma_get_peer_addr(struct rdma_cm_id *id)
 /**
  * rdma_get_devices - Get list of RDMA devices currently available.
  * @num_devices: If non-NULL, set to the number of devices returned.
+ * @return: Array of available RDMA devices on success or NULL if the request fails
  * Description:
  *   Return a NULL-terminated array of opened RDMA devices.  Callers can use
  *   this routine to allocate resources on specific RDMA devices that will be
@@ -626,6 +848,7 @@ void rdma_free_devices(struct ibv_context **list);
 /**
  * rdma_event_str - Returns a string representation of an rdma cm event.
  * @event: Asynchronous event.
+ * @return: A pointer to a static character string corresponding to the event
  * Description:
  *   Returns a string representation of an asynchronous event.
  * See also:
@@ -648,30 +871,74 @@ enum {
 };
 
 /**
- * rdma_set_option - Set options for an rdma_cm_id.
+ * rdma_set_option - Set options for an rdma_cm_id.Option levels and details 
+ * 	may be found in the enums in the relevant header files.
  * @id: Communication identifier to set option for.
  * @level: Protocol level of the option to set.
  * @optname: Name of the option to set.
  * @optval: Reference to the option data.
  * @optlen: The size of the %optval buffer.
  */
+/**
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:28:50+0800
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
+ */
 int rdma_set_option(struct rdma_cm_id *id, int level, int optname,
 		    void *optval, size_t optlen);
 
 /**
  * rdma_migrate_id - Move an rdma_cm_id to a new event channel.
- * @id: Communication identifier to migrate.
+ * @id: An existing RDMA  Communication identifier to migrate.
  * @channel: New event channel for rdma_cm_id events.
+ */
+/**
+ * [rdma_migrate_id migrates a communication identifier to a different event channel and moves
+ * 	any pending events associated with the rdma_cm_id to the new channel.
+ * 	No polling for events on the rdma_cm_id's current channel nor running of any routines on the
+ * 	rdma_cm_id should be done while migrating between channels. rdma_migrate_id will block while
+ * 	there are any unacknowledged events on the current event channel.
+ * 	If the channel parameter is NULL, then the specified rdma_cm_id will be placed into synchronous
+ * 	operation mode. All calls on the id will block until the operation completes.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T14:27:17+0800
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
 int rdma_migrate_id(struct rdma_cm_id *id, struct rdma_event_channel *channel);
 
 /**
- * rdma_getaddrinfo - RDMA address and route resolution service.
+ * [rdma_getaddrinfo  provides transport independent address translation. 
+ * 	It resolves the destination node and service address and returns information required to establish device communication. 
+ * 	It is the functional equivalent of getaddrinfo.
+ * 	Please note that either node or service must be provided. 
+ * 	If hints are provided, the operation will be controlled by hints.ai_flags. 
+ * 	If RAI_PASSIVE is specified, the call will resolve address information for use on the passive side of a connection.
+ * 	The rdma_addrinfo structure is described under the rdma_create_ep routine.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T15:42:21+0800
+ * @param     node                     [Optional: name, dotted-decimal IPv4 or IPv6 hex address to resolve]
+ * @param     service                  [The service name or port number of the address]
+ * @param     hints                    [Reference to an rmda_addrinfo structure containing hints about 
+ *                                     	the type of service the caller supports resA pointer 
+ *                                     	to a linked list of rdma_addrinfo structures containing response information]
+ * @param     res                      [Output Parameters: An rdma_addrinfo structure which returns information needed to establish communication]
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
 int rdma_getaddrinfo(char *node, char *service,
 		     struct rdma_addrinfo *hints,
 		     struct rdma_addrinfo **res);
 
+/**
+ * [rdma_freeaddrinfo releases the rdma_addrinfo (res) structure returned by the rdma_getaddrinfo routine. 
+ * 	Note that if ai_next is not NULL, rdma_freeaddrinfo will free the entire list of addrinfo structures.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-11-24T15:44:15+0800
+ * @param     res                      [The rdma_addrinfo structure to free]
+ */
 void rdma_freeaddrinfo(struct rdma_addrinfo *res);
 
 #ifdef __cplusplus
