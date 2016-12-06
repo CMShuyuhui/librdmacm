@@ -164,7 +164,7 @@ struct rdma_conn_param {
 	//May be NULL if private_data is not required.
 	const void *private_data;
 
-	//Specifies the size of the user-controlled data buffer. Note
+	// Specifies the size of the user-controlled data buffer. Note
 	// that the actual amount of data transferred to the remote side
 	// is transport dependent and may be larger than that requested.
 	uint8_t private_data_len;
@@ -183,8 +183,7 @@ struct rdma_conn_param {
 	// Applies only to RDMA_PS_TCP. This value must be less than or
 	// equal to the local RDMA device attribute max_qp_init_rd_atom
 	// and remote RDMA device attribute max_qp_rd_atom. The remote
-	// endpoint can adjust this value when accepting the
-	// connection.
+	// endpoint can adjust this value when accepting the connection.
 	uint8_t initiator_depth;
 
 	// Specifies if hardware flow control is available. This value
@@ -192,7 +191,7 @@ struct rdma_conn_param {
 	// configure the QP. Applies only to RDMA_PS_TCP.
 	uint8_t flow_control;
 
-	// 	The maximum number of times that a data transfer operation
+	// The maximum number of times that a data transfer operation
 	// should be retried on the connection when an error occurs.
 	// This setting controls the number of times to retry send,
 	// RDMA, and atomic operations when timeouts occur. Applies
@@ -212,7 +211,8 @@ struct rdma_conn_param {
 	// shared receive queue. This field is ignored by the library if
 	// a QP has been created on the rdma_cm_id. Applies only to
 	// RDMA_PS_TCP.
-	uint8_t srq; //ignored if QP created on the rdma_cm_id
+	
+	uint8_t srq; //shared receive queue , ignored if QP created on the rdma_cm_id
 
 	// Specifies the QP number associated with the connection. This
 	// field is ignored by the library if a QP has been created on
@@ -236,8 +236,8 @@ struct rdma_ud_param {
 	// additional space in the buffer will be zeroed out.
 	uint8_t private_data_len;
 
-	// Address information needed to send data to the remote endpoint(s). Users should use this structure when allocating
-	// their address handle.
+	// Address information needed to send data to the remote endpoint(s).
+	// Users should use this structure when allocating their address handle.
 	struct ibv_ah_attr ah_attr;
 
 	// QP number of the remote endpoint or multicast group.
@@ -282,21 +282,21 @@ struct rdma_cm_event {
 #define RAI_FAMILY		0x00000008
 
 struct rdma_addrinfo {
-	int			ai_flags; //Hint flags which control the operation. Supported flags are: RAI_PASSIVE, RAI_NUMERICHOST and RAI_NOROUTE
+	int			ai_flags; // Hint flags which control the operation. Supported flags are: RAI_PASSIVE, RAI_NUMERICHOST and RAI_NOROUTE
 	int			ai_family; // Address family for the source and destination address (AF_INET, AF_INET6, AF_IB)
-	int			ai_qp_type; //The type of RDMA QP used
-	int			ai_port_space; //RDMA port space used (RDMA_PS_UDP or RDMA_PS_TCP)
-	socklen_t		ai_src_len; //Length of the source address referenced by ai_src_addr
-	socklen_t		ai_dst_len; //Length of the destination address referenced by ai_dst_addr
-	struct sockaddr		*ai_src_addr; //Address of local RDMA device, if provided
-	struct sockaddr		*ai_dst_addr; //Address of destination RDMA device, if provided
-	char			*ai_src_canonname; //The canonical for the source
-	char			*ai_dst_canonname; //The canonical for the destination
-	size_t			ai_route_len; //Size of the routing information buffer referenced by ai_route.
-	void			*ai_route; //Routing information for RDMA transports that require routing data as part of connection establishment
-	size_t			ai_connect_len;//Size of connection information referenced by ai_connect
+	int			ai_qp_type; // The type of RDMA QP used
+	int			ai_port_space; // RDMA port space used (RDMA_PS_UDP or RDMA_PS_TCP)
+	socklen_t		ai_src_len; // Length of the source address referenced by ai_src_addr
+	socklen_t		ai_dst_len; // Length of the destination address referenced by ai_dst_addr
+	struct sockaddr		*ai_src_addr; // Address of local RDMA device, if provided
+	struct sockaddr		*ai_dst_addr; // Address of destination RDMA device, if provided
+	char			*ai_src_canonname; // The canonical for the source
+	char			*ai_dst_canonname; // The canonical for the destination
+	size_t			ai_route_len; // Size of the routing information buffer referenced by ai_route.
+	void			*ai_route; // Routing information for RDMA transports that require routing data as part of connection establishment
+	size_t			ai_connect_len;// Size of connection information referenced by ai_connect
 	void			*ai_connect; // Data exchanged as part of the connection establishment process
-	struct rdma_addrinfo	*ai_next;//Pointer to the next rdma_addrinfo structure in the list
+	struct rdma_addrinfo	*ai_next;// Pointer to the next rdma_addrinfo structure in the list
 };
 
 /**
@@ -318,7 +318,8 @@ struct rdma_addrinfo {
  *  users may find it useful to direct events for different cm_ids to different channels for processing.
  *
  * 	Each event channel is mapped to a file descriptor. The associated file descriptor can be used and 
- * 	manipulated like any other fd to change its behavior. Users may make the fd non-blocking, poll or select the fd, etc. ]
+ * 	manipulated like any other fd to change its behavior. 
+ * 	Users may make the fd non-blocking, poll or select the fd, etc. ]
  * 统一接入平台API
  * @AuthorHTL 胡宇辉
  * @DateTime  2016-11-24T14:16:52+0800

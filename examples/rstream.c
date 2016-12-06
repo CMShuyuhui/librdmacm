@@ -50,7 +50,7 @@
 
 struct test_size_param {
 	int size;
-	int option;
+	int option; // 级别
 };
 
 static struct test_size_param test_size[] = {
@@ -72,19 +72,20 @@ static struct test_size_param test_size[] = {
 	{ 1 << 21, 1 }, { (1 << 21) + (1 << 20), 1},
 	{ 1 << 22, 1 }, { (1 << 22) + (1 << 21), 1},
 };
-#define TEST_CNT (sizeof test_size / sizeof test_size[0])
 
-static int rs, lrs;
+#define TEST_CNT (sizeof test_size / sizeof test_size[0])   // TEST_CNT = 33
+
+static int rs, lrs;  // rs client_socket_fd, lrs server_socket_fd
 static int use_async;
-static int use_rgai;
+static int use_rgai; // no-zero means use rdma , 0 means use tcp/ip 
 static int verify;
 static int flags = MSG_DONTWAIT;
 static int poll_timeout = 0;
-static int custom;
+static int custom; // 是否定制发送数据
 static int use_fork;
 static pid_t fork_pid;
 static enum rs_optimization optimization;
-static int size_option;
+static int size_option; // 级别
 static int iterations = 1;
 static int transfer_size = 1000;
 static int transfer_count = 1000;
@@ -92,8 +93,8 @@ static int buffer_size, inline_size = 64;
 static char test_name[10] = "custom";
 static char *port = "7471";
 static int keepalive;
-static char *dst_addr;
-static char *src_addr;
+static char *dst_addr; //client ip . if dst_addr = NULL, then start as server , the src_addr is the server ip
+static char *src_addr; // server ip
 static struct timeval start, end;
 static void *buf;
 static struct rdma_addrinfo rai_hints;
@@ -277,6 +278,13 @@ static void set_keepalive(int rs)
 		printf("  time: %i\n", optval);
 }
 
+/**
+ * [set_options 设置相关属性，发送、接收缓冲区， TCP_NODELAY, NONBLOCK, KEEPALIVE]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2016-12-06T13:11:48+0800
+ * @param     rs                       [socket fd]
+ */
 static void set_options(int rs)
 {
 	int val;
@@ -415,7 +423,7 @@ static int client_connect(void)
 		printf("getaddrinfo: %s\n", gai_strerror(ret));
 		return ret;
 	}
-
+	// 通常服务器端在调用getaddrinfo之前，ai_flags设置AI_PASSIVE，用于bind；
 	if (src_addr) {
 		if (use_rgai) {
 			rai_hints.ai_flags |= RAI_PASSIVE;
@@ -495,6 +503,8 @@ free:
 		freeaddrinfo(ai);
 	return ret;
 }
+
+
 
 static int run(void)
 {
@@ -615,6 +625,7 @@ static int set_test_opt(char *optarg)
 	}
 	return 0;
 }
+
 
 int main(int argc, char **argv)
 {
