@@ -66,6 +66,7 @@ static int run(void)
 	attr.cap.max_inline_data = 16;
 	attr.qp_context = id;
 	attr.sq_sig_all = 1;
+	
 	ret = rdma_create_ep(&id, res, NULL, &attr);
 	// Check to see if we got inline data allowed or not
 	if (attr.cap.max_inline_data >= 16)

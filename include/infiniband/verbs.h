@@ -140,46 +140,46 @@ enum ibv_atomic_cap {
 };
 
 struct ibv_device_attr {
-	char			fw_ver[64];
-	uint64_t		node_guid;
-	uint64_t		sys_image_guid;
-	uint64_t		max_mr_size;
-	uint64_t		page_size_cap;
-	uint32_t		vendor_id;
-	uint32_t		vendor_part_id;
-	uint32_t		hw_ver;
-	int			max_qp;
-	int			max_qp_wr;
+	char			fw_ver[64]; 	//firmware version
+	uint64_t		node_guid; // node global unique identifier(guid)
+	uint64_t		sys_image_guid;//system image guid
+	uint64_t		max_mr_size;//largest contiguous block that can be registered
+	uint64_t		page_size_cap;//supported page size 
+	uint32_t		vendor_id;// vendor id ,per ieee
+	uint32_t		vendor_part_id;//vendor supplied part id
+	uint32_t		hw_ver;//hardware version
+	int			max_qp; // maximum number of queue pairs(QP)
+	int			max_qp_wr;//maximum outstanding work requests on any queue
 	int			device_cap_flags;
-	int			max_sge;
-	int			max_sge_rd;
-	int			max_cq;
-	int			max_cqe;
-	int			max_mr;
-	int			max_pd;
-	int			max_qp_rd_atom;
-	int			max_ee_rd_atom;
-	int			max_res_rd_atom;
-	int			max_qp_init_rd_atom;
-	int			max_ee_init_rd_atom;
-	enum ibv_atomic_cap	atomic_cap;
-	int			max_ee;
-	int			max_rdd;
-	int			max_mw;
-	int			max_raw_ipv6_qp;
-	int			max_raw_ethy_qp;
-	int			max_mcast_grp;
-	int			max_mcast_qp_attach;
-	int			max_total_mcast_qp_attach;
-	int			max_ah;
-	int			max_fmr;
-	int			max_map_per_fmr;
-	int			max_srq;
-	int			max_srq_wr;
-	int			max_srq_sge;
-	uint16_t		max_pkeys;
-	uint8_t			local_ca_ack_delay;
-	uint8_t			phys_port_cnt;
+	int			max_sge; // maximum scatter/gather entries(SGE) per WR for non-RD QPs
+	int			max_sge_rd;// maximum SGEs per WR for RD QPs
+	int			max_cq;// maximum supported completion queue
+	int			max_cqe;// maximum commpletion queue entries per CQ
+	int			max_mr;// maximum suppoered memory regions
+	int			max_pd;// maximum supported protection domains
+	int			max_qp_rd_atom;// maximum outstanding RDMA read and atomic operation per QP
+	int			max_ee_rd_atom;// maximum outstanding RDMA read and atomic operation per End to End(ee) context(RD connections)
+	int			max_res_rd_atom;//maximum resources used for incoming RDMA read and atomic operations
+	int			max_qp_init_rd_atom;//maximum RDMA read and atomic operation thar may be initiated per QP
+	int			max_ee_init_rd_atom;//maximum RDMA read and atomic operation thar may be initiated per EE
+	enum ibv_atomic_cap	atomic_cap; // IBV_ATOMIC_NONE-no atomic guarantees;IBV_ATOMIC_HCA-atomic guarantees within this device;IBV_ATOMIC_GLOB-global atomic guarantees
+	int			max_ee;// maximum supported EE contexts
+	int			max_rdd;// maximum supported RD domains
+	int			max_mw;// maximum supported memory windows
+	int			max_raw_ipv6_qp;// maximum supported raw IPv6 datagram QPs
+	int			max_raw_ethy_qp;// maximum supported ethertype datagram QPs
+	int			max_mcast_grp;// maximum supported multicast groups
+	int			max_mcast_qp_attach;// maximum QPs per multicast group that can be attached
+	int			max_total_mcast_qp_attach;// maximum total QPs that can be attached to multicast groups
+	int			max_ah;// maximum supported address handles
+	int			max_fmr;//maximum supported fast memory regions
+	int			max_map_per_fmr;// maximum number of remaps per FMR before an unmap operation si required
+	int			max_srq; // maximum supported shared receive queues
+	int			max_srq_wr; //maximum work requests per SRQ
+	int			max_srq_sge;// maximum SGEs per SRQ
+	uint16_t		max_pkeys;//maximum number of partitions
+	uint8_t			local_ca_ack_delay;//local ca ack delay
+	uint8_t			phys_port_cnt;// number of physical ports
 };
 
 /* An extensible input struct for possible future extensions of the
@@ -734,13 +734,14 @@ struct ibv_qp_cap {
 };
 
 struct ibv_qp_init_attr {
-	void		       *qp_context;
-	struct ibv_cq	       *send_cq;
-	struct ibv_cq	       *recv_cq;
-	struct ibv_srq	       *srq;
+	void		       *qp_context;//(optional) user defined value associated with QP
+	struct ibv_cq	       *send_cq;// send CQ. this must be created by the user prior to calling ibv_create_qp
+	struct ibv_cq	       *recv_cq;// receive CQ. this must be create by the user prior to call ib_create_qp. 
+	struct ibv_srq	       *srq;// (optional) shated receive queue. only used for SRQ QP's
 	struct ibv_qp_cap	cap;
-	enum ibv_qp_type	qp_type;
-	int			sq_sig_all;
+	enum ibv_qp_type	qp_type;//
+	int			sq_sig_all;//if this value is set to 1, all send requests will generate completion queue events. 
+						   //if this value is set to 0, only WRs that are flagged will generate CQE's(see ibv_post_send) 
 };
 
 enum ibv_qp_init_attr_mask {
@@ -826,10 +827,10 @@ enum ibv_qp_attr_mask {
 };
 
 enum ibv_qp_state {
-	IBV_QPS_RESET,
-	IBV_QPS_INIT,
-	IBV_QPS_RTR,
-	IBV_QPS_RTS,
+	IBV_QPS_RESET,//newly created, queues empty
+	IBV_QPS_INIT,// basic information set. ready for posting to receive queue
+	IBV_QPS_RTR,//ready to receive. remote address info set for connected QPs, QP may now receive packets.
+	IBV_QPS_RTS,// ready to send . timeout and retry parameters set , QP may now send packets.
 	IBV_QPS_SQD,
 	IBV_QPS_SQE,
 	IBV_QPS_ERR,
@@ -893,9 +894,9 @@ enum ibv_send_flags {
 };
 
 struct ibv_sge {
-	uint64_t		addr;
-	uint32_t		length;
-	uint32_t		lkey;
+	uint64_t		addr;	//address of the local data buffer thar the data will be gathered form or scattered to 
+	uint32_t		length; // the length of the data thar will be read from / written to this address
+	uint32_t		lkey; 	// the local key of the MR that was registered to this buffer
 };
 
 struct ibv_send_wr {
@@ -1268,9 +1269,9 @@ enum {
 };
 
 struct ibv_device {
-	struct ibv_device_ops	ops;
-	enum ibv_node_type	node_type;
-	enum ibv_transport_type	transport_type;
+	struct ibv_device_ops	ops; 	// pointers to alloc and free functions
+	enum ibv_node_type	node_type;	//	IBV_NODE_UNKOWN, IBV_NODE_CA, IBV_NODE_SWITCH, IBV_NODE_ROUTER, IBV_NODE_RNIC
+	enum ibv_transport_type	transport_type; // IBV_TRANSPORT_UNKNOWN, IBV_TRANSPORT_IB, IBV_TRANSPORT_IWARP
 	/* Name of underlying kernel IB device, eg "mthca0" */
 	char			name[IBV_SYSFS_NAME_MAX];
 	/* Name of uverbs device, eg "uverbs0" */
@@ -1483,6 +1484,14 @@ static inline struct verbs_device *verbs_get_device(
  * Return a NULL-terminated array of IB devices.  The array can be
  * released with ibv_free_device_list().
  */
+/**
+ * [ibv_get_device_list 获取device列表，保存在num_devices参数中，需配合使用ibv_free_device_list()释放资源]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-16T11:12:25+0800
+ * @output param     num_devices              [(optional) If non-null, the number of devices returned in the array will be stored here]
+ * @return                             [NULL terminated array of VPI devices or NULL on failure.]
+ */
 struct ibv_device **ibv_get_device_list(int *num_devices);
 
 /**
@@ -1492,6 +1501,13 @@ struct ibv_device **ibv_get_device_list(int *num_devices);
  * the array is freed, pointers to devices that were not opened with
  * ibv_open_device() are no longer valid.  Client code must open all
  * devices it intends to use before calling ibv_free_device_list().
+ */
+/**
+ * [ibv_free_device_list ]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-16T11:19:01+0800
+ * @param     list                     [list of devices provided from ibv_get_device_list command]
  */
 void ibv_free_device_list(struct ibv_device **list);
 
@@ -1503,15 +1519,41 @@ const char *ibv_get_device_name(struct ibv_device *device);
 /**
  * ibv_get_device_guid - Return device's node GUID
  */
+/**
+ * [ibv_get_device_guid returns the devices 64 bit Global Unique Identifier (GUID) in network byte order.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-16T11:21:05+0800
+ * @param     device                   [struct ibv_device for desired device]
+ * @return                             [64 bit GUID]
+ */
 uint64_t ibv_get_device_guid(struct ibv_device *device);
 
 /**
  * ibv_open_device - Initialize device for use
  */
+/**
+ * [ibv_open_device provides the user with a verbs context which is the object that will be used for all other verb operations.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-16T11:22:01+0800
+ * @param     device                   [struct ibv_device for desired device]
+ * @return                             [A verbs context that can be used for future operations on the device or NULL on failure.]
+ */
 struct ibv_context *ibv_open_device(struct ibv_device *device);
 
 /**
  * ibv_close_device - Release device
+ */
+/**
+ * [ibv_close_device closes the verb context previously opened with ibv_open_device. 
+ * 					This operation does not free any other objects associated with the context. 
+ * 					To avoid memory leaks, all other objects must be independently freed prior to calling this command.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-16T11:23:20+0800
+ * @param     context                  [struct ibv_context from ibv_open_device]
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
 int ibv_close_device(struct ibv_context *context);
 
@@ -1540,11 +1582,35 @@ void ibv_ack_async_event(struct ibv_async_event *event);
 /**
  * ibv_query_device - Get device properties
  */
+/**
+ * [ibv_query_device  retrieves the various attributes associated with a device. 
+ * 						The user should malloc a struct ibv_device_attr, pass it to the command, 
+ * 						and it will be filled in upon successful 
+ * 						return. The user is responsible to free this struct.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-16T11:31:13+0800
+ * @input param     context                  [struct ibv_context from ibv_open_device]
+ * @output param     device_attr              [struct ibv_device_attr containing device attributes]
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
+ */
 int ibv_query_device(struct ibv_context *context,
 		     struct ibv_device_attr *device_attr);
 
 /**
  * ibv_query_port - Get port properties
+ */
+/**
+ * [ibv_query_port retrieves the various attributes associated with a port. The user should allocate a
+					struct ibv_port_attr, pass it to the command, and it will be filled in upon successful return. The
+					user is responsible to free this struct.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-16T13:30:05+0800
+ * @input param     context                  [struct ibv_context from ibv_open_device]
+ * @input param     port_num                 [physical port number (1 is first port)]
+ * @output param     port_attr                [struct ibv_port_attr containing port attributes]
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
 int ibv_query_port(struct ibv_context *context, uint8_t port_num,
 		   struct ibv_port_attr *port_attr);
@@ -2239,6 +2305,15 @@ int ibv_detach_mcast(struct ibv_qp *qp, const union ibv_gid *gid, uint16_t lid);
  * safely.  If this function is not called or returns a non-zero
  * status, then libibverbs data structures are not fork()-safe and the
  * effect of an application calling fork() is undefined.
+ */
+/**
+ * [ibv_fork_init ibv_fork_init initializes libibverbs' data structures to handle the fork() function safely and avoid
+				  data corruption, whether fork() is called explicitly or implicitly such as in system() calls.
+				  防止外部调用fork，父子进程ibv数据的冲突]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-16T10:54:54+0800
+ * @return 	  [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
 int ibv_fork_init(void);
 

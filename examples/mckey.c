@@ -1,3 +1,15 @@
+// Multicast Code Example
+/*
+* BUILD COMMAND:
+* gcc -g -Wall -D_GNU_SOURCE -g -O2 -o examples/mckey examples/mckey.c -libverbs -lrdmacm
+*
+* $Id$
+*/
+
+
+
+
+
 /*
  * Copyright (c) 2005-2007 Intel Corporation.  All rights reserved.
  *
