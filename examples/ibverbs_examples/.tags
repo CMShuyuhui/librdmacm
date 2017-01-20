@@ -1,0 +1,241 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ADDR_FORMAT	.\xsrq_pingpong.c	58;"	d	file:
+IBV_PINGPONG_H	.\pingpong.h	34;"	d
+MAX_QP	.\srq_pingpong.c	/^	MAX_QP             = 256,$/;"	e	enum:__anon3	file:
+MSG_FORMAT	.\xsrq_pingpong.c	55;"	d	file:
+MSG_SIZE	.\xsrq_pingpong.c	56;"	d	file:
+MSG_SSCAN	.\xsrq_pingpong.c	57;"	d	file:
+PINGPONG_RECV_WRID	.\rc_pingpong.c	/^	PINGPONG_RECV_WRID = 1,$/;"	e	enum:__anon1	file:
+PINGPONG_RECV_WRID	.\srq_pingpong.c	/^	PINGPONG_RECV_WRID = 1,$/;"	e	enum:__anon3	file:
+PINGPONG_RECV_WRID	.\uc_pingpong.c	/^	PINGPONG_RECV_WRID = 1,$/;"	e	enum:__anon4	file:
+PINGPONG_RECV_WRID	.\ud_pingpong.c	/^	PINGPONG_RECV_WRID = 1,$/;"	e	enum:__anon5	file:
+PINGPONG_SEND_WRID	.\rc_pingpong.c	/^	PINGPONG_SEND_WRID = 2,$/;"	e	enum:__anon1	file:
+PINGPONG_SEND_WRID	.\srq_pingpong.c	/^	PINGPONG_SEND_WRID = 2,$/;"	e	enum:__anon3	file:
+PINGPONG_SEND_WRID	.\uc_pingpong.c	/^	PINGPONG_SEND_WRID = 2,$/;"	e	enum:__anon4	file:
+PINGPONG_SEND_WRID	.\ud_pingpong.c	/^	PINGPONG_SEND_WRID = 2,$/;"	e	enum:__anon5	file:
+TERMINATION_FORMAT	.\xsrq_pingpong.c	60;"	d	file:
+TERMINATION_MSG	.\xsrq_pingpong.c	62;"	d	file:
+TERMINATION_MSG_SIZE	.\xsrq_pingpong.c	61;"	d	file:
+ah	.\ud_pingpong.c	/^	struct ibv_ah		*ah;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_ah	file:
+atomic_cap_str	.\devinfo.c	/^static const char *atomic_cap_str(enum ibv_atomic_cap atom_cap)$/;"	f	file:
+buf	.\rc_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+buf	.\srq_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+buf	.\uc_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+buf	.\ud_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+buf	.\xsrq_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+channel	.\rc_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+channel	.\srq_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+channel	.\uc_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+channel	.\ud_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+channel	.\xsrq_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+comp_recv_max_time_delta	.\rc_pingpong.c	/^	unsigned int		 comp_recv_max_time_delta;$/;"	m	struct:ts_params	file:
+comp_recv_min_time_delta	.\rc_pingpong.c	/^	unsigned int		 comp_recv_min_time_delta;$/;"	m	struct:ts_params	file:
+comp_recv_prev_time	.\rc_pingpong.c	/^	uint64_t		 comp_recv_prev_time;$/;"	m	struct:ts_params	file:
+comp_recv_total_time_delta	.\rc_pingpong.c	/^	uint64_t		 comp_recv_total_time_delta;$/;"	m	struct:ts_params	file:
+comp_with_time_iters	.\rc_pingpong.c	/^	unsigned int		 comp_with_time_iters;$/;"	m	struct:ts_params	file:
+completion_timestamp_mask	.\rc_pingpong.c	/^	uint64_t		 completion_timestamp_mask;$/;"	m	struct:pingpong_context	file:
+connect_qps	.\xsrq_pingpong.c	/^static int connect_qps(int index)$/;"	f	file:
+context	.\rc_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+context	.\srq_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+context	.\uc_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+context	.\ud_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+context	.\xsrq_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+cq	.\rc_pingpong.c	/^		struct ibv_cq		*cq;$/;"	m	union:pingpong_context::__anon2	typeref:struct:pingpong_context::__anon2::ibv_cq	file:
+cq	.\srq_pingpong.c	/^	struct ibv_cq		*cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+cq	.\uc_pingpong.c	/^	struct ibv_cq		*cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+cq	.\ud_pingpong.c	/^	struct ibv_cq		*cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+cq_ex	.\rc_pingpong.c	/^		struct ibv_cq_ex	*cq_ex;$/;"	m	union:pingpong_context::__anon2	typeref:struct:pingpong_context::__anon2::ibv_cq_ex	file:
+cq_s	.\rc_pingpong.c	/^	} cq_s;$/;"	m	struct:pingpong_context	typeref:union:pingpong_context::__anon2	file:
+create_qps	.\xsrq_pingpong.c	/^static int create_qps(void)$/;"	f	file:
+ctx	.\xsrq_pingpong.c	/^struct pingpong_context ctx;$/;"	v	typeref:struct:pingpong_context
+event_name_str	.\asyncwatch.c	/^static const char *event_name_str(enum ibv_event_type event_type)$/;"	f	file:
+fd	.\xsrq_pingpong.c	/^	int			 fd;$/;"	m	struct:pingpong_context	file:
+find_qp	.\srq_pingpong.c	/^static int find_qp(int qpn, struct pingpong_context *ctx, int num_qp)$/;"	f	file:
+find_qp	.\xsrq_pingpong.c	/^static int find_qp(int qpn)$/;"	f	file:
+get_cq_event	.\xsrq_pingpong.c	/^static int get_cq_event(void)$/;"	f	file:
+gid	.\rc_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+gid	.\srq_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+gid	.\uc_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+gid	.\ud_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+gid	.\xsrq_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+gid_to_wire_gid	.\pingpong.c	/^void gid_to_wire_gid(const union ibv_gid *gid, char wgid[])$/;"	f
+gidx	.\xsrq_pingpong.c	/^	int			 gidx;$/;"	m	struct:pingpong_context	file:
+guid_str	.\devinfo.c	/^static const char *guid_str(uint64_t node_guid, char *str)$/;"	f	file:
+ib_port	.\xsrq_pingpong.c	/^	int			 ib_port;$/;"	m	struct:pingpong_context	file:
+init	.\xsrq_pingpong.c	/^static void init(void)$/;"	f	file:
+last_comp_with_ts	.\rc_pingpong.c	/^	int			 last_comp_with_ts;$/;"	m	struct:ts_params	file:
+lid	.\rc_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+lid	.\srq_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+lid	.\uc_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+lid	.\ud_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+lid	.\xsrq_pingpong.c	/^	int			 lid;$/;"	m	struct:pingpong_context	file:
+lid	.\xsrq_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+link_layer_str	.\devinfo.c	/^static const char *link_layer_str(uint8_t link_layer)$/;"	f	file:
+main	.\asyncwatch.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\device_list.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\devinfo.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\rc_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\srq_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\uc_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\ud_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+main	.\xsrq_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+max	.\rc_pingpong.c	53;"	d	file:
+min	.\rc_pingpong.c	57;"	d	file:
+mr	.\rc_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+mr	.\srq_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+mr	.\uc_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+mr	.\ud_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+mr	.\xsrq_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+mtu	.\xsrq_pingpong.c	/^	enum ibv_mtu		 mtu;$/;"	m	struct:pingpong_context	typeref:enum:pingpong_context::ibv_mtu	file:
+mtu_str	.\devinfo.c	/^static const char *mtu_str(enum ibv_mtu max_mtu)$/;"	f	file:
+null_gid	.\devinfo.c	/^static int null_gid(union ibv_gid *gid)$/;"	f	file:
+num_clients	.\xsrq_pingpong.c	/^	int			 num_clients;$/;"	m	struct:pingpong_context	file:
+num_qp	.\srq_pingpong.c	/^	int			 num_qp;$/;"	m	struct:pingpong_context	file:
+num_tests	.\xsrq_pingpong.c	/^	int			 num_tests;$/;"	m	struct:pingpong_context	file:
+open_device	.\xsrq_pingpong.c	/^static int open_device(char *ib_devname)$/;"	f	file:
+page_size	.\rc_pingpong.c	/^static int page_size;$/;"	v	file:
+page_size	.\srq_pingpong.c	/^static int page_size;$/;"	v	file:
+page_size	.\uc_pingpong.c	/^static int page_size;$/;"	v	file:
+page_size	.\ud_pingpong.c	/^static int page_size;$/;"	v	file:
+page_size	.\xsrq_pingpong.c	/^static int page_size;$/;"	v	file:
+parse_single_wc	.\rc_pingpong.c	/^static inline int parse_single_wc(struct pingpong_context *ctx, int *scnt,$/;"	f	file:
+pd	.\rc_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pd	.\srq_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pd	.\uc_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pd	.\ud_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pd	.\xsrq_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pending	.\rc_pingpong.c	/^	int			 pending;$/;"	m	struct:pingpong_context	file:
+pending	.\srq_pingpong.c	/^	int			 pending[MAX_QP];$/;"	m	struct:pingpong_context	file:
+pending	.\uc_pingpong.c	/^	int			 pending;$/;"	m	struct:pingpong_context	file:
+pending	.\ud_pingpong.c	/^	int			 pending;$/;"	m	struct:pingpong_context	file:
+pingpong_context	.\rc_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_context	.\srq_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_context	.\uc_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_context	.\ud_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_context	.\xsrq_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_dest	.\rc_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+pingpong_dest	.\srq_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+pingpong_dest	.\uc_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+pingpong_dest	.\ud_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+pingpong_dest	.\xsrq_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+port_phy_state_str	.\devinfo.c	/^static const char *port_phy_state_str(uint8_t phys_state)$/;"	f	file:
+port_state_str	.\devinfo.c	/^static const char *port_state_str(enum ibv_port_state pstate)$/;"	f	file:
+portinfo	.\rc_pingpong.c	/^	struct ibv_port_attr     portinfo;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_port_attr	file:
+portinfo	.\srq_pingpong.c	/^	struct ibv_port_attr	 portinfo;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_port_attr	file:
+portinfo	.\uc_pingpong.c	/^	struct ibv_port_attr     portinfo;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_port_attr	file:
+portinfo	.\ud_pingpong.c	/^	struct ibv_port_attr     portinfo;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_port_attr	file:
+pp_client_connect	.\xsrq_pingpong.c	/^static int pp_client_connect(const char *servername, int port)$/;"	f	file:
+pp_client_exch_dest	.\rc_pingpong.c	/^static struct pingpong_dest *pp_client_exch_dest(const char *servername, int port,$/;"	f	file:
+pp_client_exch_dest	.\srq_pingpong.c	/^static struct pingpong_dest *pp_client_exch_dest(const char *servername, int port,$/;"	f	file:
+pp_client_exch_dest	.\uc_pingpong.c	/^static struct pingpong_dest *pp_client_exch_dest(const char *servername, int port,$/;"	f	file:
+pp_client_exch_dest	.\ud_pingpong.c	/^static struct pingpong_dest *pp_client_exch_dest(const char *servername, int port,$/;"	f	file:
+pp_client_termination	.\xsrq_pingpong.c	/^static int pp_client_termination()$/;"	f	file:
+pp_close_ctx	.\rc_pingpong.c	/^int pp_close_ctx(struct pingpong_context *ctx)$/;"	f
+pp_close_ctx	.\srq_pingpong.c	/^int pp_close_ctx(struct pingpong_context *ctx, int num_qp)$/;"	f
+pp_close_ctx	.\uc_pingpong.c	/^int pp_close_ctx(struct pingpong_context *ctx)$/;"	f
+pp_close_ctx	.\ud_pingpong.c	/^int pp_close_ctx(struct pingpong_context *ctx)$/;"	f
+pp_close_ctx	.\xsrq_pingpong.c	/^static int pp_close_ctx(void)$/;"	f	file:
+pp_cnt	.\xsrq_pingpong.c	/^	int pp_cnt;$/;"	m	struct:pingpong_dest	file:
+pp_connect_ctx	.\rc_pingpong.c	/^static int pp_connect_ctx(struct pingpong_context *ctx, int port, int my_psn,$/;"	f	file:
+pp_connect_ctx	.\srq_pingpong.c	/^static int pp_connect_ctx(struct pingpong_context *ctx, int port, enum ibv_mtu mtu,$/;"	f	file:
+pp_connect_ctx	.\uc_pingpong.c	/^static int pp_connect_ctx(struct pingpong_context *ctx, int port, int my_psn,$/;"	f	file:
+pp_connect_ctx	.\ud_pingpong.c	/^static int pp_connect_ctx(struct pingpong_context *ctx, int port, int my_psn,$/;"	f	file:
+pp_cq	.\rc_pingpong.c	/^struct ibv_cq *pp_cq(struct pingpong_context *ctx)$/;"	f
+pp_get_port_info	.\pingpong.c	/^int pp_get_port_info(struct ibv_context *context, int port,$/;"	f
+pp_init_ctx	.\rc_pingpong.c	/^static struct pingpong_context *pp_init_ctx(struct ibv_device *ib_dev, int size,$/;"	f	file:
+pp_init_ctx	.\srq_pingpong.c	/^static struct pingpong_context *pp_init_ctx(struct ibv_device *ib_dev, int size,$/;"	f	file:
+pp_init_ctx	.\uc_pingpong.c	/^static struct pingpong_context *pp_init_ctx(struct ibv_device *ib_dev, int size,$/;"	f	file:
+pp_init_ctx	.\ud_pingpong.c	/^static struct pingpong_context *pp_init_ctx(struct ibv_device *ib_dev, int size,$/;"	f	file:
+pp_init_ctx	.\xsrq_pingpong.c	/^static int pp_init_ctx(char *ib_devname)$/;"	f	file:
+pp_mtu_to_enum	.\pingpong.c	/^enum ibv_mtu pp_mtu_to_enum(int mtu)$/;"	f
+pp_post_recv	.\rc_pingpong.c	/^static int pp_post_recv(struct pingpong_context *ctx, int n)$/;"	f	file:
+pp_post_recv	.\srq_pingpong.c	/^static int pp_post_recv(struct pingpong_context *ctx, int n)$/;"	f	file:
+pp_post_recv	.\uc_pingpong.c	/^static int pp_post_recv(struct pingpong_context *ctx, int n)$/;"	f	file:
+pp_post_recv	.\ud_pingpong.c	/^static int pp_post_recv(struct pingpong_context *ctx, int n)$/;"	f	file:
+pp_post_recv	.\xsrq_pingpong.c	/^static int pp_post_recv(int cnt)$/;"	f	file:
+pp_post_send	.\rc_pingpong.c	/^static int pp_post_send(struct pingpong_context *ctx)$/;"	f	file:
+pp_post_send	.\srq_pingpong.c	/^static int pp_post_send(struct pingpong_context *ctx, int qp_index)$/;"	f	file:
+pp_post_send	.\uc_pingpong.c	/^static int pp_post_send(struct pingpong_context *ctx)$/;"	f	file:
+pp_post_send	.\ud_pingpong.c	/^static int pp_post_send(struct pingpong_context *ctx, uint32_t qpn)$/;"	f	file:
+pp_post_send	.\xsrq_pingpong.c	/^static int pp_post_send(int index)$/;"	f	file:
+pp_server_connect	.\xsrq_pingpong.c	/^static int pp_server_connect(int port)$/;"	f	file:
+pp_server_exch_dest	.\rc_pingpong.c	/^static struct pingpong_dest *pp_server_exch_dest(struct pingpong_context *ctx,$/;"	f	file:
+pp_server_exch_dest	.\srq_pingpong.c	/^static struct pingpong_dest *pp_server_exch_dest(struct pingpong_context *ctx,$/;"	f	file:
+pp_server_exch_dest	.\uc_pingpong.c	/^static struct pingpong_dest *pp_server_exch_dest(struct pingpong_context *ctx,$/;"	f	file:
+pp_server_exch_dest	.\ud_pingpong.c	/^static struct pingpong_dest *pp_server_exch_dest(struct pingpong_context *ctx,$/;"	f	file:
+pp_server_termination	.\xsrq_pingpong.c	/^static int pp_server_termination()$/;"	f	file:
+print_all_port_gids	.\devinfo.c	/^static int print_all_port_gids(struct ibv_context *ctx, uint8_t port_num, int tbl_len)$/;"	f	file:
+print_device_cap_flags	.\devinfo.c	/^static void print_device_cap_flags(uint32_t dev_cap_flags)$/;"	f	file:
+print_device_cap_flags_ex	.\devinfo.c	/^static void print_device_cap_flags_ex(uint64_t device_cap_flags_ex)$/;"	f	file:
+print_hca_cap	.\devinfo.c	/^static int print_hca_cap(struct ibv_device *ib_dev, uint8_t ib_port)$/;"	f	file:
+print_odp_caps	.\devinfo.c	/^void print_odp_caps(const struct ibv_odp_caps *caps)$/;"	f
+print_odp_trans_caps	.\devinfo.c	/^void print_odp_trans_caps(uint32_t trans)$/;"	f
+print_rss_caps	.\devinfo.c	/^static void print_rss_caps(const struct ibv_rss_caps *caps)$/;"	f	file:
+print_tso_caps	.\devinfo.c	/^static void print_tso_caps(const struct ibv_tso_caps *caps)$/;"	f	file:
+psn	.\rc_pingpong.c	/^	int psn;$/;"	m	struct:pingpong_dest	file:
+psn	.\srq_pingpong.c	/^	int psn;$/;"	m	struct:pingpong_dest	file:
+psn	.\uc_pingpong.c	/^	int psn;$/;"	m	struct:pingpong_dest	file:
+psn	.\ud_pingpong.c	/^	int psn;$/;"	m	struct:pingpong_dest	file:
+qp	.\rc_pingpong.c	/^	struct ibv_qp		*qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+qp	.\srq_pingpong.c	/^	struct ibv_qp		*qp[MAX_QP];$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+qp	.\uc_pingpong.c	/^	struct ibv_qp		*qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+qp	.\ud_pingpong.c	/^	struct ibv_qp		*qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+qpn	.\rc_pingpong.c	/^	int qpn;$/;"	m	struct:pingpong_dest	file:
+qpn	.\srq_pingpong.c	/^	int qpn;$/;"	m	struct:pingpong_dest	file:
+qpn	.\uc_pingpong.c	/^	int qpn;$/;"	m	struct:pingpong_dest	file:
+qpn	.\ud_pingpong.c	/^	int qpn;$/;"	m	struct:pingpong_dest	file:
+recv_cq	.\xsrq_pingpong.c	/^	struct ibv_cq		*recv_cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+recv_psn	.\xsrq_pingpong.c	/^	int recv_psn;$/;"	m	struct:pingpong_dest	file:
+recv_qp	.\xsrq_pingpong.c	/^	struct ibv_qp		**recv_qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+recv_qpn	.\xsrq_pingpong.c	/^	int recv_qpn;$/;"	m	struct:pingpong_dest	file:
+recv_remote_dest	.\xsrq_pingpong.c	/^static int recv_remote_dest(int sockfd, int index)$/;"	f	file:
+recv_termination_ack	.\xsrq_pingpong.c	/^static int recv_termination_ack(int index)$/;"	f	file:
+rem_dest	.\xsrq_pingpong.c	/^	struct pingpong_dest	*rem_dest;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::pingpong_dest	file:
+rx_depth	.\rc_pingpong.c	/^	int			 rx_depth;$/;"	m	struct:pingpong_context	file:
+rx_depth	.\srq_pingpong.c	/^	int			 rx_depth;$/;"	m	struct:pingpong_context	file:
+rx_depth	.\uc_pingpong.c	/^	int			 rx_depth;$/;"	m	struct:pingpong_context	file:
+rx_depth	.\ud_pingpong.c	/^	int			 rx_depth;$/;"	m	struct:pingpong_context	file:
+send_cq	.\xsrq_pingpong.c	/^	struct ibv_cq		*send_cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+send_flags	.\rc_pingpong.c	/^	int			 send_flags;$/;"	m	struct:pingpong_context	file:
+send_flags	.\srq_pingpong.c	/^	int			 send_flags;$/;"	m	struct:pingpong_context	file:
+send_flags	.\uc_pingpong.c	/^	int			 send_flags;$/;"	m	struct:pingpong_context	file:
+send_flags	.\ud_pingpong.c	/^	int			 send_flags;$/;"	m	struct:pingpong_context	file:
+send_local_dest	.\xsrq_pingpong.c	/^static int send_local_dest(int sockfd, int index)$/;"	f	file:
+send_psn	.\xsrq_pingpong.c	/^	int send_psn;$/;"	m	struct:pingpong_dest	file:
+send_qp	.\xsrq_pingpong.c	/^	struct ibv_qp		**send_qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+send_qpn	.\xsrq_pingpong.c	/^	int send_qpn;$/;"	m	struct:pingpong_dest	file:
+send_termination_ack	.\xsrq_pingpong.c	/^static int send_termination_ack(int index)$/;"	f	file:
+set_ah_attr	.\xsrq_pingpong.c	/^static void set_ah_attr(struct ibv_ah_attr *attr, struct pingpong_context *ctx,$/;"	f	file:
+size	.\rc_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+size	.\srq_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+size	.\uc_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+size	.\ud_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+size	.\xsrq_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+sl	.\xsrq_pingpong.c	/^	int			 sl;$/;"	m	struct:pingpong_context	file:
+sockfd	.\xsrq_pingpong.c	/^	int sockfd;$/;"	m	struct:pingpong_dest	file:
+speed_str	.\devinfo.c	/^static const char *speed_str(uint8_t speed)$/;"	f	file:
+srq	.\srq_pingpong.c	/^	struct ibv_srq		*srq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_srq	file:
+srq	.\xsrq_pingpong.c	/^	struct ibv_srq		*srq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_srq	file:
+srqn	.\xsrq_pingpong.c	/^	int srqn;$/;"	m	struct:pingpong_dest	file:
+transport_str	.\devinfo.c	/^static const char *transport_str(enum ibv_transport_type transport)$/;"	f	file:
+ts_params	.\rc_pingpong.c	/^struct ts_params {$/;"	s	file:
+usage	.\asyncwatch.c	/^static void usage(const char *argv0)$/;"	f	file:
+usage	.\devinfo.c	/^static void usage(const char *argv0)$/;"	f	file:
+usage	.\rc_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+usage	.\srq_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+usage	.\uc_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+usage	.\ud_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+usage	.\xsrq_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+use_event	.\xsrq_pingpong.c	/^	int			 use_event;$/;"	m	struct:pingpong_context	file:
+use_odp	.\rc_pingpong.c	/^static int use_odp;$/;"	v	file:
+use_ts	.\rc_pingpong.c	/^static int use_ts;$/;"	v	file:
+verbose	.\devinfo.c	/^static int verbose;$/;"	v	file:
+vl_str	.\devinfo.c	/^static const char *vl_str(uint8_t vl_num)$/;"	f	file:
+width_str	.\devinfo.c	/^static const char *width_str(uint8_t width)$/;"	f	file:
+wire_gid_to_gid	.\pingpong.c	/^void wire_gid_to_gid(const char *wgid, union ibv_gid *gid)$/;"	f
+xrcd	.\xsrq_pingpong.c	/^	struct ibv_xrcd		*xrcd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_xrcd	file:

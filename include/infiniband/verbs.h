@@ -1632,6 +1632,19 @@ static inline int ___ibv_query_port(struct ibv_context *context,
 /**
  * ibv_query_gid - Get a GID table entry
  */
+/**
+ * [ibv_query_gid retrieves an entry in the port’s global identifier (GID) table. Each port is assigned
+ * at least one GID by the subnet manager (SM). The GID is a valid IPv6 address composed of the
+ * globally unique identifier (GUID) and a prefix assigned by the SM. GID[0] is unique and contains the port's GUID.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-18T09:28:08+0800
+ * @param     context                  [struct ibv_context from ibv_open_device]
+ * @param     port_num                 [physical port number (1 is first port)]
+ * @param     index                    [which entry in the GID table to return (0 is first)]
+ * @output param     gid               [union ibv_gid containing gid information]
+ * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
+ */
 int ibv_query_gid(struct ibv_context *context, uint8_t port_num,
 		  int index, union ibv_gid *gid);
 
@@ -1987,6 +2000,16 @@ static inline int ibv_post_srq_recv(struct ibv_srq *srq,
 
 /**
  * ibv_create_qp - Create a queue pair.
+ */
+/**
+ * [ibv_create_qp creates a QP. When a QP is created, it is put into the RESET state.]
+ * 统一接入平台API
+ * @AuthorHTL 胡宇辉
+ * @DateTime  2017-01-18T09:23:55+0800
+ * @param     pd                       		 [struct ibv_pd from ibv_alloc_pd]
+ * @input param     qp_init_attr             [initial attributes of queue pair]
+ * @output param     qp_init_attr            [actual values are filled in]
+ * @return                             		 [pointer to created queue pair (QP) or NULL on failure.]
  */
 struct ibv_qp *ibv_create_qp(struct ibv_pd *pd,
 			     struct ibv_qp_init_attr *qp_init_attr);

@@ -379,9 +379,9 @@ void rdma_destroy_event_channel(struct rdma_event_channel *channel);
  * @DateTime  2016-11-24T14:23:37+0800
  * @return                             [0 on success, -1 on error. If the call fails, errno will be set to indicate the reason for the failure.]
  */
-int rdma_create_id(struct rdma_event_channel *channel,
-		   struct rdma_cm_id **id, void *context,
-		   enum rdma_port_space ps);
+int rdma_create_id(struct rdma_event_channel *channel,                    
+				   struct rdma_cm_id **id, void *context,
+				   enum rdma_port_space ps);
 
 /**
  * rdma_create_ep - Allocate a communication identifier and qp.
