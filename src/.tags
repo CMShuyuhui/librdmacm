@@ -1,0 +1,786 @@
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
+!_TAG_PROGRAM_VERSION	5.8	//
+ACM_EP_FLAG_DEST	.\acm.c	93;"	d	file:
+ACM_EP_FLAG_SOURCE	.\acm.c	92;"	d	file:
+ACM_EP_INFO_ADDRESS_IP	.\acm.c	82;"	d	file:
+ACM_EP_INFO_ADDRESS_IP6	.\acm.c	83;"	d	file:
+ACM_EP_INFO_NAME	.\acm.c	81;"	d	file:
+ACM_EP_INFO_PATH	.\acm.c	84;"	d	file:
+ACM_FLAGS_NODELAY	.\acm.c	65;"	d	file:
+ACM_MAX_ADDRESS	.\acm.c	68;"	d	file:
+ACM_MSG_DATA_LENGTH	.\acm.c	70;"	d	file:
+ACM_MSG_EP_LENGTH	.\acm.c	69;"	d	file:
+ACM_MSG_HDR_LENGTH	.\acm.c	67;"	d	file:
+ACM_OP_ACK	.\acm.c	52;"	d	file:
+ACM_OP_RESOLVE	.\acm.c	51;"	d	file:
+ACM_STATUS_EDESTADDR	.\acm.c	62;"	d	file:
+ACM_STATUS_EDESTTYPE	.\acm.c	63;"	d	file:
+ACM_STATUS_EINVAL	.\acm.c	56;"	d	file:
+ACM_STATUS_ENODATA	.\acm.c	57;"	d	file:
+ACM_STATUS_ENOMEM	.\acm.c	55;"	d	file:
+ACM_STATUS_ENOTCONN	.\acm.c	58;"	d	file:
+ACM_STATUS_ESRCADDR	.\acm.c	60;"	d	file:
+ACM_STATUS_ESRCTYPE	.\acm.c	61;"	d	file:
+ACM_STATUS_ETIMEDOUT	.\acm.c	59;"	d	file:
+ACM_STATUS_SUCCESS	.\acm.c	54;"	d	file:
+ACM_VERSION	.\acm.c	49;"	d	file:
+CMA_H	.\cma.h	35;"	d
+CMA_INIT_CMD	.\cma.c	63;"	d	file:
+CMA_INIT_CMD_RESP	.\cma.c	70;"	d	file:
+DS_IPV4_HDR_LEN	.\rsocket.c	272;"	d	file:
+DS_IPV6_HDR_LEN	.\rsocket.c	273;"	d	file:
+DS_UDP_IPV4_HDR_LEN	.\rsocket.c	402;"	d	file:
+DS_UDP_IPV6_HDR_LEN	.\rsocket.c	403;"	d	file:
+DS_UDP_TAG	.\rsocket.c	387;"	d	file:
+ERR	.\cma.h	/^static inline int ERR(int err)$/;"	f
+IDX_ARRAY_SIZE	.\indexer.h	57;"	d
+IDX_ENTRY_BITS	.\indexer.h	55;"	d
+IDX_ENTRY_SIZE	.\indexer.h	56;"	d
+IDX_INDEX_BITS	.\indexer.h	54;"	d
+IDX_MAX_INDEX	.\indexer.h	58;"	d
+INDEXER_H	.\indexer.h	35;"	d
+PFX	.\cma.h	61;"	d
+RAI_ROUTEONLY	.\cma.h	164;"	d
+RDMADIR	.\cma.h	186;"	d
+RDMA_CONF_DIR	.\cma.h	188;"	d
+RS_CONF_DIR	.\cma.h	189;"	d
+RS_CONN_FLAG_IOMAP	.\rsocket.c	202;"	d	file:
+RS_CONN_FLAG_NET	.\rsocket.c	201;"	d	file:
+RS_CONN_RETRIES	.\rsocket.c	65;"	d	file:
+RS_CTRL_DISCONNECT	.\rsocket.c	/^	RS_CTRL_DISCONNECT,$/;"	e	enum:__anon7	file:
+RS_CTRL_KEEPALIVE	.\rsocket.c	/^	RS_CTRL_KEEPALIVE,$/;"	e	enum:__anon7	file:
+RS_CTRL_SHUTDOWN	.\rsocket.c	/^	RS_CTRL_SHUTDOWN$/;"	e	enum:__anon7	file:
+RS_MAX_CTRL_MSG	.\rsocket.c	199;"	d	file:
+RS_MAX_TRANSFER	.\rsocket.c	60;"	d	file:
+RS_MSG_SIZE	.\rsocket.c	147;"	d	file:
+RS_OLAP_START_SIZE	.\rsocket.c	59;"	d	file:
+RS_OPT_MSG_SEND	.\rsocket.c	250;"	d	file:
+RS_OPT_SVC_ACTIVE	.\rsocket.c	251;"	d	file:
+RS_OPT_SWAP_SGL	.\rsocket.c	245;"	d	file:
+RS_OP_CTRL	.\rsocket.c	/^	RS_OP_CTRL$/;"	e	enum:__anon6	file:
+RS_OP_DATA	.\rsocket.c	/^	RS_OP_DATA,$/;"	e	enum:__anon6	file:
+RS_OP_IOMAP_SGL	.\rsocket.c	/^	RS_OP_IOMAP_SGL,$/;"	e	enum:__anon6	file:
+RS_OP_RSVD	.\rsocket.c	/^	RS_OP_RSVD,$/;"	e	enum:__anon6	file:
+RS_OP_RSVD_DATA_MORE	.\rsocket.c	/^	RS_OP_RSVD_DATA_MORE,$/;"	e	enum:__anon6	file:
+RS_OP_RSVD_DRA_MORE	.\rsocket.c	/^	RS_OP_RSVD_DRA_MORE,$/;"	e	enum:__anon6	file:
+RS_OP_SGL	.\rsocket.c	/^	RS_OP_SGL,$/;"	e	enum:__anon6	file:
+RS_OP_WRITE	.\rsocket.c	/^	RS_OP_WRITE, \/* opcode is not transmitted over the network *\/$/;"	e	enum:__anon6	file:
+RS_QP_CTRL_SIZE	.\rsocket.c	64;"	d	file:
+RS_QP_MAX_SIZE	.\rsocket.c	63;"	d	file:
+RS_QP_MIN_SIZE	.\rsocket.c	62;"	d	file:
+RS_SGL_SIZE	.\rsocket.c	66;"	d	file:
+RS_SNDLOWAT	.\rsocket.c	61;"	d	file:
+RS_SVC_ADD_DGRAM	.\rsocket.c	/^	RS_SVC_ADD_DGRAM,$/;"	e	enum:__anon5	file:
+RS_SVC_ADD_KEEPALIVE	.\rsocket.c	/^	RS_SVC_ADD_KEEPALIVE,$/;"	e	enum:__anon5	file:
+RS_SVC_MOD_KEEPALIVE	.\rsocket.c	/^	RS_SVC_MOD_KEEPALIVE$/;"	e	enum:__anon5	file:
+RS_SVC_NOOP	.\rsocket.c	/^	RS_SVC_NOOP,$/;"	e	enum:__anon5	file:
+RS_SVC_REM_DGRAM	.\rsocket.c	/^	RS_SVC_REM_DGRAM,$/;"	e	enum:__anon5	file:
+RS_SVC_REM_KEEPALIVE	.\rsocket.c	/^	RS_SVC_REM_KEEPALIVE,$/;"	e	enum:__anon5	file:
+RS_WR_ID_FLAG_MSG_SEND	.\rsocket.c	150;"	d	file:
+RS_WR_ID_FLAG_RECV	.\rsocket.c	149;"	d	file:
+SYSCONFDIR	.\cma.h	183;"	d
+VALGRIND_MAKE_MEM_DEFINED	.\cma.h	58;"	d
+__fxstat	.\preload.c	/^int __fxstat(int ver, int socket, struct stat *buf)$/;"	f
+_dlist_entry	.\indexer.h	/^typedef struct _dlist_entry {$/;"	s
+abi_ver	.\cma.c	/^static int abi_ver = RDMA_USER_CM_MAX_ABI_VERSION;$/;"	v	file:
+accept	.\preload.c	/^	int (*accept)(int socket, struct sockaddr *addr, socklen_t *addrlen);$/;"	m	struct:socket_calls	file:
+accept	.\preload.c	/^int accept(int socket, struct sockaddr *addr, socklen_t *addrlen)$/;"	f
+acm_ep_addr_data	.\acm.c	/^struct acm_ep_addr_data {$/;"	s	file:
+acm_ep_info	.\acm.c	/^union acm_ep_info {$/;"	u	file:
+acm_hdr	.\acm.c	/^struct acm_hdr {$/;"	s	file:
+acm_lock	.\acm.c	/^static pthread_mutex_t acm_lock = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+acm_msg	.\acm.c	/^struct acm_msg {$/;"	s	file:
+acm_resolve_msg	.\acm.c	/^struct acm_resolve_msg {$/;"	s	file:
+addr	.\acm.c	/^	uint8_t                 addr[ACM_MAX_ADDRESS];$/;"	m	union:acm_ep_info	file:
+addr	.\cma.c	/^	struct sockaddr_storage addr;$/;"	m	struct:cma_multicast	typeref:struct:cma_multicast::sockaddr_storage	file:
+addr	.\rsocket.c	/^			uint8_t  addr[16];$/;"	m	struct:ds_header::__anon10::__anon11	file:
+addr	.\rsocket.c	/^	uint64_t addr;$/;"	m	struct:rs_sge	file:
+addr	.\rsocket.c	/^	union socket_addr addr;	\/* must be first *\/$/;"	m	struct:ds_dest	typeref:union:ds_dest::socket_addr	file:
+addr	.\rsocket.c	/^	} addr;$/;"	m	struct:ds_header	typeref:union:ds_header::__anon10	file:
+addr	.\rsocket.c	/^	} addr;$/;"	m	struct:ds_udp_header	typeref:union:ds_udp_header::__anon16	file:
+af_ib	.\rsocket.c	/^		} af_ib;$/;"	m	union:rs_conn_private_data::__anon8	typeref:struct:rs_conn_private_data::__anon8::__anon9	file:
+af_ib_support	.\cma.c	/^int af_ib_support;$/;"	v
+ah	.\rsocket.c	/^	struct ibv_ah	  *ah;$/;"	m	struct:ds_dest	typeref:struct:ds_dest::ibv_ah	file:
+array	.\indexer.h	/^	union idx_entry *array[IDX_ARRAY_SIZE];$/;"	m	struct:indexer	typeref:union:indexer::idx_entry
+array	.\indexer.h	/^	void **array[IDX_ARRAY_SIZE];$/;"	m	struct:index_map
+atomic_dec	.\cma.h	/^static inline int atomic_dec(atomic_t *atomic)$/;"	f
+atomic_dec	.\cma.h	141;"	d
+atomic_get	.\cma.h	144;"	d
+atomic_inc	.\cma.h	/^static inline int atomic_inc(atomic_t *atomic)$/;"	f
+atomic_inc	.\cma.h	140;"	d
+atomic_init	.\cma.h	/^static inline void atomic_init(atomic_t *atomic)$/;"	f
+atomic_init	.\cma.h	142;"	d
+atomic_set	.\cma.h	145;"	d
+atomic_t	.\cma.h	/^typedef struct { pthread_mutex_t mut; int val; } atomic_t;$/;"	t	typeref:struct:__anon2
+atomic_t	.\cma.h	/^typedef struct { volatile int val; } atomic_t;$/;"	t	typeref:struct:__anon4
+bind	.\preload.c	/^	int (*bind)(int socket, const struct sockaddr *addr, socklen_t addrlen);$/;"	m	struct:socket_calls	file:
+bind	.\preload.c	/^int bind(int socket, const struct sockaddr *addr, socklen_t addrlen)$/;"	f
+check_abi_version	.\cma.c	/^static int check_abi_version(void)$/;"	f	file:
+close	.\preload.c	/^	int (*close)(int socket);$/;"	m	struct:socket_calls	file:
+close	.\preload.c	/^int close(int socket)$/;"	f
+cm_id	.\rsocket.c	/^			struct rdma_cm_id *cm_id;$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::rdma_cm_id	file:
+cm_id	.\rsocket.c	/^	struct rdma_cm_id *cm_id;$/;"	m	struct:ds_qp	typeref:struct:ds_qp::rdma_cm_id	file:
+cma_dev	.\cma.c	/^	struct cma_device	*cma_dev;$/;"	m	struct:cma_id_private	typeref:struct:cma_id_private::cma_device	file:
+cma_dev_array	.\cma.c	/^static struct cma_device *cma_dev_array;$/;"	v	typeref:struct:cma_device	file:
+cma_dev_cnt	.\cma.c	/^static int cma_dev_cnt;$/;"	v	file:
+cma_device	.\cma.c	/^struct cma_device {$/;"	s	file:
+cma_dst_ip4	.\cma.h	178;"	d
+cma_dst_ip6	.\cma.h	179;"	d
+cma_event	.\cma.c	/^struct cma_event {$/;"	s	file:
+cma_id_private	.\cma.c	/^struct cma_id_private {$/;"	s	file:
+cma_init_cnt	.\cma.c	/^static int cma_init_cnt;$/;"	v	file:
+cma_multicast	.\cma.c	/^struct cma_multicast {$/;"	s	file:
+cma_port	.\cma.c	/^struct cma_port {$/;"	s	file:
+cma_src_ip4	.\cma.h	176;"	d
+cma_src_ip6	.\cma.h	177;"	d
+cma_version	.\cma.h	/^	uint8_t  cma_version;$/;"	m	struct:ib_connect_hdr
+cmd	.\rsocket.c	/^	uint32_t cmd;$/;"	m	struct:rs_svc_msg	file:
+cnt	.\cma.h	/^	volatile int cnt;$/;"	m	struct:__anon3
+cnt	.\rsocket.c	/^	int cnt;$/;"	m	struct:rs_svc	file:
+cond	.\cma.c	/^	pthread_cond_t		cond;$/;"	m	struct:cma_id_private	file:
+cond	.\cma.c	/^	pthread_cond_t	cond;$/;"	m	struct:cma_multicast	file:
+config	.\preload.c	/^static struct config_entry *config;$/;"	v	typeref:struct:config_entry	file:
+config_cnt	.\preload.c	/^static int config_cnt;$/;"	v	file:
+config_entry	.\preload.c	/^struct config_entry {$/;"	s	file:
+conn_data	.\rsocket.c	/^			struct rs_conn_data	conn_data;$/;"	m	struct:rs_conn_private_data::__anon8::__anon9	typeref:struct:rs_conn_private_data::__anon8::__anon9::rs_conn_data	file:
+conn_data	.\rsocket.c	/^		struct rs_conn_data		conn_data;$/;"	m	union:rs_conn_private_data::__anon8	typeref:struct:rs_conn_private_data::__anon8::rs_conn_data	file:
+conn_dest	.\rsocket.c	/^			struct ds_dest    *conn_dest;$/;"	m	struct:rsocket::__anon12::__anon14	typeref:struct:rsocket::__anon12::__anon14::ds_dest	file:
+connect	.\cma.c	/^	void			*connect;$/;"	m	struct:cma_id_private	file:
+connect	.\preload.c	/^	int (*connect)(int socket, const struct sockaddr *addr, socklen_t addrlen);$/;"	m	struct:socket_calls	file:
+connect	.\preload.c	/^int connect(int socket, const struct sockaddr *addr, socklen_t addrlen)$/;"	f
+connect_error	.\cma.c	/^	int			connect_error;$/;"	m	struct:cma_id_private	file:
+connect_len	.\cma.c	/^	size_t			connect_len;$/;"	m	struct:cma_id_private	file:
+container_of	.\cma.h	75;"	d
+context	.\cma.c	/^	void		*context;$/;"	m	struct:cma_multicast	file:
+context_size	.\rsocket.c	/^	int context_size;$/;"	m	struct:rs_svc	file:
+contexts	.\rsocket.c	/^	void *contexts;$/;"	m	struct:rs_svc	file:
+copysockopts	.\preload.c	/^static int copysockopts(int dfd, int sfd, struct socket_calls *dapi,$/;"	f	file:
+cq_armed	.\rsocket.c	/^	int		  cq_armed;$/;"	m	struct:ds_qp	file:
+cq_armed	.\rsocket.c	/^	int		  cq_armed;$/;"	m	struct:rsocket	file:
+cq_lock	.\rsocket.c	/^	fastlock_t	  cq_lock;$/;"	m	struct:rsocket	file:
+cq_wait_lock	.\rsocket.c	/^	fastlock_t	  cq_wait_lock;$/;"	m	struct:rsocket	file:
+credits	.\rsocket.c	/^	uint16_t	  credits;$/;"	m	struct:rs_conn_data	file:
+ctrl_max_seqno	.\rsocket.c	/^			unsigned int	  ctrl_max_seqno;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+ctrl_seqno	.\rsocket.c	/^			unsigned int	  ctrl_seqno;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+data	.\acm.c	/^		uint8_t                 data[ACM_MSG_DATA_LENGTH];$/;"	m	union:acm_msg::__anon1	file:
+data	.\acm.c	/^	struct acm_ep_addr_data data[0];$/;"	m	struct:acm_resolve_msg	typeref:struct:acm_resolve_msg::acm_ep_addr_data	file:
+data	.\acm.c	/^	uint8_t		        data[3];$/;"	m	struct:acm_hdr	file:
+data	.\rsocket.c	/^	uint32_t data;$/;"	m	struct:rs_msg	file:
+data_buf	.\rsocket.c	/^	struct rs_sge	  data_buf;$/;"	m	struct:rs_conn_data	typeref:struct:rs_conn_data::rs_sge	file:
+def_inline	.\rsocket.c	/^static uint16_t def_inline = 64;$/;"	v	file:
+def_iomap_size	.\rsocket.c	/^static uint16_t def_iomap_size = 0;$/;"	v	file:
+def_mem	.\rsocket.c	/^static uint32_t def_mem = (1 << 17);$/;"	v	file:
+def_rqsize	.\rsocket.c	/^static uint16_t def_rqsize = 384;$/;"	v	file:
+def_sqsize	.\rsocket.c	/^static uint16_t def_sqsize = 384;$/;"	v	file:
+def_wmem	.\rsocket.c	/^static uint32_t def_wmem = (1 << 17);$/;"	v	file:
+dest	.\rsocket.c	/^	struct ds_dest	  dest;$/;"	m	struct:ds_qp	typeref:struct:ds_qp::ds_dest	file:
+dest_map	.\rsocket.c	/^			void		  *dest_map;$/;"	m	struct:rsocket::__anon12::__anon14	file:
+dlist_empty	.\indexer.h	/^static inline int dlist_empty(dlist_entry *head)$/;"	f
+dlist_entry	.\indexer.h	/^}	dlist_entry;$/;"	t	typeref:struct:_dlist_entry
+dlist_init	.\indexer.h	/^static inline void dlist_init(dlist_entry *head)$/;"	f
+dlist_insert_after	.\indexer.h	/^static inline void dlist_insert_after(dlist_entry *item, dlist_entry *head)$/;"	f
+dlist_insert_before	.\indexer.h	/^static inline void dlist_insert_before(dlist_entry *item, dlist_entry *head)$/;"	f
+dlist_insert_head	.\indexer.h	135;"	d
+dlist_insert_tail	.\indexer.h	136;"	d
+dlist_remove	.\indexer.h	/^static inline void dlist_remove(dlist_entry *item)$/;"	f
+dmsg	.\rsocket.c	/^		struct ds_rmsg	  *dmsg;$/;"	m	union:rsocket::__anon15	typeref:struct:rsocket::__anon15::ds_rmsg	file:
+domain	.\preload.c	/^	int domain;$/;"	m	struct:config_entry	file:
+ds_add_qp_dest	.\rsocket.c	/^static int ds_add_qp_dest(struct ds_qp *qp, union socket_addr *addr,$/;"	f	file:
+ds_all_sends_done	.\rsocket.c	/^static int ds_all_sends_done(struct rsocket *rs)$/;"	f	file:
+ds_can_send	.\rsocket.c	/^static int ds_can_send(struct rsocket *rs)$/;"	f	file:
+ds_compare_addr	.\rsocket.c	/^static int ds_compare_addr(const void *dst1, const void *dst2)$/;"	f	file:
+ds_create_qp	.\rsocket.c	/^static int ds_create_qp(struct rsocket *rs, union socket_addr *src_addr,$/;"	f	file:
+ds_dest	.\rsocket.c	/^struct ds_dest {$/;"	s	file:
+ds_format_hdr	.\rsocket.c	/^static void ds_format_hdr(struct ds_header *hdr, union socket_addr *addr)$/;"	f	file:
+ds_free	.\rsocket.c	/^static void ds_free(struct rsocket *rs)$/;"	f	file:
+ds_free_qp	.\rsocket.c	/^static void ds_free_qp(struct ds_qp *qp)$/;"	f	file:
+ds_get_comp	.\rsocket.c	/^static int ds_get_comp(struct rsocket *rs, int nonblock, int (*test)(struct rsocket *rs))$/;"	f	file:
+ds_get_cq_event	.\rsocket.c	/^static int ds_get_cq_event(struct rsocket *rs)$/;"	f	file:
+ds_get_dest	.\rsocket.c	/^static int ds_get_dest(struct rsocket *rs, const struct sockaddr *addr,$/;"	f	file:
+ds_get_qp	.\rsocket.c	/^static int ds_get_qp(struct rsocket *rs, union socket_addr *src_addr,$/;"	f	file:
+ds_get_src_addr	.\rsocket.c	/^static int ds_get_src_addr(struct rsocket *rs,$/;"	f	file:
+ds_header	.\rsocket.c	/^struct ds_header {$/;"	s	file:
+ds_init	.\rsocket.c	/^static int ds_init(struct rsocket *rs, int domain)$/;"	f	file:
+ds_init_bufs	.\rsocket.c	/^static int ds_init_bufs(struct ds_qp *qp)$/;"	f	file:
+ds_init_ep	.\rsocket.c	/^static int ds_init_ep(struct rsocket *rs)$/;"	f	file:
+ds_insert_qp	.\rsocket.c	/^static void ds_insert_qp(struct rsocket *rs, struct ds_qp *qp)$/;"	f	file:
+ds_next_qp	.\rsocket.c	405;"	d	file:
+ds_poll_cqs	.\rsocket.c	/^static void ds_poll_cqs(struct rsocket *rs)$/;"	f	file:
+ds_post_recv	.\rsocket.c	/^static inline int ds_post_recv(struct rsocket *rs, struct ds_qp *qp, uint32_t offset)$/;"	f	file:
+ds_post_send	.\rsocket.c	/^static int ds_post_send(struct rsocket *rs, struct ibv_sge *sge,$/;"	f	file:
+ds_process_cqs	.\rsocket.c	/^static int ds_process_cqs(struct rsocket *rs, int nonblock, int (*test)(struct rsocket *rs))$/;"	f	file:
+ds_qp	.\rsocket.c	/^struct ds_qp {$/;"	s	file:
+ds_recvfrom	.\rsocket.c	/^static ssize_t ds_recvfrom(struct rsocket *rs, void *buf, size_t len, int flags,$/;"	f	file:
+ds_remove_qp	.\rsocket.c	/^static void ds_remove_qp(struct rsocket *rs, struct ds_qp *qp)$/;"	f	file:
+ds_req_notify_cqs	.\rsocket.c	/^static void ds_req_notify_cqs(struct rsocket *rs)$/;"	f	file:
+ds_rmsg	.\rsocket.c	/^struct ds_rmsg {$/;"	s	file:
+ds_send_udp	.\rsocket.c	/^static ssize_t ds_send_udp(struct rsocket *rs, const void *buf, size_t len,$/;"	f	file:
+ds_sendv_udp	.\rsocket.c	/^static ssize_t ds_sendv_udp(struct rsocket *rs, const struct iovec *iov,$/;"	f	file:
+ds_set_qp_size	.\rsocket.c	/^static void ds_set_qp_size(struct rsocket *rs)$/;"	f	file:
+ds_set_src	.\rsocket.c	/^static void ds_set_src(struct sockaddr *addr, socklen_t *addrlen,$/;"	f	file:
+ds_shutdown	.\rsocket.c	/^static void ds_shutdown(struct rsocket *rs)$/;"	f	file:
+ds_smsg	.\rsocket.c	/^struct ds_smsg {$/;"	s	file:
+ds_udp_header	.\rsocket.c	/^struct ds_udp_header {$/;"	s	file:
+ds_valid_recv	.\rsocket.c	/^static int ds_valid_recv(struct ds_qp *qp, struct ibv_wc *wc)$/;"	f	file:
+dsend	.\rsocket.c	/^static ssize_t dsend(struct rsocket *rs, const void *buf, size_t len, int flags)$/;"	f	file:
+dst_addr	.\cma.h	/^	uint32_t dst_addr[4];$/;"	m	struct:ib_connect_hdr
+dup2	.\preload.c	/^	int (*dup2)(int oldfd, int newfd);$/;"	m	struct:socket_calls	file:
+dup2	.\preload.c	/^int dup2(int oldfd, int newfd)$/;"	f
+dupfd	.\preload.c	/^	int dupfd;$/;"	m	struct:fd_info	file:
+entry	.\rsocket.c	/^	dlist_entry entry;$/;"	m	struct:rs_iomap_mr	file:
+epfd	.\rsocket.c	/^			int		  epfd;$/;"	m	struct:rsocket::__anon12::__anon14	file:
+err	.\rsocket.c	/^	int		  err;$/;"	m	struct:rsocket	file:
+event	.\cma.c	/^	struct rdma_cm_event	event;$/;"	m	struct:cma_event	typeref:struct:cma_event::rdma_cm_event	file:
+events_completed	.\cma.c	/^	int			events_completed;$/;"	m	struct:cma_id_private	file:
+events_completed	.\cma.c	/^	int		events_completed;$/;"	m	struct:cma_multicast	file:
+fastlock_acquire	.\cma.h	/^static inline void fastlock_acquire(fastlock_t *lock)$/;"	f
+fastlock_acquire	.\cma.h	87;"	d
+fastlock_destroy	.\cma.h	/^static inline void fastlock_destroy(fastlock_t *lock)$/;"	f
+fastlock_destroy	.\cma.h	86;"	d
+fastlock_init	.\cma.h	/^static inline void fastlock_init(fastlock_t *lock)$/;"	f
+fastlock_init	.\cma.h	85;"	d
+fastlock_release	.\cma.h	/^static inline void fastlock_release(fastlock_t *lock)$/;"	f
+fastlock_release	.\cma.h	88;"	d
+fastlock_t	.\cma.h	/^} fastlock_t;$/;"	t	typeref:struct:__anon3
+fastlock_t	.\cma.h	84;"	d
+fcntl	.\preload.c	/^	int (*fcntl)(int socket, int cmd, ... \/* arg *\/);$/;"	m	struct:socket_calls	file:
+fcntl	.\preload.c	/^int fcntl(int socket, int cmd, ... \/* arg *\/)$/;"	f
+fd	.\preload.c	/^	int fd;$/;"	m	struct:fd_info	file:
+fd_close	.\preload.c	/^static enum fd_type fd_close(int index, int *fd)$/;"	f	file:
+fd_flags	.\rsocket.c	/^	int		  fd_flags;$/;"	m	struct:rsocket	file:
+fd_fork	.\preload.c	/^	fd_fork,$/;"	e	enum:fd_fork_state	file:
+fd_fork_active	.\preload.c	/^	fd_fork_active,$/;"	e	enum:fd_fork_state	file:
+fd_fork_get	.\preload.c	/^static inline enum fd_type fd_fork_get(int index, int *fd)$/;"	f	file:
+fd_fork_listen	.\preload.c	/^	fd_fork_listen,$/;"	e	enum:fd_fork_state	file:
+fd_fork_passive	.\preload.c	/^	fd_fork_passive$/;"	e	enum:fd_fork_state	file:
+fd_fork_state	.\preload.c	/^enum fd_fork_state {$/;"	g	file:
+fd_get	.\preload.c	/^static inline enum fd_type fd_get(int index, int *fd)$/;"	f	file:
+fd_getd	.\preload.c	/^static inline int fd_getd(int index)$/;"	f	file:
+fd_gets	.\preload.c	/^static inline enum fd_fork_state fd_gets(int index)$/;"	f	file:
+fd_gett	.\preload.c	/^static inline enum fd_type fd_gett(int index)$/;"	f	file:
+fd_info	.\preload.c	/^struct fd_info {$/;"	s	file:
+fd_normal	.\preload.c	/^	fd_normal,$/;"	e	enum:fd_type	file:
+fd_open	.\preload.c	/^static int fd_open(void)$/;"	f	file:
+fd_ready	.\preload.c	/^	fd_ready,$/;"	e	enum:fd_fork_state	file:
+fd_rsocket	.\preload.c	/^	fd_rsocket$/;"	e	enum:fd_type	file:
+fd_store	.\preload.c	/^static void fd_store(int index, int fd, enum fd_type type, enum fd_fork_state state)$/;"	f	file:
+fd_type	.\preload.c	/^enum fd_type {$/;"	g	file:
+fds_alloc	.\preload.c	/^static struct pollfd *fds_alloc(nfds_t nfds)$/;"	f	file:
+flags	.\acm.c	/^	uint32_t                flags;$/;"	m	struct:acm_ep_addr_data	file:
+flags	.\rsocket.c	/^	uint8_t		  flags;$/;"	m	struct:rs_conn_data	file:
+flowinfo	.\rsocket.c	/^			uint32_t flowinfo;$/;"	m	struct:ds_header::__anon10::__anon11	file:
+fork_active	.\preload.c	/^static void fork_active(int socket)$/;"	f	file:
+fork_passive	.\preload.c	/^static void fork_passive(int socket)$/;"	f	file:
+fork_support	.\preload.c	/^static int fork_support;$/;"	v	file:
+free_config	.\preload.c	/^static void free_config(void)$/;"	f	file:
+free_list	.\indexer.h	/^	int		 free_list;$/;"	m	struct:indexer
+fxstat	.\preload.c	/^	int (*fxstat)(int ver, int fd, struct stat *buf);$/;"	m	struct:socket_calls	file:
+getenv_options	.\preload.c	/^void getenv_options(void)$/;"	f
+getpeername	.\preload.c	/^	int (*getpeername)(int socket, struct sockaddr *addr, socklen_t *addrlen);$/;"	m	struct:socket_calls	file:
+getpeername	.\preload.c	/^int getpeername(int socket, struct sockaddr *addr, socklen_t *addrlen)$/;"	f
+getsockname	.\preload.c	/^	int (*getsockname)(int socket, struct sockaddr *addr, socklen_t *addrlen);$/;"	m	struct:socket_calls	file:
+getsockname	.\preload.c	/^int getsockname(int socket, struct sockaddr *addr, socklen_t *addrlen)$/;"	f
+getsockopt	.\preload.c	/^	int (*getsockopt)(int socket, int level, int optname,$/;"	m	struct:socket_calls	file:
+getsockopt	.\preload.c	/^int getsockopt(int socket, int level, int optname,$/;"	f
+guid	.\cma.c	/^	uint64_t	    guid;$/;"	m	struct:cma_device	file:
+handle	.\cma.c	/^	uint32_t		handle;$/;"	m	struct:cma_id_private	file:
+handle	.\cma.c	/^	uint32_t	handle;$/;"	m	struct:cma_multicast	file:
+hdr	.\acm.c	/^	struct acm_hdr                  hdr;$/;"	m	struct:acm_msg	typeref:struct:acm_msg::acm_hdr	file:
+hdr	.\acm.c	/^	struct acm_hdr          hdr;$/;"	m	struct:acm_resolve_msg	typeref:struct:acm_resolve_msg::acm_hdr	file:
+hdr	.\rsocket.c	/^	struct ds_header  hdr;$/;"	m	struct:ds_qp	typeref:struct:ds_qp::ds_header	file:
+htonll	.\cma.h	/^static inline uint64_t htonll(uint64_t x) { return bswap_64(x); }$/;"	f
+htonll	.\cma.h	/^static inline uint64_t htonll(uint64_t x) { return x; }$/;"	f
+ib_connect_hdr	.\cma.h	/^struct ib_connect_hdr {$/;"	s
+ib_hdr	.\rsocket.c	/^			struct ib_connect_hdr	ib_hdr;$/;"	m	struct:rs_conn_private_data::__anon8::__anon9	typeref:struct:rs_conn_private_data::__anon8::__anon9::ib_connect_hdr	file:
+id	.\cma.c	/^	struct rdma_cm_id	id;$/;"	m	struct:cma_id_private	typeref:struct:cma_id_private::rdma_cm_id	file:
+id	.\rsocket.c	/^	pthread_t id;$/;"	m	struct:rs_svc	file:
+id_priv	.\cma.c	/^	struct cma_id_private	*id_priv;$/;"	m	struct:cma_event	typeref:struct:cma_event::cma_id_private	file:
+id_priv	.\cma.c	/^	struct cma_id_private *id_priv;$/;"	m	struct:cma_multicast	typeref:struct:cma_multicast::cma_id_private	file:
+idm	.\preload.c	/^static struct index_map idm;$/;"	v	typeref:struct:index_map	file:
+idm	.\rsocket.c	/^static struct index_map idm;$/;"	v	typeref:struct:index_map	file:
+idm_at	.\indexer.h	/^static inline void *idm_at(struct index_map *idm, int index)$/;"	f
+idm_clear	.\indexer.c	/^void *idm_clear(struct index_map *idm, int index)$/;"	f
+idm_grow	.\indexer.c	/^static int idm_grow(struct index_map *idm, int index)$/;"	f	file:
+idm_lock	.\cma.c	/^static fastlock_t idm_lock;$/;"	v	file:
+idm_lookup	.\indexer.h	/^static inline void *idm_lookup(struct index_map *idm, int index)$/;"	f
+idm_set	.\indexer.c	/^int idm_set(struct index_map *idm, int index, void *item)$/;"	f
+idx_array_index	.\indexer.h	67;"	d
+idx_at	.\indexer.h	/^static inline void *idx_at(struct indexer *idx, int index)$/;"	f
+idx_entry	.\indexer.h	/^union idx_entry {$/;"	u
+idx_entry_index	.\indexer.h	68;"	d
+idx_grow	.\indexer.c	/^static int idx_grow(struct indexer *idx)$/;"	f	file:
+idx_insert	.\indexer.c	/^int idx_insert(struct indexer *idx, void *item)$/;"	f
+idx_remove	.\indexer.c	/^void *idx_remove(struct indexer *idx, int index)$/;"	f
+idx_replace	.\indexer.c	/^void idx_replace(struct indexer *idx, int index, void *item)$/;"	f
+index	.\rsocket.c	/^	int		  index;$/;"	m	struct:rsocket	file:
+index	.\rsocket.c	/^	int index;	\/* -1 if mapping is local and not in iomap_list *\/$/;"	m	struct:rs_iomap_mr	file:
+index_map	.\indexer.h	/^struct index_map$/;"	s
+indexer	.\indexer.h	/^struct indexer$/;"	s
+info	.\acm.c	/^	union acm_ep_info       info;$/;"	m	struct:acm_ep_addr_data	typeref:union:acm_ep_addr_data::acm_ep_info	file:
+init_preload	.\preload.c	/^static void init_preload(void)$/;"	f	file:
+initiator_depth	.\cma.c	/^	uint8_t			initiator_depth;$/;"	m	struct:cma_id_private	file:
+intercept_socket	.\preload.c	/^static int intercept_socket(int domain, int type, int protocol)$/;"	f	file:
+iomap_list	.\rsocket.c	/^	dlist_entry	  iomap_list;$/;"	m	struct:rsocket	file:
+iomap_pending	.\rsocket.c	/^	int		  iomap_pending;$/;"	m	struct:rsocket	file:
+iomap_queue	.\rsocket.c	/^	dlist_entry	  iomap_queue;$/;"	m	struct:rsocket	file:
+ip_version	.\cma.h	/^	uint8_t  ip_version; \/* IP version: 7:4 *\/$/;"	m	struct:ib_connect_hdr
+ipv4	.\rsocket.c	/^		uint32_t  ipv4;$/;"	m	union:ds_header::__anon10	file:
+ipv4	.\rsocket.c	/^		uint32_t ipv4;$/;"	m	union:ds_udp_header::__anon16	file:
+ipv6	.\rsocket.c	/^		uint8_t  ipv6[16];$/;"	m	union:ds_udp_header::__anon16	file:
+ipv6	.\rsocket.c	/^		} ipv6;$/;"	m	union:ds_header::__anon10	typeref:struct:ds_header::__anon10::__anon11	file:
+ipv6_opts	.\rsocket.c	/^	uint64_t	  ipv6_opts;$/;"	m	struct:rsocket	file:
+item	.\indexer.h	/^	void *item;$/;"	m	union:idx_entry
+keepalive_time	.\rsocket.c	/^			unsigned int	  keepalive_time;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+key	.\rsocket.c	/^	uint32_t key;$/;"	m	struct:rs_sge	file:
+length	.\acm.c	/^	uint16_t                length;$/;"	m	struct:acm_hdr	file:
+length	.\rsocket.c	/^	uint32_t	length;$/;"	m	struct:ds_rmsg	file:
+length	.\rsocket.c	/^	uint32_t length;$/;"	m	struct:rs_sge	file:
+length	.\rsocket.c	/^	uint8_t		  length;$/;"	m	struct:ds_header	file:
+length	.\rsocket.c	/^	uint8_t		  length;$/;"	m	struct:ds_udp_header	file:
+link_layer	.\cma.c	/^	uint8_t			link_layer;$/;"	m	struct:cma_port	file:
+list	.\rsocket.c	/^	dlist_entry	  list;$/;"	m	struct:ds_qp	file:
+listen	.\preload.c	/^	int (*listen)(int socket, int backlog);$/;"	m	struct:socket_calls	file:
+listen	.\preload.c	/^int listen(int socket, int backlog)$/;"	f
+map_lock	.\rsocket.c	/^	fastlock_t	  map_lock; \/* acquire slock first if needed *\/$/;"	m	struct:rsocket	file:
+max	.\cma.h	71;"	d
+max_initiator_depth	.\cma.c	/^	uint8_t		    max_initiator_depth;$/;"	m	struct:cma_device	file:
+max_qpsize	.\cma.c	/^	int		    max_qpsize;$/;"	m	struct:cma_device	file:
+max_responder_resources	.\cma.c	/^	uint8_t		    max_responder_resources;$/;"	m	struct:cma_device	file:
+mc	.\cma.c	/^	struct cma_multicast	*mc;$/;"	m	struct:cma_event	typeref:struct:cma_event::cma_multicast	file:
+mc_list	.\cma.c	/^	struct cma_multicast	*mc_list;$/;"	m	struct:cma_id_private	typeref:struct:cma_id_private::cma_multicast	file:
+mgid	.\cma.c	/^	union ibv_gid	mgid;$/;"	m	struct:cma_multicast	typeref:union:cma_multicast::ibv_gid	file:
+min	.\cma.h	72;"	d
+mlid	.\cma.c	/^	uint16_t	mlid;$/;"	m	struct:cma_multicast	file:
+mr	.\rsocket.c	/^	struct ibv_mr *mr;$/;"	m	struct:rs_iomap_mr	typeref:struct:rs_iomap_mr::ibv_mr	file:
+mut	.\cma.c	/^	pthread_mutex_t		mut;$/;"	m	struct:cma_id_private	file:
+mut	.\cma.c	/^static pthread_mutex_t mut = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+mut	.\cma.h	/^typedef struct { pthread_mutex_t mut; int val; } atomic_t;$/;"	m	struct:__anon2
+mut	.\preload.c	/^static pthread_mutex_t mut = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+mut	.\rsocket.c	/^static pthread_mutex_t mut = PTHREAD_MUTEX_INITIALIZER;$/;"	v	file:
+name	.\acm.c	/^	uint8_t                 name[ACM_MAX_ADDRESS];$/;"	m	union:acm_ep_info	file:
+name	.\preload.c	/^	char *name;$/;"	m	struct:config_entry	file:
+next	.\cma.c	/^	struct cma_multicast  *next;$/;"	m	struct:cma_multicast	typeref:struct:cma_multicast::cma_multicast	file:
+next	.\indexer.h	/^	int   next;$/;"	m	union:idx_entry
+next	.\indexer.h	/^	struct _dlist_entry	*next;$/;"	m	struct:_dlist_entry	typeref:struct:_dlist_entry::_dlist_entry
+next	.\rsocket.c	/^	struct ds_smsg	*next;$/;"	m	struct:ds_smsg	typeref:struct:ds_smsg::ds_smsg	file:
+nohints	.\addrinfo.c	/^struct rdma_addrinfo nohints;$/;"	v	typeref:struct:rdma_addrinfo
+ntohll	.\cma.h	/^static inline uint64_t ntohll(uint64_t x) { return bswap_64(x); }$/;"	f
+ntohll	.\cma.h	/^static inline uint64_t ntohll(uint64_t x) { return x; }$/;"	f
+offset	.\rsocket.c	/^	uint32_t	offset;$/;"	m	struct:ds_rmsg	file:
+offset	.\rsocket.c	/^	uint64_t offset;$/;"	m	struct:rs_iomap	file:
+offset	.\rsocket.c	/^	uint64_t offset;$/;"	m	struct:rs_iomap_mr	file:
+op	.\rsocket.c	/^	uint32_t op;$/;"	m	struct:rs_msg	file:
+op	.\rsocket.c	/^	uint8_t		  op;$/;"	m	struct:ds_udp_header	file:
+opcode	.\acm.c	/^	uint8_t                 opcode;$/;"	m	struct:acm_hdr	file:
+optlen	.\rsocket.c	/^	size_t		  optlen;$/;"	m	struct:rsocket	file:
+opts	.\rsocket.c	/^	int		  opts;$/;"	m	struct:rsocket	file:
+optval	.\rsocket.c	/^	void		  *optval;$/;"	m	struct:rsocket	file:
+path	.\acm.c	/^	struct ibv_path_record  path;$/;"	m	union:acm_ep_info	typeref:struct:acm_ep_info::ibv_path_record	file:
+pd	.\cma.c	/^	struct ibv_pd	   *pd;$/;"	m	struct:cma_device	typeref:struct:cma_device::ibv_pd	file:
+poll	.\preload.c	/^	int (*poll)(struct pollfd *fds, nfds_t nfds, int timeout);$/;"	m	struct:socket_calls	file:
+poll	.\preload.c	/^int poll(struct pollfd *fds, nfds_t nfds, int timeout)$/;"	f
+polling_time	.\rsocket.c	/^static uint32_t polling_time = 10;$/;"	v	file:
+port	.\cma.c	/^	struct cma_port    *port;$/;"	m	struct:cma_device	typeref:struct:cma_device::cma_port	file:
+port	.\cma.h	/^	uint16_t port;$/;"	m	struct:ib_connect_hdr
+port	.\rsocket.c	/^	uint16_t	  port;$/;"	m	struct:ds_header	file:
+port_cnt	.\cma.c	/^	int		    port_cnt;$/;"	m	struct:cma_device	file:
+prev	.\indexer.h	/^	struct _dlist_entry	*prev;$/;"	m	struct:_dlist_entry	typeref:struct:_dlist_entry::_dlist_entry
+private_data	.\cma.c	/^	uint8_t			private_data[RDMA_MAX_PRIVATE_DATA];$/;"	m	struct:cma_event	file:
+protocol	.\preload.c	/^	int protocol;$/;"	m	struct:config_entry	file:
+qp	.\rsocket.c	/^	struct ds_qp	  *qp;$/;"	m	struct:ds_dest	typeref:struct:ds_dest::ds_qp	file:
+qp	.\rsocket.c	/^	struct ds_qp	*qp;$/;"	m	struct:ds_rmsg	typeref:struct:ds_rmsg::ds_qp	file:
+qp_init_attr	.\cma.c	/^	struct ibv_qp_init_attr	*qp_init_attr;$/;"	m	struct:cma_id_private	typeref:struct:cma_id_private::ibv_qp_init_attr	file:
+qp_list	.\rsocket.c	/^			struct ds_qp	  *qp_list;$/;"	m	struct:rsocket::__anon12::__anon14	typeref:struct:rsocket::__anon12::__anon14::ds_qp	file:
+qpn	.\rsocket.c	/^	uint32_t	   qpn;$/;"	m	struct:ds_dest	file:
+qpn	.\rsocket.c	/^	uint32_t	  qpn;  \/* lower 8-bits reserved *\/$/;"	m	struct:ds_udp_header	file:
+raccept	.\rsocket.c	/^int raccept(int socket, struct sockaddr *addr, socklen_t *addrlen)$/;"	f
+rbind	.\rsocket.c	/^int rbind(int socket, const struct sockaddr *addr, socklen_t addrlen)$/;"	f
+rbuf	.\rsocket.c	/^			uint8_t		  *rbuf;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+rbuf	.\rsocket.c	/^	uint8_t		  *rbuf;$/;"	m	struct:ds_qp	file:
+rbuf_bytes_avail	.\rsocket.c	/^			int		  rbuf_bytes_avail;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+rbuf_free_offset	.\rsocket.c	/^			int		  rbuf_free_offset;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+rbuf_msg_index	.\rsocket.c	/^			int		  rbuf_msg_index;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+rbuf_offset	.\rsocket.c	/^			int		  rbuf_offset;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+rbuf_size	.\rsocket.c	/^	uint32_t	  rbuf_size;$/;"	m	struct:rsocket	file:
+rclose	.\rsocket.c	/^int rclose(int socket)$/;"	f
+rconnect	.\rsocket.c	/^int rconnect(int socket, const struct sockaddr *addr, socklen_t addrlen)$/;"	f
+rdma_accept	.\cma.c	/^int rdma_accept(struct rdma_cm_id *id, struct rdma_conn_param *conn_param)$/;"	f
+rdma_ack_cm_event	.\cma.c	/^int rdma_ack_cm_event(struct rdma_cm_event *event)$/;"	f
+rdma_bind_addr	.\cma.c	/^int rdma_bind_addr(struct rdma_cm_id *id, struct sockaddr *addr)$/;"	f
+rdma_bind_addr2	.\cma.c	/^static int rdma_bind_addr2(struct rdma_cm_id *id, struct sockaddr *addr,$/;"	f	file:
+rdma_cma_fini	.\cma.c	/^static void __attribute__((destructor)) rdma_cma_fini(void)$/;"	f	file:
+rdma_connect	.\cma.c	/^int rdma_connect(struct rdma_cm_id *id, struct rdma_conn_param *conn_param)$/;"	f
+rdma_create_ep	.\cma.c	/^int rdma_create_ep(struct rdma_cm_id **id, struct rdma_addrinfo *res,$/;"	f
+rdma_create_event_channel	.\cma.c	/^struct rdma_event_channel *rdma_create_event_channel(void)$/;"	f
+rdma_create_id	.\cma.c	/^int rdma_create_id(struct rdma_event_channel *channel,$/;"	f
+rdma_create_id2	.\cma.c	/^static int rdma_create_id2(struct rdma_event_channel *channel,$/;"	f	file:
+rdma_create_qp	.\cma.c	/^int rdma_create_qp(struct rdma_cm_id *id, struct ibv_pd *pd,$/;"	f
+rdma_create_qp_ex	.\cma.c	/^int rdma_create_qp_ex(struct rdma_cm_id *id,$/;"	f
+rdma_create_srq	.\cma.c	/^int rdma_create_srq(struct rdma_cm_id *id, struct ibv_pd *pd,$/;"	f
+rdma_create_srq_ex	.\cma.c	/^int rdma_create_srq_ex(struct rdma_cm_id *id, struct ibv_srq_init_attr_ex *attr)$/;"	f
+rdma_destroy_ep	.\cma.c	/^void rdma_destroy_ep(struct rdma_cm_id *id)$/;"	f
+rdma_destroy_event_channel	.\cma.c	/^void rdma_destroy_event_channel(struct rdma_event_channel *channel)$/;"	f
+rdma_destroy_id	.\cma.c	/^int rdma_destroy_id(struct rdma_cm_id *id)$/;"	f
+rdma_destroy_qp	.\cma.c	/^void rdma_destroy_qp(struct rdma_cm_id *id)$/;"	f
+rdma_destroy_srq	.\cma.c	/^void rdma_destroy_srq(struct rdma_cm_id *id)$/;"	f
+rdma_disconnect	.\cma.c	/^int rdma_disconnect(struct rdma_cm_id *id)$/;"	f
+rdma_event_str	.\cma.c	/^const char *rdma_event_str(enum rdma_cm_event_type event)$/;"	f
+rdma_free_devices	.\cma.c	/^void rdma_free_devices(struct ibv_context **list)$/;"	f
+rdma_freeaddrinfo	.\addrinfo.c	/^void rdma_freeaddrinfo(struct rdma_addrinfo *res)$/;"	f
+rdma_get_cm_event	.\cma.c	/^int rdma_get_cm_event(struct rdma_event_channel *channel,$/;"	f
+rdma_get_devices	.\cma.c	/^struct ibv_context **rdma_get_devices(int *num_devices)$/;"	f
+rdma_get_dst_port	.\cma.c	/^uint16_t rdma_get_dst_port(struct rdma_cm_id *id)$/;"	f
+rdma_get_request	.\cma.c	/^int rdma_get_request(struct rdma_cm_id *listen, struct rdma_cm_id **id)$/;"	f
+rdma_get_src_port	.\cma.c	/^uint16_t rdma_get_src_port(struct rdma_cm_id *id)$/;"	f
+rdma_getaddrinfo	.\addrinfo.c	/^int rdma_getaddrinfo(char *node, char *service,$/;"	f
+rdma_init_qp_attr	.\cma.c	/^static int rdma_init_qp_attr(struct rdma_cm_id *id, struct ibv_qp_attr *qp_attr,$/;"	f	file:
+rdma_join_multicast	.\cma.c	/^int rdma_join_multicast(struct rdma_cm_id *id, struct sockaddr *addr,$/;"	f
+rdma_join_multicast2	.\cma.c	/^static int rdma_join_multicast2(struct rdma_cm_id *id, struct sockaddr *addr,$/;"	f	file:
+rdma_leave_multicast	.\cma.c	/^int rdma_leave_multicast(struct rdma_cm_id *id, struct sockaddr *addr)$/;"	f
+rdma_listen	.\cma.c	/^int rdma_listen(struct rdma_cm_id *id, int backlog)$/;"	f
+rdma_migrate_id	.\cma.c	/^int rdma_migrate_id(struct rdma_cm_id *id, struct rdma_event_channel *channel)$/;"	f
+rdma_notify	.\cma.c	/^int rdma_notify(struct rdma_cm_id *id, enum ibv_event_type event)$/;"	f
+rdma_reject	.\cma.c	/^int rdma_reject(struct rdma_cm_id *id, const void *private_data,$/;"	f
+rdma_resolve_addr	.\cma.c	/^int rdma_resolve_addr(struct rdma_cm_id *id, struct sockaddr *src_addr,$/;"	f
+rdma_resolve_addr2	.\cma.c	/^static int rdma_resolve_addr2(struct rdma_cm_id *id, struct sockaddr *src_addr,$/;"	f	file:
+rdma_resolve_route	.\cma.c	/^int rdma_resolve_route(struct rdma_cm_id *id, int timeout_ms)$/;"	f
+rdma_set_option	.\cma.c	/^int rdma_set_option(struct rdma_cm_id *id, int level, int optname,$/;"	f
+read	.\preload.c	/^	ssize_t (*read)(int socket, void *buf, size_t count);$/;"	m	struct:socket_calls	file:
+read	.\preload.c	/^ssize_t read(int socket, void *buf, size_t count)$/;"	f
+readv	.\preload.c	/^	ssize_t (*readv)(int socket, const struct iovec *iov, int iovcnt);$/;"	m	struct:socket_calls	file:
+readv	.\preload.c	/^ssize_t readv(int socket, const struct iovec *iov, int iovcnt)$/;"	f
+real	.\preload.c	/^static struct socket_calls real;$/;"	v	typeref:struct:socket_calls	file:
+recv	.\preload.c	/^	ssize_t (*recv)(int socket, void *buf, size_t len, int flags);$/;"	m	struct:socket_calls	file:
+recv	.\preload.c	/^ssize_t recv(int socket, void *buf, size_t len, int flags)$/;"	f
+recvfrom	.\preload.c	/^	ssize_t (*recvfrom)(int socket, void *buf, size_t len, int flags,$/;"	m	struct:socket_calls	file:
+recvfrom	.\preload.c	/^ssize_t recvfrom(int socket, void *buf, size_t len, int flags,$/;"	f
+recvmsg	.\preload.c	/^	ssize_t (*recvmsg)(int socket, struct msghdr *msg, int flags);$/;"	m	struct:socket_calls	file:
+recvmsg	.\preload.c	/^ssize_t recvmsg(int socket, struct msghdr *msg, int flags)$/;"	f
+refcnt	.\cma.c	/^	int		    refcnt;$/;"	m	struct:cma_device	file:
+refcnt	.\preload.c	/^	atomic_t refcnt;$/;"	m	struct:fd_info	file:
+refcnt	.\rsocket.c	/^	atomic_t refcnt;$/;"	m	struct:rs_iomap_mr	file:
+remote_iomap	.\rsocket.c	/^			struct rs_sge	  remote_iomap;$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::rs_sge	file:
+remote_iomappings	.\rsocket.c	/^	struct rs_iomap_mr *remote_iomappings;$/;"	m	struct:rsocket	typeref:struct:rsocket::rs_iomap_mr	file:
+remote_sge	.\rsocket.c	/^			int		  remote_sge;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+remote_sgl	.\rsocket.c	/^			struct rs_sge	  remote_sgl;$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::rs_sge	file:
+reserved	.\acm.c	/^	uint16_t                reserved;$/;"	m	struct:acm_ep_addr_data	file:
+reserved	.\rsocket.c	/^	uint8_t		  reserved;$/;"	m	struct:ds_udp_header	file:
+reserved	.\rsocket.c	/^	uint8_t		  reserved[3];$/;"	m	struct:rs_conn_data	file:
+resolve_data	.\acm.c	/^		struct acm_ep_addr_data resolve_data[0];$/;"	m	union:acm_msg::__anon1	typeref:struct:acm_msg::__anon1::acm_ep_addr_data	file:
+responder_resources	.\cma.c	/^	uint8_t			responder_resources;$/;"	m	struct:cma_id_private	file:
+retries	.\rsocket.c	/^	int		  retries;$/;"	m	struct:rsocket	file:
+rfcntl	.\rsocket.c	/^int rfcntl(int socket, int cmd, ... \/* arg *\/ )$/;"	f
+rgetpeername	.\rsocket.c	/^int rgetpeername(int socket, struct sockaddr *addr, socklen_t *addrlen)$/;"	f
+rgetsockname	.\rsocket.c	/^int rgetsockname(int socket, struct sockaddr *addr, socklen_t *addrlen)$/;"	f
+rgetsockopt	.\rsocket.c	/^int rgetsockopt(int socket, int level, int optname,$/;"	f
+riomap	.\rsocket.c	/^off_t riomap(int socket, void *buf, size_t len, int prot, int flags, off_t offset)$/;"	f
+riounmap	.\rsocket.c	/^int riounmap(int socket, void *buf, size_t len)$/;"	f
+riowrite	.\rsocket.c	/^size_t riowrite(int socket, const void *buf, size_t count, off_t offset, int flags)$/;"	f
+rlisten	.\rsocket.c	/^int rlisten(int socket, int backlog)$/;"	f
+rlock	.\rsocket.c	/^	fastlock_t	  rlock;$/;"	m	struct:rsocket	file:
+rmr	.\rsocket.c	/^			struct ibv_mr	  *rmr;$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::ibv_mr	file:
+rmr	.\rsocket.c	/^	struct ibv_mr	  *rmr;$/;"	m	struct:ds_qp	typeref:struct:ds_qp::ibv_mr	file:
+rmsg	.\rsocket.c	/^		struct rs_msg	  *rmsg;$/;"	m	union:rsocket::__anon15	typeref:struct:rsocket::__anon15::rs_msg	file:
+rmsg_head	.\rsocket.c	/^	int		  rmsg_head;$/;"	m	struct:rsocket	file:
+rmsg_tail	.\rsocket.c	/^	int		  rmsg_tail;$/;"	m	struct:rsocket	file:
+rpoll	.\rsocket.c	/^int rpoll(struct pollfd *fds, nfds_t nfds, int timeout)$/;"	f
+rpoll_to_select	.\preload.c	/^static int rpoll_to_select(struct pollfd *fds, int nfds,$/;"	f	file:
+rq_size	.\preload.c	/^static int rq_size;$/;"	v	file:
+rq_size	.\rsocket.c	/^	uint16_t	  rq_size;$/;"	m	struct:rsocket	file:
+rqe_avail	.\rsocket.c	/^			int		  rqe_avail;$/;"	m	struct:rsocket::__anon12::__anon14	file:
+rread	.\rsocket.c	/^ssize_t rread(int socket, void *buf, size_t count)$/;"	f
+rreadv	.\rsocket.c	/^ssize_t rreadv(int socket, const struct iovec *iov, int iovcnt)$/;"	f
+rrecv	.\rsocket.c	/^ssize_t rrecv(int socket, void *buf, size_t len, int flags)$/;"	f
+rrecvfrom	.\rsocket.c	/^ssize_t rrecvfrom(int socket, void *buf, size_t len, int flags,$/;"	f
+rrecvmsg	.\rsocket.c	/^ssize_t rrecvmsg(int socket, struct msghdr *msg, int flags)$/;"	f
+rrecvv	.\rsocket.c	/^static ssize_t rrecvv(int socket, const struct iovec *iov, int iovcnt, int flags)$/;"	f	file:
+rs	.\preload.c	/^static struct socket_calls rs;$/;"	v	typeref:struct:socket_calls	file:
+rs	.\rsocket.c	/^	struct rsocket	  *rs;$/;"	m	struct:ds_qp	typeref:struct:ds_qp::rsocket	file:
+rs	.\rsocket.c	/^	struct rsocket *rs;$/;"	m	struct:rs_svc_msg	typeref:struct:rs_svc_msg::rsocket	file:
+rs_2ctrl_avail	.\rsocket.c	/^static inline int rs_2ctrl_avail(struct rsocket *rs)$/;"	f	file:
+rs_accepting	.\rsocket.c	/^	rs_accepting       = rs_opening |   0x0080,$/;"	e	enum:rs_state	file:
+rs_alloc	.\rsocket.c	/^static struct rsocket *rs_alloc(struct rsocket *inherited_rs, int type)$/;"	f	file:
+rs_any_addr	.\rsocket.c	/^static int rs_any_addr(const union socket_addr *addr)$/;"	f	file:
+rs_bound	.\rsocket.c	/^	rs_bound	   =		    0x0001,$/;"	e	enum:rs_state	file:
+rs_can_send	.\rsocket.c	/^static int rs_can_send(struct rsocket *rs)$/;"	f	file:
+rs_configure	.\rsocket.c	/^void rs_configure(void)$/;"	f
+rs_conn_all_sends_done	.\rsocket.c	/^static int rs_conn_all_sends_done(struct rsocket *rs)$/;"	f	file:
+rs_conn_can_send	.\rsocket.c	/^static int rs_conn_can_send(struct rsocket *rs)$/;"	f	file:
+rs_conn_can_send_ctrl	.\rsocket.c	/^static int rs_conn_can_send_ctrl(struct rsocket *rs)$/;"	f	file:
+rs_conn_data	.\rsocket.c	/^struct rs_conn_data {$/;"	s	file:
+rs_conn_data_offset	.\rsocket.c	/^static size_t rs_conn_data_offset(struct rsocket *rs)$/;"	f	file:
+rs_conn_have_rdata	.\rsocket.c	/^static int rs_conn_have_rdata(struct rsocket *rs)$/;"	f	file:
+rs_conn_private_data	.\rsocket.c	/^struct rs_conn_private_data {$/;"	s	file:
+rs_connect_error	.\rsocket.c	/^	rs_connect_error   =		    0x0800,$/;"	e	enum:rs_state	file:
+rs_connect_rdwr	.\rsocket.c	/^	rs_connect_rdwr    = rs_connected | rs_readable | rs_writable,$/;"	e	enum:rs_state	file:
+rs_connected	.\rsocket.c	/^	rs_connected	   =		    0x0100,$/;"	e	enum:rs_state	file:
+rs_connecting	.\rsocket.c	/^	rs_connecting      = rs_opening |   0x0040,$/;"	e	enum:rs_state	file:
+rs_convert_sa_path	.\rsocket.c	/^static void rs_convert_sa_path(struct ibv_sa_path_rec *sa_path,$/;"	f	file:
+rs_convert_timeout	.\preload.c	/^static int rs_convert_timeout(struct timeval *timeout)$/;"	f	file:
+rs_convert_timeout	.\rsocket.c	/^static int rs_convert_timeout(struct timeval *timeout)$/;"	f	file:
+rs_copy_addr	.\rsocket.c	/^static void rs_copy_addr(struct sockaddr *dst, struct sockaddr *src, socklen_t *len)$/;"	f	file:
+rs_copy_iov	.\rsocket.c	/^static void rs_copy_iov(void *dst, const struct iovec **iov, size_t *offset, size_t len)$/;"	f	file:
+rs_create_cq	.\rsocket.c	/^static int rs_create_cq(struct rsocket *rs, struct rdma_cm_id *cm_id)$/;"	f	file:
+rs_create_ep	.\rsocket.c	/^static int rs_create_ep(struct rsocket *rs)$/;"	f	file:
+rs_ctrl_avail	.\rsocket.c	/^static inline int rs_ctrl_avail(struct rsocket *rs)$/;"	f	file:
+rs_disconnected	.\rsocket.c	/^	rs_disconnected	   =		    0x1000,$/;"	e	enum:rs_state	file:
+rs_do_connect	.\rsocket.c	/^static int rs_do_connect(struct rsocket *rs)$/;"	f	file:
+rs_error	.\rsocket.c	/^	rs_error	   =		    0x2000,$/;"	e	enum:rs_state	file:
+rs_fds_alloc	.\rsocket.c	/^static struct pollfd *rs_fds_alloc(nfds_t nfds)$/;"	f	file:
+rs_find_iomap	.\rsocket.c	/^static struct rs_iomap *rs_find_iomap(struct rsocket *rs, off_t offset)$/;"	f	file:
+rs_format_conn_data	.\rsocket.c	/^static void rs_format_conn_data(struct rsocket *rs, struct rs_conn_data *conn)$/;"	f	file:
+rs_free	.\rsocket.c	/^static void rs_free(struct rsocket *rs)$/;"	f	file:
+rs_free_iomappings	.\rsocket.c	/^static void rs_free_iomappings(struct rsocket *rs)$/;"	f	file:
+rs_get_comp	.\rsocket.c	/^static int rs_get_comp(struct rsocket *rs, int nonblock, int (*test)(struct rsocket *rs))$/;"	f	file:
+rs_get_cq_event	.\rsocket.c	/^static int rs_get_cq_event(struct rsocket *rs)$/;"	f	file:
+rs_get_ctrl_buf	.\rsocket.c	/^static void *rs_get_ctrl_buf(struct rsocket *rs)$/;"	f	file:
+rs_get_iomap_mr	.\rsocket.c	/^static struct rs_iomap_mr *rs_get_iomap_mr(struct rsocket *rs)$/;"	f	file:
+rs_get_time	.\rsocket.c	/^static uint32_t rs_get_time(void)$/;"	f	file:
+rs_give_credits	.\rsocket.c	/^static int rs_give_credits(struct rsocket *rs)$/;"	f	file:
+rs_have_rdata	.\rsocket.c	/^static int rs_have_rdata(struct rsocket *rs)$/;"	f	file:
+rs_host_is_net	.\rsocket.c	200;"	d	file:
+rs_init	.\rsocket.c	/^	rs_init,$/;"	e	enum:rs_state	file:
+rs_init_bufs	.\rsocket.c	/^static int rs_init_bufs(struct rsocket *rs)$/;"	f	file:
+rs_insert	.\rsocket.c	/^static int rs_insert(struct rsocket *rs, int index)$/;"	f	file:
+rs_iomap	.\rsocket.c	/^struct rs_iomap {$/;"	s	file:
+rs_iomap_mr	.\rsocket.c	/^struct rs_iomap_mr {$/;"	s	file:
+rs_is_cq_armed	.\rsocket.c	/^static int rs_is_cq_armed(struct rsocket *rs)$/;"	f	file:
+rs_listening	.\rsocket.c	/^	rs_listening	   =		    0x0002,$/;"	e	enum:rs_state	file:
+rs_msg	.\rsocket.c	/^struct rs_msg {$/;"	s	file:
+rs_msg_data	.\rsocket.c	146;"	d	file:
+rs_msg_op	.\rsocket.c	145;"	d	file:
+rs_msg_set	.\rsocket.c	144;"	d	file:
+rs_nonblocking	.\rsocket.c	/^static int rs_nonblocking(struct rsocket *rs, int flags)$/;"	f	file:
+rs_notify_svc	.\rsocket.c	/^static int rs_notify_svc(struct rs_svc *svc, struct rsocket *rs, int cmd)$/;"	f	file:
+rs_opening	.\rsocket.c	/^	rs_opening	   =		    0x0004,$/;"	e	enum:rs_state	file:
+rs_peek	.\rsocket.c	/^static ssize_t rs_peek(struct rsocket *rs, void *buf, size_t len)$/;"	f	file:
+rs_poll_all	.\rsocket.c	/^static int rs_poll_all(struct rsocket *rs)$/;"	f	file:
+rs_poll_arm	.\rsocket.c	/^static int rs_poll_arm(struct pollfd *rfds, struct pollfd *fds, nfds_t nfds)$/;"	f	file:
+rs_poll_check	.\rsocket.c	/^static int rs_poll_check(struct pollfd *fds, nfds_t nfds)$/;"	f	file:
+rs_poll_cq	.\rsocket.c	/^static int rs_poll_cq(struct rsocket *rs)$/;"	f	file:
+rs_poll_events	.\rsocket.c	/^static int rs_poll_events(struct pollfd *rfds, struct pollfd *fds, nfds_t nfds)$/;"	f	file:
+rs_poll_rs	.\rsocket.c	/^static int rs_poll_rs(struct rsocket *rs, int events,$/;"	f	file:
+rs_poll_to_select	.\rsocket.c	/^rs_poll_to_select(int nfds, struct pollfd *fds, fd_set *readfds,$/;"	f	file:
+rs_post_msg	.\rsocket.c	/^static int rs_post_msg(struct rsocket *rs, uint32_t msg)$/;"	f	file:
+rs_post_recv	.\rsocket.c	/^static inline int rs_post_recv(struct rsocket *rs)$/;"	f	file:
+rs_post_write	.\rsocket.c	/^static int rs_post_write(struct rsocket *rs,$/;"	f	file:
+rs_post_write_msg	.\rsocket.c	/^static int rs_post_write_msg(struct rsocket *rs,$/;"	f	file:
+rs_process_cq	.\rsocket.c	/^static int rs_process_cq(struct rsocket *rs, int nonblock, int (*test)(struct rsocket *rs))$/;"	f	file:
+rs_readable	.\rsocket.c	/^	rs_readable	   =		    0x0400,$/;"	e	enum:rs_state	file:
+rs_recv_wr_id	.\rsocket.c	152;"	d	file:
+rs_release_iomap_mr	.\rsocket.c	/^static void rs_release_iomap_mr(struct rs_iomap_mr *iomr)$/;"	f	file:
+rs_remove	.\rsocket.c	/^static void rs_remove(struct rsocket *rs)$/;"	f	file:
+rs_resolving_addr	.\rsocket.c	/^	rs_resolving_addr  = rs_opening |   0x0010,$/;"	e	enum:rs_state	file:
+rs_resolving_route	.\rsocket.c	/^	rs_resolving_route = rs_opening |   0x0020,$/;"	e	enum:rs_state	file:
+rs_save_conn_data	.\rsocket.c	/^static void rs_save_conn_data(struct rsocket *rs, struct rs_conn_data *conn)$/;"	f	file:
+rs_sbuf_left	.\rsocket.c	/^static uint32_t rs_sbuf_left(struct rsocket *rs)$/;"	f	file:
+rs_scale_to_value	.\rsocket.c	/^static int rs_scale_to_value(int value, int bits)$/;"	f	file:
+rs_select_to_poll	.\rsocket.c	/^rs_select_to_poll(int *nfds, fd_set *readfds, fd_set *writefds, fd_set *exceptfds)$/;"	f	file:
+rs_send_credits	.\rsocket.c	/^static void rs_send_credits(struct rsocket *rs)$/;"	f	file:
+rs_send_iomaps	.\rsocket.c	/^static int rs_send_iomaps(struct rsocket *rs, int flags)$/;"	f	file:
+rs_send_wr_id	.\rsocket.c	151;"	d	file:
+rs_set_keepalive	.\rsocket.c	/^static int rs_set_keepalive(struct rsocket *rs, int on)$/;"	f	file:
+rs_set_nonblocking	.\rsocket.c	/^static int rs_set_nonblocking(struct rsocket *rs, int arg)$/;"	f	file:
+rs_set_qp_size	.\rsocket.c	/^static void rs_set_qp_size(struct rsocket *rs)$/;"	f	file:
+rs_sge	.\rsocket.c	/^struct rs_sge {$/;"	s	file:
+rs_state	.\rsocket.c	/^enum rs_state {$/;"	g	file:
+rs_svc	.\rsocket.c	/^struct rs_svc {$/;"	s	file:
+rs_svc_add_rs	.\rsocket.c	/^static int rs_svc_add_rs(struct rs_svc *svc, struct rsocket *rs)$/;"	f	file:
+rs_svc_grow_sets	.\rsocket.c	/^static int rs_svc_grow_sets(struct rs_svc *svc, int grow_size)$/;"	f	file:
+rs_svc_index	.\rsocket.c	/^static int rs_svc_index(struct rs_svc *svc, struct rsocket *rs)$/;"	f	file:
+rs_svc_msg	.\rsocket.c	/^struct rs_svc_msg {$/;"	s	file:
+rs_svc_rm_rs	.\rsocket.c	/^static int rs_svc_rm_rs(struct rs_svc *svc, struct rsocket *rs)$/;"	f	file:
+rs_update_credits	.\rsocket.c	/^static void rs_update_credits(struct rsocket *rs)$/;"	f	file:
+rs_value_to_scale	.\rsocket.c	/^static int rs_value_to_scale(int value, int bits)$/;"	f	file:
+rs_wr_data	.\rsocket.c	155;"	d	file:
+rs_wr_is_msg_send	.\rsocket.c	154;"	d	file:
+rs_wr_is_recv	.\rsocket.c	153;"	d	file:
+rs_writable	.\rsocket.c	/^	rs_writable 	   =		    0x0200,$/;"	e	enum:rs_state	file:
+rs_write_data	.\rsocket.c	/^static int rs_write_data(struct rsocket *rs,$/;"	f	file:
+rs_write_direct	.\rsocket.c	/^static int rs_write_direct(struct rsocket *rs, struct rs_iomap *iom, uint64_t offset,$/;"	f	file:
+rs_write_iomap	.\rsocket.c	/^static int rs_write_iomap(struct rsocket *rs, struct rs_iomap_mr *iomr,$/;"	f	file:
+rselect	.\rsocket.c	/^int rselect(int nfds, fd_set *readfds, fd_set *writefds,$/;"	f
+rsend	.\rsocket.c	/^ssize_t rsend(int socket, const void *buf, size_t len, int flags)$/;"	f
+rsendmsg	.\rsocket.c	/^ssize_t rsendmsg(int socket, const struct msghdr *msg, int flags)$/;"	f
+rsendto	.\rsocket.c	/^ssize_t rsendto(int socket, const void *buf, size_t len, int flags,$/;"	f
+rsendv	.\rsocket.c	/^static ssize_t rsendv(int socket, const struct iovec *iov, int iovcnt, int flags)$/;"	f	file:
+rseq_comp	.\rsocket.c	/^			uint16_t	  rseq_comp;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+rseq_no	.\rsocket.c	/^			uint16_t	  rseq_no;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+rsetsockopt	.\rsocket.c	/^int rsetsockopt(int socket, int level, int optname,$/;"	f
+rshutdown	.\rsocket.c	/^int rshutdown(int socket, int how)$/;"	f
+rsocket	.\rsocket.c	/^int rsocket(int domain, int type, int protocol)$/;"	f
+rsocket	.\rsocket.c	/^struct rsocket {$/;"	s	file:
+rss	.\rsocket.c	/^	struct rsocket **rss;$/;"	m	struct:rs_svc	typeref:struct:rs_svc::rsocket	file:
+run	.\rsocket.c	/^	void *(*run)(void *svc);$/;"	m	struct:rs_svc	file:
+rwrite	.\rsocket.c	/^ssize_t rwrite(int socket, const void *buf, size_t count)$/;"	f
+rwritev	.\rsocket.c	/^ssize_t rwritev(int socket, const struct iovec *iov, int iovcnt)$/;"	f
+sa	.\rsocket.c	/^	struct sockaddr		sa;$/;"	m	union:socket_addr	typeref:struct:socket_addr::sockaddr	file:
+sbuf	.\rsocket.c	/^	uint8_t		  *sbuf;$/;"	m	struct:rsocket	file:
+sbuf_bytes_avail	.\rsocket.c	/^			int		  sbuf_bytes_avail;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+sbuf_size	.\rsocket.c	/^	uint32_t	  sbuf_size;$/;"	m	struct:rsocket	file:
+scan_config	.\preload.c	/^static void scan_config(void)$/;"	f	file:
+select	.\preload.c	/^int select(int nfds, fd_set *readfds, fd_set *writefds,$/;"	f
+select_to_rpoll	.\preload.c	/^static void select_to_rpoll(struct pollfd *fds, int *nfds,$/;"	f	file:
+sem	.\cma.h	/^	sem_t sem;$/;"	m	struct:__anon3
+send	.\preload.c	/^	ssize_t (*send)(int socket, const void *buf, size_t len, int flags);$/;"	m	struct:socket_calls	file:
+send	.\preload.c	/^ssize_t send(int socket, const void *buf, size_t len, int flags)$/;"	f
+sendfile	.\preload.c	/^	ssize_t (*sendfile)(int out_fd, int in_fd, off_t *offset, size_t count);$/;"	m	struct:socket_calls	file:
+sendfile	.\preload.c	/^ssize_t sendfile(int out_fd, int in_fd, off_t *offset, size_t count)$/;"	f
+sendmsg	.\preload.c	/^	ssize_t (*sendmsg)(int socket, const struct msghdr *msg, int flags);$/;"	m	struct:socket_calls	file:
+sendmsg	.\preload.c	/^ssize_t sendmsg(int socket, const struct msghdr *msg, int flags)$/;"	f
+sendto	.\preload.c	/^	ssize_t (*sendto)(int socket, const void *buf, size_t len, int flags,$/;"	m	struct:socket_calls	file:
+sendto	.\preload.c	/^ssize_t sendto(int socket, const void *buf, size_t len, int flags,$/;"	f
+server_port	.\acm.c	/^static uint16_t server_port;$/;"	v	file:
+set_rsocket_options	.\preload.c	/^void set_rsocket_options(int rsocket)$/;"	f
+setsockopt	.\preload.c	/^	int (*setsockopt)(int socket, int level, int optname,$/;"	m	struct:socket_calls	file:
+setsockopt	.\preload.c	/^int setsockopt(int socket, int level, int optname,$/;"	f
+sge	.\rsocket.c	/^	struct rs_sge sge;$/;"	m	struct:rs_iomap	typeref:struct:rs_iomap::rs_sge	file:
+shutdown	.\preload.c	/^	int (*shutdown)(int socket, int how);$/;"	m	struct:socket_calls	file:
+shutdown	.\preload.c	/^int shutdown(int socket, int how)$/;"	f
+sin	.\rsocket.c	/^	struct sockaddr_in	sin;$/;"	m	union:socket_addr	typeref:struct:socket_addr::sockaddr_in	file:
+sin6	.\rsocket.c	/^	struct sockaddr_in6	sin6;$/;"	m	union:socket_addr	typeref:struct:socket_addr::sockaddr_in6	file:
+size	.\indexer.h	/^	int		 size;$/;"	m	struct:indexer
+size	.\rsocket.c	/^	int size;$/;"	m	struct:rs_svc	file:
+slock	.\rsocket.c	/^	fastlock_t	  slock;$/;"	m	struct:rsocket	file:
+smr	.\rsocket.c	/^			struct ibv_mr	  *smr;$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::ibv_mr	file:
+smr	.\rsocket.c	/^	struct ibv_mr	  *smr;$/;"	m	struct:ds_qp	typeref:struct:ds_qp::ibv_mr	file:
+smsg_free	.\rsocket.c	/^			struct ds_smsg	  *smsg_free;$/;"	m	struct:rsocket::__anon12::__anon14	typeref:struct:rsocket::__anon12::__anon14::ds_smsg	file:
+so_opts	.\rsocket.c	/^	uint64_t	  so_opts;$/;"	m	struct:rsocket	file:
+sock	.\acm.c	/^static int sock = -1;$/;"	v	file:
+sock	.\rsocket.c	/^	int sock[2];$/;"	m	struct:rs_svc	file:
+socket	.\preload.c	/^	int (*socket)(int domain, int type, int protocol);$/;"	m	struct:socket_calls	file:
+socket	.\preload.c	/^int socket(int domain, int type, int protocol)$/;"	f
+socket_addr	.\rsocket.c	/^union socket_addr {$/;"	u	file:
+socket_calls	.\preload.c	/^struct socket_calls {$/;"	s	file:
+sq_inline	.\preload.c	/^static int sq_inline;$/;"	v	file:
+sq_inline	.\rsocket.c	/^	uint16_t	  sq_inline;$/;"	m	struct:rsocket	file:
+sq_size	.\preload.c	/^static int sq_size;$/;"	v	file:
+sq_size	.\rsocket.c	/^	uint16_t	  sq_size;$/;"	m	struct:rsocket	file:
+sqe_avail	.\rsocket.c	/^	int		  sqe_avail;$/;"	m	struct:rsocket	file:
+src_addr	.\cma.h	/^	uint32_t src_addr[4];$/;"	m	struct:ib_connect_hdr
+sseq_comp	.\rsocket.c	/^			uint16_t	  sseq_comp;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+sseq_no	.\rsocket.c	/^			uint16_t	  sseq_no;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+ssgl	.\rsocket.c	/^			struct ibv_sge	  ssgl[2];$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::ibv_sge	file:
+state	.\preload.c	/^	enum fd_fork_state state;$/;"	m	struct:fd_info	typeref:enum:fd_info::fd_fork_state	file:
+state	.\rsocket.c	/^	int		  state;$/;"	m	struct:rsocket	file:
+status	.\acm.c	/^	uint8_t                 status;$/;"	m	struct:acm_hdr	file:
+status	.\rsocket.c	/^	uint32_t status;$/;"	m	struct:rs_svc_msg	file:
+sync	.\cma.c	/^	int			sync;$/;"	m	struct:cma_id_private	file:
+tag	.\rsocket.c	/^	uint32_t	  tag;$/;"	m	struct:ds_udp_header	file:
+target_buffer_list	.\rsocket.c	/^			void		  *target_buffer_list;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+target_iomap	.\rsocket.c	/^			struct rs_iomap   *target_iomap;$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::rs_iomap	file:
+target_iomap_size	.\rsocket.c	/^			int		  target_iomap_size;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+target_iomap_size	.\rsocket.c	/^	uint8_t		  target_iomap_size;$/;"	m	struct:rs_conn_data	file:
+target_mr	.\rsocket.c	/^			struct ibv_mr	  *target_mr;$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::ibv_mr	file:
+target_sge	.\rsocket.c	/^			int		  target_sge;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+target_sgl	.\rsocket.c	/^			volatile struct rs_sge	  *target_sgl;$/;"	m	struct:rsocket::__anon12::__anon13	typeref:struct:rsocket::__anon12::__anon13::rs_sge	file:
+target_sgl	.\rsocket.c	/^	struct rs_sge	  target_sgl;$/;"	m	struct:rs_conn_data	typeref:struct:rs_conn_data::rs_sge	file:
+tcp_opts	.\rsocket.c	/^			uint64_t	  tcp_opts;$/;"	m	struct:rsocket::__anon12::__anon13	file:
+tcp_svc	.\rsocket.c	/^static struct rs_svc tcp_svc = {$/;"	v	typeref:struct:rs_svc	file:
+tcp_svc_process_sock	.\rsocket.c	/^static void tcp_svc_process_sock(struct rs_svc *svc)$/;"	f	file:
+tcp_svc_run	.\rsocket.c	/^static void *tcp_svc_run(void *arg)$/;"	f	file:
+tcp_svc_send_keepalive	.\rsocket.c	/^static void tcp_svc_send_keepalive(struct rsocket *rs)$/;"	f	file:
+tcp_svc_timeouts	.\rsocket.c	/^static uint32_t *tcp_svc_timeouts;$/;"	v	file:
+tid	.\acm.c	/^	uint64_t                tid;$/;"	m	struct:acm_hdr	file:
+transpose_socket	.\preload.c	/^static int transpose_socket(int socket, enum fd_type new_type)$/;"	f	file:
+type	.\acm.c	/^	uint16_t                type;$/;"	m	struct:acm_ep_addr_data	file:
+type	.\preload.c	/^	enum fd_type type;$/;"	m	struct:fd_info	typeref:enum:fd_info::fd_type	file:
+type	.\preload.c	/^	int type;$/;"	m	struct:config_entry	file:
+type	.\rsocket.c	/^	int		  type;$/;"	m	struct:rsocket	file:
+ucma_addrlen	.\cma.c	/^int ucma_addrlen(struct sockaddr *addr)$/;"	f
+ucma_alloc_id	.\cma.c	/^static struct cma_id_private *ucma_alloc_id(struct rdma_event_channel *channel,$/;"	f	file:
+ucma_cleanup	.\cma.c	/^static void ucma_cleanup(void)$/;"	f	file:
+ucma_complete	.\cma.c	/^int ucma_complete(struct rdma_cm_id *id)$/;"	f
+ucma_complete_event	.\cma.c	/^static void ucma_complete_event(struct cma_id_private *id_priv)$/;"	f	file:
+ucma_complete_mc_event	.\cma.c	/^static void ucma_complete_mc_event(struct cma_multicast *mc)$/;"	f	file:
+ucma_convert_in6	.\addrinfo.c	/^static int ucma_convert_in6(int ps, struct sockaddr_ib **dst, socklen_t *dst_len,$/;"	f	file:
+ucma_convert_path	.\cma.c	/^static void ucma_convert_path(struct ibv_path_data *path_data,$/;"	f	file:
+ucma_convert_to_ai	.\addrinfo.c	/^static void ucma_convert_to_ai(struct addrinfo *ai, struct rdma_addrinfo *rai)$/;"	f	file:
+ucma_convert_to_rai	.\addrinfo.c	/^static int ucma_convert_to_rai(struct rdma_addrinfo *rai,$/;"	f	file:
+ucma_copy_addr	.\addrinfo.c	/^static int ucma_copy_addr(struct sockaddr **dst, socklen_t *dst_len,$/;"	f	file:
+ucma_copy_conn_event	.\cma.c	/^static void ucma_copy_conn_event(struct cma_event *event,$/;"	f	file:
+ucma_copy_conn_param_to_kern	.\cma.c	/^static void ucma_copy_conn_param_to_kern(struct cma_id_private *id_priv,$/;"	f	file:
+ucma_copy_ud_event	.\cma.c	/^static void ucma_copy_ud_event(struct cma_event *event,$/;"	f	file:
+ucma_create_cqs	.\cma.c	/^static int ucma_create_cqs(struct rdma_cm_id *id, uint32_t send_size, uint32_t recv_size)$/;"	f	file:
+ucma_destroy_cqs	.\cma.c	/^static void ucma_destroy_cqs(struct rdma_cm_id *id)$/;"	f	file:
+ucma_destroy_kern_id	.\cma.c	/^static int ucma_destroy_kern_id(int fd, uint32_t handle)$/;"	f	file:
+ucma_find_pkey	.\cma.c	/^static int ucma_find_pkey(struct cma_device *cma_dev, uint8_t port_num,$/;"	f	file:
+ucma_free_id	.\cma.c	/^static void ucma_free_id(struct cma_id_private *id_priv)$/;"	f	file:
+ucma_get_device	.\cma.c	/^static int ucma_get_device(struct cma_id_private *id_priv, uint64_t guid)$/;"	f	file:
+ucma_get_port	.\cma.c	/^uint16_t ucma_get_port(struct sockaddr *addr)$/;"	f
+ucma_get_xrcd	.\cma.c	/^static struct ibv_xrcd *ucma_get_xrcd(struct cma_device *cma_dev)$/;"	f	file:
+ucma_getaddrinfo	.\addrinfo.c	/^static int ucma_getaddrinfo(char *node, char *service,$/;"	f	file:
+ucma_ib_addr	.\acm.c	/^static int ucma_ib_addr(struct sockaddr *addr, socklen_t len)$/;"	f	file:
+ucma_ib_cleanup	.\acm.c	/^void ucma_ib_cleanup(void)$/;"	f
+ucma_ib_init	.\acm.c	/^void ucma_ib_init(void)$/;"	f
+ucma_ib_resolve	.\acm.c	/^void ucma_ib_resolve(struct rdma_addrinfo **rai, struct rdma_addrinfo *hints)$/;"	f
+ucma_ib_save_resp	.\acm.c	/^static void ucma_ib_save_resp(struct rdma_addrinfo *rai, struct acm_msg *msg)$/;"	f	file:
+ucma_ib_set_addr	.\acm.c	/^static int ucma_ib_set_addr(struct rdma_addrinfo *ib_rai,$/;"	f	file:
+ucma_ib_set_connect	.\acm.c	/^static int ucma_ib_set_connect(struct rdma_addrinfo *ib_rai,$/;"	f	file:
+ucma_idm	.\cma.c	/^static struct index_map ucma_idm;$/;"	v	typeref:struct:index_map	file:
+ucma_inet_addr	.\acm.c	/^static int ucma_inet_addr(struct sockaddr *addr, socklen_t len)$/;"	f	file:
+ucma_init	.\cma.c	/^int ucma_init(void)$/;"	f
+ucma_init_all	.\cma.c	/^static int ucma_init_all(void)$/;"	f	file:
+ucma_init_conn_qp	.\cma.c	/^static int ucma_init_conn_qp(struct cma_id_private *id_priv, struct ibv_qp *qp)$/;"	f	file:
+ucma_init_conn_qp3	.\cma.c	/^static int ucma_init_conn_qp3(struct cma_id_private *id_priv, struct ibv_qp *qp)$/;"	f	file:
+ucma_init_device	.\cma.c	/^static int ucma_init_device(struct cma_device *cma_dev)$/;"	f	file:
+ucma_init_ud_qp	.\cma.c	/^static int ucma_init_ud_qp(struct cma_id_private *id_priv, struct ibv_qp *qp)$/;"	f	file:
+ucma_init_ud_qp3	.\cma.c	/^static int ucma_init_ud_qp3(struct cma_id_private *id_priv, struct ibv_qp *qp)$/;"	f	file:
+ucma_insert_id	.\cma.c	/^static void ucma_insert_id(struct cma_id_private *id_priv)$/;"	f	file:
+ucma_is_ud_qp	.\cma.c	/^static int ucma_is_ud_qp(enum ibv_qp_type qp_type)$/;"	f	file:
+ucma_lookup_id	.\cma.c	/^static struct cma_id_private *ucma_lookup_id(int handle)$/;"	f	file:
+ucma_max_qpsize	.\cma.c	/^int ucma_max_qpsize(struct rdma_cm_id *id)$/;"	f
+ucma_modify_qp_err	.\cma.c	/^static int ucma_modify_qp_err(struct rdma_cm_id *id)$/;"	f	file:
+ucma_modify_qp_rtr	.\cma.c	/^static int ucma_modify_qp_rtr(struct rdma_cm_id *id, uint8_t resp_res)$/;"	f	file:
+ucma_modify_qp_rts	.\cma.c	/^static int ucma_modify_qp_rts(struct rdma_cm_id *id, uint8_t init_depth)$/;"	f	file:
+ucma_modify_qp_sqd	.\cma.c	/^static int ucma_modify_qp_sqd(struct rdma_cm_id *id)$/;"	f	file:
+ucma_open_device	.\cma.c	/^static struct ibv_context *ucma_open_device(uint64_t guid)$/;"	f	file:
+ucma_passive_ep	.\cma.c	/^static int ucma_passive_ep(struct rdma_cm_id *id, struct rdma_addrinfo *res,$/;"	f	file:
+ucma_process_addr_resolved	.\cma.c	/^static void ucma_process_addr_resolved(struct cma_event *evt)$/;"	f	file:
+ucma_process_conn_req	.\cma.c	/^static int ucma_process_conn_req(struct cma_event *evt,$/;"	f	file:
+ucma_process_conn_resp	.\cma.c	/^static int ucma_process_conn_resp(struct cma_id_private *id_priv)$/;"	f	file:
+ucma_process_join	.\cma.c	/^static int ucma_process_join(struct cma_event *evt)$/;"	f	file:
+ucma_process_route_resolved	.\cma.c	/^static void ucma_process_route_resolved(struct cma_event *evt)$/;"	f	file:
+ucma_put_device	.\cma.c	/^static void ucma_put_device(struct cma_device *cma_dev)$/;"	f	file:
+ucma_query_addr	.\cma.c	/^static int ucma_query_addr(struct rdma_cm_id *id)$/;"	f	file:
+ucma_query_gid	.\cma.c	/^static int ucma_query_gid(struct rdma_cm_id *id)$/;"	f	file:
+ucma_query_path	.\cma.c	/^static int ucma_query_path(struct rdma_cm_id *id)$/;"	f	file:
+ucma_query_req_info	.\cma.c	/^static int ucma_query_req_info(struct rdma_cm_id *id)$/;"	f	file:
+ucma_query_route	.\cma.c	/^static int ucma_query_route(struct rdma_cm_id *id)$/;"	f	file:
+ucma_remove_id	.\cma.c	/^static void ucma_remove_id(struct cma_id_private *id_priv)$/;"	f	file:
+ucma_resolve_af_ib	.\acm.c	/^static void ucma_resolve_af_ib(struct rdma_addrinfo **rai)$/;"	f	file:
+ucma_set_af_ib_support	.\cma.c	/^static void ucma_set_af_ib_support(void)$/;"	f	file:
+ucma_set_ep_addr	.\acm.c	/^static void ucma_set_ep_addr(struct acm_ep_addr_data *data, struct sockaddr *addr)$/;"	f	file:
+ucma_set_ib_route	.\cma.c	/^static int ucma_set_ib_route(struct rdma_cm_id *id)$/;"	f	file:
+ucma_set_server_port	.\acm.c	/^static int ucma_set_server_port(void)$/;"	f	file:
+ucma_set_sid	.\addrinfo.c	/^void ucma_set_sid(enum rdma_port_space ps, struct sockaddr *addr,$/;"	f
+ucma_shutdown	.\cma.c	/^int ucma_shutdown(struct rdma_cm_id *id)$/;"	f
+ucma_valid_param	.\cma.c	/^static int ucma_valid_param(struct cma_id_private *id_priv,$/;"	f	file:
+udp_sock	.\rsocket.c	/^			int		  udp_sock;$/;"	m	struct:rsocket::__anon12::__anon14	file:
+udp_svc	.\rsocket.c	/^static struct rs_svc udp_svc = {$/;"	v	typeref:struct:rs_svc	file:
+udp_svc_create_ah	.\rsocket.c	/^static void udp_svc_create_ah(struct rsocket *rs, struct ds_dest *dest, uint32_t qpn)$/;"	f	file:
+udp_svc_fds	.\rsocket.c	/^static struct pollfd *udp_svc_fds;$/;"	v	typeref:struct:pollfd	file:
+udp_svc_forward	.\rsocket.c	/^static void udp_svc_forward(struct rsocket *rs, void *buf, size_t len,$/;"	f	file:
+udp_svc_path_bits	.\rsocket.c	/^static uint8_t udp_svc_path_bits(struct ds_dest *dest)$/;"	f	file:
+udp_svc_process_rs	.\rsocket.c	/^static void udp_svc_process_rs(struct rsocket *rs)$/;"	f	file:
+udp_svc_process_sock	.\rsocket.c	/^static void udp_svc_process_sock(struct rs_svc *svc)$/;"	f	file:
+udp_svc_run	.\rsocket.c	/^static void *udp_svc_run(void *arg)$/;"	f	file:
+udp_svc_sgid_index	.\rsocket.c	/^static uint8_t udp_svc_sgid_index(struct ds_dest *dest, union ibv_gid *sgid)$/;"	f	file:
+udp_svc_valid_udp_hdr	.\rsocket.c	/^static int udp_svc_valid_udp_hdr(struct ds_udp_header *udp_hdr,$/;"	f	file:
+unack_cqe	.\rsocket.c	/^	int		  unack_cqe;$/;"	m	struct:rsocket	file:
+val	.\cma.h	/^typedef struct { pthread_mutex_t mut; int val; } atomic_t;$/;"	m	struct:__anon2
+val	.\cma.h	/^typedef struct { volatile int val; } atomic_t;$/;"	m	struct:__anon4
+verbs	.\cma.c	/^	struct ibv_context *verbs;$/;"	m	struct:cma_device	typeref:struct:cma_device::ibv_context	file:
+version	.\acm.c	/^	uint8_t                 version;$/;"	m	struct:acm_hdr	file:
+version	.\rsocket.c	/^	uint8_t		  version;$/;"	m	struct:ds_header	file:
+version	.\rsocket.c	/^	uint8_t		  version;$/;"	m	struct:ds_udp_header	file:
+version	.\rsocket.c	/^	uint8_t		  version;$/;"	m	struct:rs_conn_data	file:
+write	.\preload.c	/^	ssize_t (*write)(int socket, const void *buf, size_t count);$/;"	m	struct:socket_calls	file:
+write	.\preload.c	/^ssize_t write(int socket, const void *buf, size_t count)$/;"	f
+writev	.\preload.c	/^	ssize_t (*writev)(int socket, const struct iovec *iov, int iovcnt);$/;"	m	struct:socket_calls	file:
+writev	.\preload.c	/^ssize_t writev(int socket, const struct iovec *iov, int iovcnt)$/;"	f
+xrcd	.\cma.c	/^	struct ibv_xrcd    *xrcd;$/;"	m	struct:cma_device	typeref:struct:cma_device::ibv_xrcd	file:

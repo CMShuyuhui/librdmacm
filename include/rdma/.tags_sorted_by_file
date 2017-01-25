@@ -1,0 +1,388 @@
+RAI_FAMILY	rdma_cma.h	282;"	d
+RAI_NOROUTE	rdma_cma.h	281;"	d
+RAI_NUMERICHOST	rdma_cma.h	280;"	d
+RAI_PASSIVE	rdma_cma.h	279;"	d
+RDMA_CMA_H	rdma_cma.h	35;"	d
+RDMA_CM_EVENT_ADDR_CHANGE	rdma_cma.h	/^	RDMA_CM_EVENT_ADDR_CHANGE,$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_ADDR_ERROR	rdma_cma.h	/^	RDMA_CM_EVENT_ADDR_ERROR, \/\/Address resolution (rdma_resolve_addr) failed.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_ADDR_RESOLVED	rdma_cma.h	/^	RDMA_CM_EVENT_ADDR_RESOLVED, \/\/Address resolution (rdma_resolve_addr) completed successfully.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_CONNECT_ERROR	rdma_cma.h	/^	RDMA_CM_EVENT_CONNECT_ERROR,\/\/Indicates that an error has occurred trying to establish or a connection. May be generated on the$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_CONNECT_REQUEST	rdma_cma.h	/^	RDMA_CM_EVENT_CONNECT_REQUEST,\/\/Generated on the passive side to notify the user of a new connection request.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_CONNECT_RESPONSE	rdma_cma.h	/^	RDMA_CM_EVENT_CONNECT_RESPONSE,\/\/Generated on the active side to notify the user of a successful response to a connection request. It$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_DEVICE_REMOVAL	rdma_cma.h	/^	RDMA_CM_EVENT_DEVICE_REMOVAL,\/\/The local RDMA device associated with the rdma_cm_id has been removed. Upon receiving this$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_DISCONNECTED	rdma_cma.h	/^	RDMA_CM_EVENT_DISCONNECTED,\/\/The connection has been disconnected.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_ESTABLISHED	rdma_cma.h	/^	RDMA_CM_EVENT_ESTABLISHED,\/\/Indicates that a connection has been established with the remote end point.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_MULTICAST_ERROR	rdma_cma.h	/^	RDMA_CM_EVENT_MULTICAST_ERROR,$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_MULTICAST_JOIN	rdma_cma.h	/^	RDMA_CM_EVENT_MULTICAST_JOIN,\/\/The multicast join operation (rdma_join_multicast) completed successfully.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_REJECTED	rdma_cma.h	/^	RDMA_CM_EVENT_REJECTED,\/\/Indicates that a connection request or response was rejected by the remote end point.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_ROUTE_ERROR	rdma_cma.h	/^	RDMA_CM_EVENT_ROUTE_ERROR,\/\/Route resolution (rdma_resolve_route) failed.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_ROUTE_RESOLVED	rdma_cma.h	/^	RDMA_CM_EVENT_ROUTE_RESOLVED,\/\/Route resolution (rdma_resolve_route) completed successfully.$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_TIMEWAIT_EXIT	rdma_cma.h	/^	RDMA_CM_EVENT_TIMEWAIT_EXIT$/;"	e	enum:rdma_cm_event_type
+RDMA_CM_EVENT_UNREACHABLE	rdma_cma.h	/^	RDMA_CM_EVENT_UNREACHABLE,\/\/Generated on the active side to notify the user that the remote server is not reachable or unable to$/;"	e	enum:rdma_cm_event_type
+RDMA_IB_IP_PORT_MASK	rdma_cma.h	93;"	d
+RDMA_IB_IP_PS_MASK	rdma_cma.h	92;"	d
+RDMA_IB_IP_PS_TCP	rdma_cma.h	94;"	d
+RDMA_IB_IP_PS_UDP	rdma_cma.h	95;"	d
+RDMA_IB_PS_IB	rdma_cma.h	96;"	d
+RDMA_MAX_INIT_DEPTH	rdma_cma.h	/^	RDMA_MAX_INIT_DEPTH = 0xFF$/;"	e	enum:__anon4
+RDMA_MAX_RESP_RES	rdma_cma.h	/^	RDMA_MAX_RESP_RES = 0xFF,$/;"	e	enum:__anon4
+RDMA_OPTION_IB	rdma_cma.h	/^	RDMA_OPTION_IB		= 1$/;"	e	enum:__anon6
+RDMA_OPTION_IB_PATH	rdma_cma.h	/^	RDMA_OPTION_IB_PATH	 = 1	\/* struct ibv_path_data[] *\/$/;"	e	enum:__anon7
+RDMA_OPTION_ID	rdma_cma.h	/^	RDMA_OPTION_ID		= 0,$/;"	e	enum:__anon6
+RDMA_OPTION_ID_AFONLY	rdma_cma.h	/^	RDMA_OPTION_ID_AFONLY	 = 2,   \/* int: ~IPV6_V6ONLY *\/$/;"	e	enum:__anon7
+RDMA_OPTION_ID_REUSEADDR	rdma_cma.h	/^	RDMA_OPTION_ID_REUSEADDR = 1,   \/* int: ~SO_REUSEADDR *\/$/;"	e	enum:__anon7
+RDMA_OPTION_ID_TOS	rdma_cma.h	/^	RDMA_OPTION_ID_TOS	 = 0,	\/* uint8_t: RFC 2474 *\/$/;"	e	enum:__anon7
+RDMA_PS_IB	rdma_cma.h	/^	RDMA_PS_IB    = 0x013F,$/;"	e	enum:rdma_port_space
+RDMA_PS_IPOIB	rdma_cma.h	/^	RDMA_PS_IPOIB = 0x0002,$/;"	e	enum:rdma_port_space
+RDMA_PS_TCP	rdma_cma.h	/^	RDMA_PS_TCP   = 0x0106,$/;"	e	enum:rdma_port_space
+RDMA_PS_UDP	rdma_cma.h	/^	RDMA_PS_UDP   = 0x0111,$/;"	e	enum:rdma_port_space
+RDMA_UDP_QKEY	rdma_cma.h	102;"	d
+addr	rdma_cma.h	/^	struct rdma_addr	 addr;$/;"	m	struct:rdma_route	typeref:struct:rdma_route::rdma_addr
+addr	rdma_cma.h	/^	} addr;$/;"	m	struct:rdma_addr	typeref:union:rdma_addr::__anon3
+ah_attr	rdma_cma.h	/^	struct ibv_ah_attr ah_attr;$/;"	m	struct:rdma_ud_param	typeref:struct:rdma_ud_param::ibv_ah_attr
+ai_connect	rdma_cma.h	/^	void			*ai_connect; \/\/ Data exchanged as part of the connection establishment process$/;"	m	struct:rdma_addrinfo
+ai_connect_len	rdma_cma.h	/^	size_t			ai_connect_len;\/\/ Size of connection information referenced by ai_connect$/;"	m	struct:rdma_addrinfo
+ai_dst_addr	rdma_cma.h	/^	struct sockaddr		*ai_dst_addr; \/\/ Address of destination RDMA device, if provided$/;"	m	struct:rdma_addrinfo	typeref:struct:rdma_addrinfo::sockaddr
+ai_dst_canonname	rdma_cma.h	/^	char			*ai_dst_canonname; \/\/ The canonical for the destination$/;"	m	struct:rdma_addrinfo
+ai_dst_len	rdma_cma.h	/^	socklen_t		ai_dst_len; \/\/ Length of the destination address referenced by ai_dst_addr$/;"	m	struct:rdma_addrinfo
+ai_family	rdma_cma.h	/^	int			ai_family; \/\/ Address family for the source and destination address (AF_INET, AF_INET6, AF_IB)$/;"	m	struct:rdma_addrinfo
+ai_flags	rdma_cma.h	/^	int			ai_flags; \/\/ Hint flags which control the operation. Supported flags are: RAI_PASSIVE, RAI_NUMERICHOST and RAI_NOROUTE$/;"	m	struct:rdma_addrinfo
+ai_next	rdma_cma.h	/^	struct rdma_addrinfo	*ai_next;\/\/ Pointer to the next rdma_addrinfo structure in the list$/;"	m	struct:rdma_addrinfo	typeref:struct:rdma_addrinfo::rdma_addrinfo
+ai_port_space	rdma_cma.h	/^	int			ai_port_space; \/\/ RDMA port space used (RDMA_PS_UDP or RDMA_PS_TCP)$/;"	m	struct:rdma_addrinfo
+ai_qp_type	rdma_cma.h	/^	int			ai_qp_type; \/\/ The type of RDMA QP used$/;"	m	struct:rdma_addrinfo
+ai_route	rdma_cma.h	/^	void			*ai_route; \/\/ Routing information for RDMA transports that require routing data as part of connection establishment$/;"	m	struct:rdma_addrinfo
+ai_route_len	rdma_cma.h	/^	size_t			ai_route_len; \/\/ Size of the routing information buffer referenced by ai_route.$/;"	m	struct:rdma_addrinfo
+ai_src_addr	rdma_cma.h	/^	struct sockaddr		*ai_src_addr; \/\/ Address of local RDMA device, if provided$/;"	m	struct:rdma_addrinfo	typeref:struct:rdma_addrinfo::sockaddr
+ai_src_canonname	rdma_cma.h	/^	char			*ai_src_canonname; \/\/ The canonical for the source$/;"	m	struct:rdma_addrinfo
+ai_src_len	rdma_cma.h	/^	socklen_t		ai_src_len; \/\/ Length of the source address referenced by ai_src_addr$/;"	m	struct:rdma_addrinfo
+channel	rdma_cma.h	/^	struct rdma_event_channel *channel;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::rdma_event_channel
+conn	rdma_cma.h	/^		struct rdma_conn_param conn;$/;"	m	union:rdma_cm_event::__anon5	typeref:struct:rdma_cm_event::__anon5::rdma_conn_param
+context	rdma_cma.h	/^	void			*context;$/;"	m	struct:rdma_cm_id
+dgid	rdma_cma.h	/^	union ibv_gid	dgid;$/;"	m	struct:rdma_ib_addr	typeref:union:rdma_ib_addr::ibv_gid
+dst_addr	rdma_cma.h	/^		struct sockaddr		dst_addr;$/;"	m	union:rdma_addr::__anon2	typeref:struct:rdma_addr::__anon2::sockaddr
+dst_sin	rdma_cma.h	/^		struct sockaddr_in	dst_sin;$/;"	m	union:rdma_addr::__anon2	typeref:struct:rdma_addr::__anon2::sockaddr_in
+dst_sin6	rdma_cma.h	/^		struct sockaddr_in6	dst_sin6;$/;"	m	union:rdma_addr::__anon2	typeref:struct:rdma_addr::__anon2::sockaddr_in6
+dst_storage	rdma_cma.h	/^		struct sockaddr_storage dst_storage;$/;"	m	union:rdma_addr::__anon2	typeref:struct:rdma_addr::__anon2::sockaddr_storage
+event	rdma_cma.h	/^	enum rdma_cm_event_type	 event;$/;"	m	struct:rdma_cm_event	typeref:enum:rdma_cm_event::rdma_cm_event_type
+event	rdma_cma.h	/^	struct rdma_cm_event	*event;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::rdma_cm_event
+fd	rdma_cma.h	/^	int			fd;$/;"	m	struct:rdma_event_channel
+flow_control	rdma_cma.h	/^	uint8_t flow_control;$/;"	m	struct:rdma_conn_param
+ibaddr	rdma_cma.h	/^		struct rdma_ib_addr	ibaddr;$/;"	m	union:rdma_addr::__anon3	typeref:struct:rdma_addr::__anon3::rdma_ib_addr
+id	rdma_cma.h	/^	struct rdma_cm_id	*id; $/;"	m	struct:rdma_cm_event	typeref:struct:rdma_cm_event::rdma_cm_id
+initiator_depth	rdma_cma.h	/^	uint8_t initiator_depth;$/;"	m	struct:rdma_conn_param
+listen_id	rdma_cma.h	/^	struct rdma_cm_id	*listen_id;$/;"	m	struct:rdma_cm_event	typeref:struct:rdma_cm_event::rdma_cm_id
+num_paths	rdma_cma.h	/^	int			 num_paths;$/;"	m	struct:rdma_route
+param	rdma_cma.h	/^	} param;$/;"	m	struct:rdma_cm_event	typeref:union:rdma_cm_event::__anon5
+path_rec	rdma_cma.h	/^	struct ibv_sa_path_rec	*path_rec;$/;"	m	struct:rdma_route	typeref:struct:rdma_route::ibv_sa_path_rec
+pd	rdma_cma.h	/^	struct ibv_pd		*pd;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::ibv_pd
+pkey	rdma_cma.h	/^	uint16_t	pkey;$/;"	m	struct:rdma_ib_addr
+port_num	rdma_cma.h	/^	uint8_t			 port_num;$/;"	m	struct:rdma_cm_id
+private_data	rdma_cma.h	/^	const void *private_data;$/;"	m	struct:rdma_conn_param
+private_data	rdma_cma.h	/^	const void *private_data;$/;"	m	struct:rdma_ud_param
+private_data_len	rdma_cma.h	/^	uint8_t private_data_len;$/;"	m	struct:rdma_conn_param
+private_data_len	rdma_cma.h	/^	uint8_t private_data_len;$/;"	m	struct:rdma_ud_param
+ps	rdma_cma.h	/^	enum rdma_port_space	 ps;$/;"	m	struct:rdma_cm_id	typeref:enum:rdma_cm_id::rdma_port_space
+qkey	rdma_cma.h	/^	uint32_t qkey;$/;"	m	struct:rdma_ud_param
+qp	rdma_cma.h	/^	struct ibv_qp		*qp;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::ibv_qp
+qp_num	rdma_cma.h	/^	uint32_t qp_num;$/;"	m	struct:rdma_ud_param
+qp_num	rdma_cma.h	/^	uint32_t qp_num;\/\/ignored if QP created on the rdma_cm_id$/;"	m	struct:rdma_conn_param
+qp_type	rdma_cma.h	/^	enum ibv_qp_type	qp_type;$/;"	m	struct:rdma_cm_id	typeref:enum:rdma_cm_id::ibv_qp_type
+rdma_addr	rdma_cma.h	/^struct rdma_addr {$/;"	s
+rdma_addrinfo	rdma_cma.h	/^struct rdma_addrinfo {$/;"	s
+rdma_cm_event	rdma_cma.h	/^struct rdma_cm_event {$/;"	s
+rdma_cm_event_type	rdma_cma.h	/^enum rdma_cm_event_type {$/;"	g
+rdma_cm_id	rdma_cma.h	/^struct rdma_cm_id {$/;"	s
+rdma_conn_param	rdma_cma.h	/^struct rdma_conn_param {$/;"	s
+rdma_event_channel	rdma_cma.h	/^struct rdma_event_channel {$/;"	s
+rdma_get_local_addr	rdma_cma.h	/^static inline struct sockaddr *rdma_get_local_addr(struct rdma_cm_id *id)$/;"	f
+rdma_get_peer_addr	rdma_cma.h	/^static inline struct sockaddr *rdma_get_peer_addr(struct rdma_cm_id *id)$/;"	f
+rdma_ib_addr	rdma_cma.h	/^struct rdma_ib_addr {$/;"	s
+rdma_port_space	rdma_cma.h	/^enum rdma_port_space {$/;"	g
+rdma_route	rdma_cma.h	/^struct rdma_route {$/;"	s
+rdma_ud_param	rdma_cma.h	/^struct rdma_ud_param {$/;"	s
+recv_cq	rdma_cma.h	/^	struct ibv_cq		*recv_cq;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::ibv_cq
+recv_cq_channel	rdma_cma.h	/^	struct ibv_comp_channel *recv_cq_channel;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::ibv_comp_channel
+responder_resources	rdma_cma.h	/^	uint8_t responder_resources;$/;"	m	struct:rdma_conn_param
+retry_count	rdma_cma.h	/^	uint8_t retry_count;		\/* ignored when accepting *\/$/;"	m	struct:rdma_conn_param
+rnr_retry_count	rdma_cma.h	/^	uint8_t rnr_retry_count;$/;"	m	struct:rdma_conn_param
+route	rdma_cma.h	/^	struct rdma_route	 route;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::rdma_route
+send_cq	rdma_cma.h	/^	struct ibv_cq		*send_cq;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::ibv_cq
+send_cq_channel	rdma_cma.h	/^	struct ibv_comp_channel *send_cq_channel;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::ibv_comp_channel
+sgid	rdma_cma.h	/^	union ibv_gid	sgid;$/;"	m	struct:rdma_ib_addr	typeref:union:rdma_ib_addr::ibv_gid
+src_addr	rdma_cma.h	/^		struct sockaddr		src_addr;$/;"	m	union:rdma_addr::__anon1	typeref:struct:rdma_addr::__anon1::sockaddr
+src_sin	rdma_cma.h	/^		struct sockaddr_in	src_sin;$/;"	m	union:rdma_addr::__anon1	typeref:struct:rdma_addr::__anon1::sockaddr_in
+src_sin6	rdma_cma.h	/^		struct sockaddr_in6	src_sin6;$/;"	m	union:rdma_addr::__anon1	typeref:struct:rdma_addr::__anon1::sockaddr_in6
+src_storage	rdma_cma.h	/^		struct sockaddr_storage src_storage;$/;"	m	union:rdma_addr::__anon1	typeref:struct:rdma_addr::__anon1::sockaddr_storage
+srq	rdma_cma.h	/^	struct ibv_srq		*srq;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::ibv_srq
+srq	rdma_cma.h	/^	uint8_t srq; \/\/shared receive queue , ignored if QP created on the rdma_cm_id$/;"	m	struct:rdma_conn_param
+status	rdma_cma.h	/^	int			 status;$/;"	m	struct:rdma_cm_event
+ud	rdma_cma.h	/^		struct rdma_ud_param   ud;$/;"	m	union:rdma_cm_event::__anon5	typeref:struct:rdma_cm_event::__anon5::rdma_ud_param
+verbs	rdma_cma.h	/^	struct ibv_context	*verbs;$/;"	m	struct:rdma_cm_id	typeref:struct:rdma_cm_id::ibv_context
+RDMA_CMA_ABI_H	rdma_cma_abi.h	34;"	d
+RDMA_MAX_PRIVATE_DATA	rdma_cma_abi.h	47;"	d
+RDMA_USER_CM_MAX_ABI_VERSION	rdma_cma_abi.h	45;"	d
+RDMA_USER_CM_MIN_ABI_VERSION	rdma_cma_abi.h	44;"	d
+UCMA_CMD_ACCEPT	rdma_cma_abi.h	/^	UCMA_CMD_ACCEPT,$/;"	e	enum:__anon8
+UCMA_CMD_BIND	rdma_cma_abi.h	/^	UCMA_CMD_BIND,$/;"	e	enum:__anon8
+UCMA_CMD_BIND_IP	rdma_cma_abi.h	/^	UCMA_CMD_BIND_IP,$/;"	e	enum:__anon8
+UCMA_CMD_CONNECT	rdma_cma_abi.h	/^	UCMA_CMD_CONNECT,$/;"	e	enum:__anon8
+UCMA_CMD_CREATE_ID	rdma_cma_abi.h	/^	UCMA_CMD_CREATE_ID,$/;"	e	enum:__anon8
+UCMA_CMD_DESTROY_ID	rdma_cma_abi.h	/^	UCMA_CMD_DESTROY_ID,$/;"	e	enum:__anon8
+UCMA_CMD_DISCONNECT	rdma_cma_abi.h	/^	UCMA_CMD_DISCONNECT,$/;"	e	enum:__anon8
+UCMA_CMD_GET_EVENT	rdma_cma_abi.h	/^	UCMA_CMD_GET_EVENT,$/;"	e	enum:__anon8
+UCMA_CMD_GET_OPTION	rdma_cma_abi.h	/^	UCMA_CMD_GET_OPTION,$/;"	e	enum:__anon8
+UCMA_CMD_INIT_QP_ATTR	rdma_cma_abi.h	/^	UCMA_CMD_INIT_QP_ATTR,$/;"	e	enum:__anon8
+UCMA_CMD_JOIN_IP_MCAST	rdma_cma_abi.h	/^ 	UCMA_CMD_JOIN_IP_MCAST,$/;"	e	enum:__anon8
+UCMA_CMD_JOIN_MCAST	rdma_cma_abi.h	/^	UCMA_CMD_JOIN_MCAST$/;"	e	enum:__anon8
+UCMA_CMD_LEAVE_MCAST	rdma_cma_abi.h	/^ 	UCMA_CMD_LEAVE_MCAST,$/;"	e	enum:__anon8
+UCMA_CMD_LISTEN	rdma_cma_abi.h	/^	UCMA_CMD_LISTEN,$/;"	e	enum:__anon8
+UCMA_CMD_MIGRATE_ID	rdma_cma_abi.h	/^	UCMA_CMD_MIGRATE_ID,$/;"	e	enum:__anon8
+UCMA_CMD_NOTIFY	rdma_cma_abi.h	/^	UCMA_CMD_NOTIFY,$/;"	e	enum:__anon8
+UCMA_CMD_QUERY	rdma_cma_abi.h	/^	UCMA_CMD_QUERY,$/;"	e	enum:__anon8
+UCMA_CMD_QUERY_ROUTE	rdma_cma_abi.h	/^	UCMA_CMD_QUERY_ROUTE,$/;"	e	enum:__anon8
+UCMA_CMD_REJECT	rdma_cma_abi.h	/^	UCMA_CMD_REJECT,$/;"	e	enum:__anon8
+UCMA_CMD_RESOLVE_ADDR	rdma_cma_abi.h	/^	UCMA_CMD_RESOLVE_ADDR,$/;"	e	enum:__anon8
+UCMA_CMD_RESOLVE_IP	rdma_cma_abi.h	/^	UCMA_CMD_RESOLVE_IP,$/;"	e	enum:__anon8
+UCMA_CMD_RESOLVE_ROUTE	rdma_cma_abi.h	/^	UCMA_CMD_RESOLVE_ROUTE,$/;"	e	enum:__anon8
+UCMA_CMD_SET_OPTION	rdma_cma_abi.h	/^	UCMA_CMD_SET_OPTION,$/;"	e	enum:__anon8
+UCMA_QUERY_ADDR	rdma_cma_abi.h	/^	UCMA_QUERY_ADDR,$/;"	e	enum:__anon9
+UCMA_QUERY_GID	rdma_cma_abi.h	/^	UCMA_QUERY_GID$/;"	e	enum:__anon9
+UCMA_QUERY_PATH	rdma_cma_abi.h	/^	UCMA_QUERY_PATH,$/;"	e	enum:__anon9
+addr	rdma_cma_abi.h	/^	struct sockaddr_in6 addr;$/;"	m	struct:ucma_abi_bind_ip	typeref:struct:ucma_abi_bind_ip::sockaddr_in6
+addr	rdma_cma_abi.h	/^	struct sockaddr_in6 addr;$/;"	m	struct:ucma_abi_join_ip_mcast	typeref:struct:ucma_abi_join_ip_mcast::sockaddr_in6
+addr	rdma_cma_abi.h	/^	struct sockaddr_storage addr;$/;"	m	struct:ucma_abi_bind	typeref:struct:ucma_abi_bind::sockaddr_storage
+addr	rdma_cma_abi.h	/^	struct sockaddr_storage addr;$/;"	m	struct:ucma_abi_join_mcast	typeref:struct:ucma_abi_join_mcast::sockaddr_storage
+addr_size	rdma_cma_abi.h	/^	__u16 addr_size;$/;"	m	struct:ucma_abi_bind
+addr_size	rdma_cma_abi.h	/^	__u16 addr_size;$/;"	m	struct:ucma_abi_join_mcast
+ah_attr	rdma_cma_abi.h	/^	struct ibv_kern_ah_attr ah_attr;$/;"	m	struct:ucma_abi_ud_param	typeref:struct:ucma_abi_ud_param::ibv_kern_ah_attr
+backlog	rdma_cma_abi.h	/^	__u32 backlog;$/;"	m	struct:ucma_abi_listen
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_accept
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_bind
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_bind_ip
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_cmd_hdr
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_connect
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_create_id
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_destroy_id
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_disconnect
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_get_event
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_init_qp_attr
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_join_ip_mcast
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_join_mcast
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_listen
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_migrate_id
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_notify
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_query
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_reject
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_resolve_addr
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_resolve_ip
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_resolve_route
+cmd	rdma_cma_abi.h	/^	__u32 cmd;$/;"	m	struct:ucma_abi_set_option
+conn	rdma_cma_abi.h	/^		struct ucma_abi_conn_param conn;$/;"	m	union:ucma_abi_event_resp::__anon10	typeref:struct:ucma_abi_event_resp::__anon10::ucma_abi_conn_param
+conn_param	rdma_cma_abi.h	/^	struct ucma_abi_conn_param conn_param;$/;"	m	struct:ucma_abi_accept	typeref:struct:ucma_abi_accept::ucma_abi_conn_param
+conn_param	rdma_cma_abi.h	/^	struct ucma_abi_conn_param conn_param;$/;"	m	struct:ucma_abi_connect	typeref:struct:ucma_abi_connect::ucma_abi_conn_param
+dst_addr	rdma_cma_abi.h	/^	struct sockaddr_in6 dst_addr;$/;"	m	struct:ucma_abi_query_route_resp	typeref:struct:ucma_abi_query_route_resp::sockaddr_in6
+dst_addr	rdma_cma_abi.h	/^	struct sockaddr_in6 dst_addr;$/;"	m	struct:ucma_abi_resolve_ip	typeref:struct:ucma_abi_resolve_ip::sockaddr_in6
+dst_addr	rdma_cma_abi.h	/^	struct sockaddr_storage dst_addr;$/;"	m	struct:ucma_abi_query_addr_resp	typeref:struct:ucma_abi_query_addr_resp::sockaddr_storage
+dst_addr	rdma_cma_abi.h	/^	struct sockaddr_storage dst_addr;$/;"	m	struct:ucma_abi_resolve_addr	typeref:struct:ucma_abi_resolve_addr::sockaddr_storage
+dst_size	rdma_cma_abi.h	/^	__u16 dst_size;$/;"	m	struct:ucma_abi_query_addr_resp
+dst_size	rdma_cma_abi.h	/^	__u16 dst_size;$/;"	m	struct:ucma_abi_resolve_addr
+event	rdma_cma_abi.h	/^	__u32 event;$/;"	m	struct:ucma_abi_event_resp
+event	rdma_cma_abi.h	/^	__u32 event;$/;"	m	struct:ucma_abi_notify
+events_reported	rdma_cma_abi.h	/^	__u32 events_reported;$/;"	m	struct:ucma_abi_destroy_id_resp
+events_reported	rdma_cma_abi.h	/^	__u32 events_reported;$/;"	m	struct:ucma_abi_migrate_resp
+fd	rdma_cma_abi.h	/^	__u32 fd;$/;"	m	struct:ucma_abi_migrate_id
+flow_control	rdma_cma_abi.h	/^	__u8  flow_control;$/;"	m	struct:ucma_abi_conn_param
+ib_route	rdma_cma_abi.h	/^	struct ibv_kern_path_rec ib_route[2];$/;"	m	struct:ucma_abi_query_route_resp	typeref:struct:ucma_abi_query_route_resp::ibv_kern_path_rec
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_accept
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_bind
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_bind_ip
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_connect
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_create_id_resp
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_destroy_id
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_disconnect
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_event_resp
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_init_qp_attr
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_join_ip_mcast
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_join_mcast
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_listen
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_migrate_id
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_notify
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_query
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_reject
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_resolve_addr
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_resolve_ip
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_resolve_route
+id	rdma_cma_abi.h	/^	__u32 id;$/;"	m	struct:ucma_abi_set_option
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_accept
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_bind
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_bind_ip
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_cmd_hdr
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_connect
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_create_id
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_destroy_id
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_disconnect
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_get_event
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_init_qp_attr
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_join_ip_mcast
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_join_mcast
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_listen
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_migrate_id
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_notify
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_query
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_reject
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_resolve_addr
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_resolve_ip
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_resolve_route
+in	rdma_cma_abi.h	/^	__u16 in;$/;"	m	struct:ucma_abi_set_option
+initiator_depth	rdma_cma_abi.h	/^	__u8  initiator_depth;$/;"	m	struct:ucma_abi_conn_param
+level	rdma_cma_abi.h	/^	__u32 level;$/;"	m	struct:ucma_abi_set_option
+node_guid	rdma_cma_abi.h	/^	__u64 node_guid;$/;"	m	struct:ucma_abi_query_addr_resp
+node_guid	rdma_cma_abi.h	/^	__u64 node_guid;$/;"	m	struct:ucma_abi_query_route_resp
+num_paths	rdma_cma_abi.h	/^	__u32 num_paths;$/;"	m	struct:ucma_abi_query_path_resp
+num_paths	rdma_cma_abi.h	/^	__u32 num_paths;$/;"	m	struct:ucma_abi_query_route_resp
+option	rdma_cma_abi.h	/^	__u32 option;$/;"	m	struct:ucma_abi_query
+optlen	rdma_cma_abi.h	/^	__u32 optlen;$/;"	m	struct:ucma_abi_set_option
+optname	rdma_cma_abi.h	/^	__u32 optname;$/;"	m	struct:ucma_abi_set_option
+optval	rdma_cma_abi.h	/^	__u64 optval;$/;"	m	struct:ucma_abi_set_option
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_accept
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_bind
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_bind_ip
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_cmd_hdr
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_connect
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_create_id
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_destroy_id
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_disconnect
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_get_event
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_init_qp_attr
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_join_ip_mcast
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_join_mcast
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_listen
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_migrate_id
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_notify
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_query
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_reject
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_resolve_addr
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_resolve_ip
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_resolve_route
+out	rdma_cma_abi.h	/^	__u16 out;$/;"	m	struct:ucma_abi_set_option
+param	rdma_cma_abi.h	/^	} param;$/;"	m	struct:ucma_abi_event_resp	typeref:union:ucma_abi_event_resp::__anon10
+path_data	rdma_cma_abi.h	/^	struct ibv_path_data path_data[0];$/;"	m	struct:ucma_abi_query_path_resp	typeref:struct:ucma_abi_query_path_resp::ibv_path_data
+pkey	rdma_cma_abi.h	/^	__u16 pkey;$/;"	m	struct:ucma_abi_query_addr_resp
+port_num	rdma_cma_abi.h	/^	__u8  port_num;$/;"	m	struct:ucma_abi_query_addr_resp
+port_num	rdma_cma_abi.h	/^	__u8 port_num;$/;"	m	struct:ucma_abi_query_route_resp
+private_data	rdma_cma_abi.h	/^	__u8  private_data[RDMA_MAX_PRIVATE_DATA];$/;"	m	struct:ucma_abi_conn_param
+private_data	rdma_cma_abi.h	/^	__u8  private_data[RDMA_MAX_PRIVATE_DATA];$/;"	m	struct:ucma_abi_reject
+private_data	rdma_cma_abi.h	/^	__u8 private_data[RDMA_MAX_PRIVATE_DATA];$/;"	m	struct:ucma_abi_ud_param
+private_data_len	rdma_cma_abi.h	/^	__u8  private_data_len;$/;"	m	struct:ucma_abi_conn_param
+private_data_len	rdma_cma_abi.h	/^	__u8  private_data_len;$/;"	m	struct:ucma_abi_reject
+private_data_len	rdma_cma_abi.h	/^	__u8 private_data_len;$/;"	m	struct:ucma_abi_ud_param
+ps	rdma_cma_abi.h	/^	__u16 ps;$/;"	m	struct:ucma_abi_create_id
+qkey	rdma_cma_abi.h	/^	__u32 qkey;$/;"	m	struct:ucma_abi_ud_param
+qp_num	rdma_cma_abi.h	/^	__u32 qp_num;$/;"	m	struct:ucma_abi_conn_param
+qp_num	rdma_cma_abi.h	/^	__u32 qp_num;$/;"	m	struct:ucma_abi_ud_param
+qp_state	rdma_cma_abi.h	/^	__u32 qp_state;$/;"	m	struct:ucma_abi_init_qp_attr
+qp_type	rdma_cma_abi.h	/^	__u8  qp_type;$/;"	m	struct:ucma_abi_create_id
+reserved	rdma_cma_abi.h	/^	__u16 reserved;$/;"	m	struct:ucma_abi_bind
+reserved	rdma_cma_abi.h	/^	__u16 reserved;$/;"	m	struct:ucma_abi_join_mcast
+reserved	rdma_cma_abi.h	/^	__u32 reserved;$/;"	m	struct:ucma_abi_accept
+reserved	rdma_cma_abi.h	/^	__u32 reserved;$/;"	m	struct:ucma_abi_conn_param
+reserved	rdma_cma_abi.h	/^	__u32 reserved;$/;"	m	struct:ucma_abi_connect
+reserved	rdma_cma_abi.h	/^	__u32 reserved;$/;"	m	struct:ucma_abi_destroy_id
+reserved	rdma_cma_abi.h	/^	__u32 reserved;$/;"	m	struct:ucma_abi_query_path_resp
+reserved	rdma_cma_abi.h	/^	__u32 reserved;$/;"	m	struct:ucma_abi_resolve_addr
+reserved	rdma_cma_abi.h	/^	__u8  reserved;$/;"	m	struct:ucma_abi_query_addr_resp
+reserved	rdma_cma_abi.h	/^	__u8  reserved[3];$/;"	m	struct:ucma_abi_reject
+reserved	rdma_cma_abi.h	/^	__u8  reserved[5];$/;"	m	struct:ucma_abi_create_id
+reserved	rdma_cma_abi.h	/^	__u8 reserved[3];$/;"	m	struct:ucma_abi_query_route_resp
+reserved	rdma_cma_abi.h	/^	__u8 reserved[7];$/;"	m	struct:ucma_abi_ud_param
+reserved2	rdma_cma_abi.h	/^	__u8 reserved2[4];  \/* Round to 8-byte boundary to support 32\/64 *\/$/;"	m	struct:ucma_abi_ud_param
+responder_resources	rdma_cma_abi.h	/^	__u8  responder_resources;$/;"	m	struct:ucma_abi_conn_param
+response	rdma_cma_abi.h	/^	__u64 response;		\/* rdma_ucma_create_id_resp *\/$/;"	m	struct:ucma_abi_join_mcast
+response	rdma_cma_abi.h	/^	__u64 response;		\/* ucma_abi_create_id_resp *\/$/;"	m	struct:ucma_abi_join_ip_mcast
+response	rdma_cma_abi.h	/^	__u64 response;$/;"	m	struct:ucma_abi_bind_ip
+response	rdma_cma_abi.h	/^	__u64 response;$/;"	m	struct:ucma_abi_create_id
+response	rdma_cma_abi.h	/^	__u64 response;$/;"	m	struct:ucma_abi_destroy_id
+response	rdma_cma_abi.h	/^	__u64 response;$/;"	m	struct:ucma_abi_get_event
+response	rdma_cma_abi.h	/^	__u64 response;$/;"	m	struct:ucma_abi_init_qp_attr
+response	rdma_cma_abi.h	/^	__u64 response;$/;"	m	struct:ucma_abi_migrate_id
+response	rdma_cma_abi.h	/^	__u64 response;$/;"	m	struct:ucma_abi_query
+retry_count	rdma_cma_abi.h	/^	__u8  retry_count;$/;"	m	struct:ucma_abi_conn_param
+rnr_retry_count	rdma_cma_abi.h	/^	__u8  rnr_retry_count;$/;"	m	struct:ucma_abi_conn_param
+src_addr	rdma_cma_abi.h	/^	struct sockaddr_in6 src_addr;$/;"	m	struct:ucma_abi_query_route_resp	typeref:struct:ucma_abi_query_route_resp::sockaddr_in6
+src_addr	rdma_cma_abi.h	/^	struct sockaddr_in6 src_addr;$/;"	m	struct:ucma_abi_resolve_ip	typeref:struct:ucma_abi_resolve_ip::sockaddr_in6
+src_addr	rdma_cma_abi.h	/^	struct sockaddr_storage src_addr;$/;"	m	struct:ucma_abi_query_addr_resp	typeref:struct:ucma_abi_query_addr_resp::sockaddr_storage
+src_addr	rdma_cma_abi.h	/^	struct sockaddr_storage src_addr;$/;"	m	struct:ucma_abi_resolve_addr	typeref:struct:ucma_abi_resolve_addr::sockaddr_storage
+src_size	rdma_cma_abi.h	/^	__u16 src_size;$/;"	m	struct:ucma_abi_query_addr_resp
+src_size	rdma_cma_abi.h	/^	__u16 src_size;$/;"	m	struct:ucma_abi_resolve_addr
+srq	rdma_cma_abi.h	/^	__u8  srq;$/;"	m	struct:ucma_abi_conn_param
+status	rdma_cma_abi.h	/^	__u32 status;$/;"	m	struct:ucma_abi_event_resp
+timeout_ms	rdma_cma_abi.h	/^	__u32 timeout_ms;$/;"	m	struct:ucma_abi_resolve_addr
+timeout_ms	rdma_cma_abi.h	/^	__u32 timeout_ms;$/;"	m	struct:ucma_abi_resolve_ip
+timeout_ms	rdma_cma_abi.h	/^	__u32 timeout_ms;$/;"	m	struct:ucma_abi_resolve_route
+ucma_abi_accept	rdma_cma_abi.h	/^struct ucma_abi_accept {$/;"	s
+ucma_abi_bind	rdma_cma_abi.h	/^struct ucma_abi_bind {$/;"	s
+ucma_abi_bind_ip	rdma_cma_abi.h	/^struct ucma_abi_bind_ip {$/;"	s
+ucma_abi_cmd_hdr	rdma_cma_abi.h	/^struct ucma_abi_cmd_hdr {$/;"	s
+ucma_abi_conn_param	rdma_cma_abi.h	/^struct ucma_abi_conn_param {$/;"	s
+ucma_abi_connect	rdma_cma_abi.h	/^struct ucma_abi_connect {$/;"	s
+ucma_abi_create_id	rdma_cma_abi.h	/^struct ucma_abi_create_id {$/;"	s
+ucma_abi_create_id_resp	rdma_cma_abi.h	/^struct ucma_abi_create_id_resp {$/;"	s
+ucma_abi_destroy_id	rdma_cma_abi.h	/^struct ucma_abi_destroy_id {$/;"	s
+ucma_abi_destroy_id_resp	rdma_cma_abi.h	/^struct ucma_abi_destroy_id_resp {$/;"	s
+ucma_abi_disconnect	rdma_cma_abi.h	/^struct ucma_abi_disconnect {$/;"	s
+ucma_abi_event_resp	rdma_cma_abi.h	/^struct ucma_abi_event_resp {$/;"	s
+ucma_abi_get_event	rdma_cma_abi.h	/^struct ucma_abi_get_event {$/;"	s
+ucma_abi_init_qp_attr	rdma_cma_abi.h	/^struct ucma_abi_init_qp_attr {$/;"	s
+ucma_abi_join_ip_mcast	rdma_cma_abi.h	/^struct ucma_abi_join_ip_mcast {$/;"	s
+ucma_abi_join_mcast	rdma_cma_abi.h	/^struct ucma_abi_join_mcast {$/;"	s
+ucma_abi_listen	rdma_cma_abi.h	/^struct ucma_abi_listen {$/;"	s
+ucma_abi_migrate_id	rdma_cma_abi.h	/^struct ucma_abi_migrate_id {$/;"	s
+ucma_abi_migrate_resp	rdma_cma_abi.h	/^struct ucma_abi_migrate_resp {$/;"	s
+ucma_abi_notify	rdma_cma_abi.h	/^struct ucma_abi_notify {$/;"	s
+ucma_abi_query	rdma_cma_abi.h	/^struct ucma_abi_query {$/;"	s
+ucma_abi_query_addr_resp	rdma_cma_abi.h	/^struct ucma_abi_query_addr_resp {$/;"	s
+ucma_abi_query_path_resp	rdma_cma_abi.h	/^struct ucma_abi_query_path_resp {$/;"	s
+ucma_abi_query_route_resp	rdma_cma_abi.h	/^struct ucma_abi_query_route_resp {$/;"	s
+ucma_abi_reject	rdma_cma_abi.h	/^struct ucma_abi_reject {$/;"	s
+ucma_abi_resolve_addr	rdma_cma_abi.h	/^struct ucma_abi_resolve_addr {$/;"	s
+ucma_abi_resolve_ip	rdma_cma_abi.h	/^struct ucma_abi_resolve_ip {$/;"	s
+ucma_abi_resolve_route	rdma_cma_abi.h	/^struct ucma_abi_resolve_route {$/;"	s
+ucma_abi_set_option	rdma_cma_abi.h	/^struct ucma_abi_set_option {$/;"	s
+ucma_abi_ud_param	rdma_cma_abi.h	/^struct ucma_abi_ud_param {$/;"	s
+ud	rdma_cma_abi.h	/^		struct ucma_abi_ud_param   ud;$/;"	m	union:ucma_abi_event_resp::__anon10	typeref:struct:ucma_abi_event_resp::__anon10::ucma_abi_ud_param
+uid	rdma_cma_abi.h	/^	__u64 uid;$/;"	m	struct:ucma_abi_accept
+uid	rdma_cma_abi.h	/^	__u64 uid;$/;"	m	struct:ucma_abi_create_id
+uid	rdma_cma_abi.h	/^	__u64 uid;$/;"	m	struct:ucma_abi_event_resp
+uid	rdma_cma_abi.h	/^	__u64 uid;$/;"	m	struct:ucma_abi_join_ip_mcast
+uid	rdma_cma_abi.h	/^	__u64 uid;$/;"	m	struct:ucma_abi_join_mcast
+valid	rdma_cma_abi.h	/^	__u8  valid;$/;"	m	struct:ucma_abi_conn_param
+RDMA_VERBS_H	rdma_verbs.h	34;"	d
+rdma_dereg_mr	rdma_verbs.h	/^static inline int rdma_dereg_mr(struct ibv_mr *mr)$/;"	f
+rdma_get_recv_comp	rdma_verbs.h	/^static inline int rdma_get_recv_comp(struct rdma_cm_id *id, struct ibv_wc *wc)$/;"	f
+rdma_get_send_comp	rdma_verbs.h	/^static inline int rdma_get_send_comp(struct rdma_cm_id *id, struct ibv_wc *wc)$/;"	f
+rdma_post_read	rdma_verbs.h	/^static inline int rdma_post_read(struct rdma_cm_id *id, void *context, void *addr,$/;"	f
+rdma_post_readv	rdma_verbs.h	/^static inline int rdma_post_readv(struct rdma_cm_id *id, void *context, struct ibv_sge *sgl,$/;"	f
+rdma_post_recv	rdma_verbs.h	/^static inline int rdma_post_recv(struct rdma_cm_id *id, void *context, void *addr,$/;"	f
+rdma_post_recvv	rdma_verbs.h	/^static inline int rdma_post_recvv(struct rdma_cm_id *id, void *context, struct ibv_sge *sgl,$/;"	f
+rdma_post_send	rdma_verbs.h	/^static inline int rdma_post_send(struct rdma_cm_id *id, void *context, void *addr,$/;"	f
+rdma_post_sendv	rdma_verbs.h	/^static inline int rdma_post_sendv(struct rdma_cm_id *id, void *context, struct ibv_sge *sgl,$/;"	f
+rdma_post_ud_send	rdma_verbs.h	/^static inline int rdma_post_ud_send(struct rdma_cm_id *id, void *context, void *addr,$/;"	f
+rdma_post_write	rdma_verbs.h	/^static inline int rdma_post_write(struct rdma_cm_id *id, void *context, void *addr,$/;"	f
+rdma_post_writev	rdma_verbs.h	/^static inline int rdma_post_writev(struct rdma_cm_id *id, void *context, struct ibv_sge *sgl,$/;"	f
+rdma_reg_msgs	rdma_verbs.h	/^static inline struct ibv_mr* rdma_reg_msgs(struct rdma_cm_id *id, void *addr, size_t length)$/;"	f
+rdma_reg_read	rdma_verbs.h	/^static inline struct ibv_mr* rdma_reg_read(struct rdma_cm_id *id, void *addr, size_t length)$/;"	f
+rdma_reg_write	rdma_verbs.h	/^static inline struct ibv_mr* rdma_reg_write(struct rdma_cm_id *id, void *addr, size_t length)$/;"	f
+rdma_seterrno	rdma_verbs.h	/^static inline int rdma_seterrno(int ret)$/;"	f
+RDMA_INLINE	rsocket.h	/^	RDMA_INLINE,$/;"	e	enum:__anon11
+RDMA_IOMAPSIZE	rsocket.h	/^	RDMA_IOMAPSIZE,$/;"	e	enum:__anon11
+RDMA_ROUTE	rsocket.h	/^	RDMA_ROUTE$/;"	e	enum:__anon11
+RDMA_RQSIZE	rsocket.h	/^	RDMA_RQSIZE,$/;"	e	enum:__anon11
+RDMA_SQSIZE	rsocket.h	/^	RDMA_SQSIZE,$/;"	e	enum:__anon11
+RSOCKET_H	rsocket.h	34;"	d
+SOL_RDMA	rsocket.h	76;"	d
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/

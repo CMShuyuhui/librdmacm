@@ -75,9 +75,9 @@ union socket_addr {
 };
 
 enum rs_optimization {
-	opt_mixed,
-	opt_latency,
-	opt_bandwidth
+	opt_mixed,//混合模式
+	opt_latency,//延时
+	opt_bandwidth//带宽
 };
 /**
  * [get_rdma_addr 根据hints获取ip和端口]

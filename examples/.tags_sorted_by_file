@@ -1,0 +1,817 @@
+CQ_INDEX	cmatose.c	/^enum CQ_INDEX {$/;"	g	file:
+RECV_CQ_INDEX	cmatose.c	/^	RECV_CQ_INDEX$/;"	e	enum:CQ_INDEX	file:
+SEND_CQ_INDEX	cmatose.c	/^	SEND_CQ_INDEX,$/;"	e	enum:CQ_INDEX	file:
+addr_handler	cmatose.c	/^static int addr_handler(struct cmatest_node *node)$/;"	f	file:
+alloc_nodes	cmatose.c	/^static int alloc_nodes(void)$/;"	f	file:
+channel	cmatose.c	/^	struct rdma_event_channel *channel;$/;"	m	struct:cmatest	typeref:struct:cmatest::rdma_event_channel	file:
+cma_handler	cmatose.c	/^static int cma_handler(struct rdma_cm_id *cma_id, struct rdma_cm_event *event)$/;"	f	file:
+cma_id	cmatose.c	/^	struct rdma_cm_id	*cma_id;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::rdma_cm_id	file:
+cmatest	cmatose.c	/^struct cmatest {$/;"	s	file:
+cmatest_node	cmatose.c	/^struct cmatest_node {$/;"	s	file:
+conn_index	cmatose.c	/^	int			conn_index;$/;"	m	struct:cmatest	file:
+connect_error	cmatose.c	/^static void connect_error(void)$/;"	f	file:
+connect_events	cmatose.c	/^static int connect_events(void)$/;"	f	file:
+connect_handler	cmatose.c	/^static int connect_handler(struct rdma_cm_id *cma_id)$/;"	f	file:
+connected	cmatose.c	/^	int			connected;$/;"	m	struct:cmatest_node	file:
+connections	cmatose.c	/^static int connections = 1;$/;"	v	file:
+connects_left	cmatose.c	/^	int			connects_left;$/;"	m	struct:cmatest	file:
+cq	cmatose.c	/^	struct ibv_cq		*cq[2];$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_cq	file:
+create_message	cmatose.c	/^static int create_message(struct cmatest_node *node)$/;"	f	file:
+destroy_node	cmatose.c	/^static void destroy_node(struct cmatest_node *node)$/;"	f	file:
+destroy_nodes	cmatose.c	/^static void destroy_nodes(void)$/;"	f	file:
+disconnect_events	cmatose.c	/^static int disconnect_events(void)$/;"	f	file:
+disconnects_left	cmatose.c	/^	int			disconnects_left;$/;"	m	struct:cmatest	file:
+dst_addr	cmatose.c	/^static char *dst_addr;$/;"	v	file:
+hints	cmatose.c	/^static struct rdma_addrinfo hints;$/;"	v	typeref:struct:rdma_addrinfo	file:
+id	cmatose.c	/^	int			id;$/;"	m	struct:cmatest_node	file:
+init_node	cmatose.c	/^static int init_node(struct cmatest_node *node)$/;"	f	file:
+main	cmatose.c	/^int main(int argc, char **argv)$/;"	f
+mem	cmatose.c	/^	void			*mem;$/;"	m	struct:cmatest_node	file:
+message_count	cmatose.c	/^static int message_count = 10;$/;"	v	file:
+message_size	cmatose.c	/^static int message_size = 100;$/;"	v	file:
+migrate	cmatose.c	/^static uint8_t migrate = 0;$/;"	v	file:
+migrate_channel	cmatose.c	/^static int migrate_channel(struct rdma_cm_id *listen_id)$/;"	f	file:
+mr	cmatose.c	/^	struct ibv_mr		*mr;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_mr	file:
+nodes	cmatose.c	/^	struct cmatest_node	*nodes;$/;"	m	struct:cmatest	typeref:struct:cmatest::cmatest_node	file:
+pd	cmatose.c	/^	struct ibv_pd		*pd;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_pd	file:
+poll_cqs	cmatose.c	/^static int poll_cqs(enum CQ_INDEX index)$/;"	f	file:
+port	cmatose.c	/^static char *port = "7471";$/;"	v	file:
+post_recvs	cmatose.c	/^static int post_recvs(struct cmatest_node *node)$/;"	f	file:
+post_sends	cmatose.c	/^static int post_sends(struct cmatest_node *node)$/;"	f	file:
+rai	cmatose.c	/^	struct rdma_addrinfo	*rai;$/;"	m	struct:cmatest	typeref:struct:cmatest::rdma_addrinfo	file:
+route_handler	cmatose.c	/^static int route_handler(struct cmatest_node *node)$/;"	f	file:
+run_client	cmatose.c	/^static int run_client(void)$/;"	f	file:
+run_server	cmatose.c	/^static int run_server(void)$/;"	f	file:
+set_tos	cmatose.c	/^static uint8_t set_tos = 0;$/;"	v	file:
+src_addr	cmatose.c	/^static char *src_addr;$/;"	v	file:
+test	cmatose.c	/^static struct cmatest test;$/;"	v	typeref:struct:cmatest	file:
+tos	cmatose.c	/^static uint8_t tos;$/;"	v	file:
+INIT_LIST	cmtime.c	99;"	d	file:
+STEP_BIND	cmtime.c	/^	STEP_BIND,$/;"	e	enum:step	file:
+STEP_CNT	cmtime.c	/^	STEP_CNT$/;"	e	enum:step	file:
+STEP_CONNECT	cmtime.c	/^	STEP_CONNECT,$/;"	e	enum:step	file:
+STEP_CREATE_ID	cmtime.c	/^	STEP_CREATE_ID,$/;"	e	enum:step	file:
+STEP_CREATE_QP	cmtime.c	/^	STEP_CREATE_QP,$/;"	e	enum:step	file:
+STEP_DESTROY	cmtime.c	/^	STEP_DESTROY,$/;"	e	enum:step	file:
+STEP_DISCONNECT	cmtime.c	/^	STEP_DISCONNECT,$/;"	e	enum:step	file:
+STEP_RESOLVE_ADDR	cmtime.c	/^	STEP_RESOLVE_ADDR,$/;"	e	enum:step	file:
+STEP_RESOLVE_ROUTE	cmtime.c	/^	STEP_RESOLVE_ROUTE,$/;"	e	enum:step	file:
+__list_delete	cmtime.c	/^static inline void __list_delete(struct list_head *list)$/;"	f	file:
+__list_empty	cmtime.c	/^static inline int __list_empty(struct work_list *list)$/;"	f	file:
+__list_remove_head	cmtime.c	/^static inline struct list_head *__list_remove_head(struct work_list *work_list)$/;"	f	file:
+__req_handler	cmtime.c	/^static void __req_handler(struct rdma_cm_id *id)$/;"	f	file:
+addr_handler	cmtime.c	/^static void addr_handler(struct node *n)$/;"	f	file:
+alloc_nodes	cmtime.c	/^static int alloc_nodes(void)$/;"	f	file:
+channel	cmtime.c	/^static struct rdma_event_channel *channel;$/;"	v	typeref:struct:rdma_event_channel	file:
+cleanup_nodes	cmtime.c	/^static void cleanup_nodes(void)$/;"	f	file:
+cma_handler	cmtime.c	/^static void cma_handler(struct rdma_cm_id *id, struct rdma_cm_event *event)$/;"	f	file:
+completed	cmtime.c	/^static volatile int completed[STEP_CNT];$/;"	v	file:
+cond	cmtime.c	/^	pthread_cond_t		cond;$/;"	m	struct:work_list	file:
+conn_handler	cmtime.c	/^static void conn_handler(struct node *n)$/;"	f	file:
+conn_param	cmtime.c	/^static struct rdma_conn_param conn_param;$/;"	v	typeref:struct:rdma_conn_param	file:
+connections	cmtime.c	/^static int connections = 100;$/;"	v	file:
+diff_us	cmtime.c	/^static float diff_us(struct timeval *end, struct timeval *start)$/;"	f	file:
+disc_handler	cmtime.c	/^static void disc_handler(struct node *n)$/;"	f	file:
+disc_handler_thread	cmtime.c	/^static void *disc_handler_thread(void *arg)$/;"	f	file:
+disc_work	cmtime.c	/^static struct work_list disc_work;$/;"	v	typeref:struct:work_list	file:
+dst_addr	cmtime.c	/^static char *dst_addr;$/;"	v	file:
+end_perf	cmtime.c	112;"	d	file:
+end_time	cmtime.c	114;"	d	file:
+error	cmtime.c	/^	int error;$/;"	m	struct:node	file:
+hints	cmtime.c	/^static struct rdma_addrinfo hints, *rai;$/;"	v	typeref:struct:rdma_addrinfo	file:
+id	cmtime.c	/^	struct rdma_cm_id	*id;$/;"	m	struct:list_head	typeref:struct:list_head::rdma_cm_id	file:
+id	cmtime.c	/^	struct rdma_cm_id *id;$/;"	m	struct:node	typeref:struct:node::rdma_cm_id	file:
+init_qp_attr	cmtime.c	/^static struct ibv_qp_init_attr init_qp_attr;$/;"	v	typeref:struct:ibv_qp_init_attr	file:
+list	cmtime.c	/^	struct list_head	list;$/;"	m	struct:work_list	typeref:struct:work_list::list_head	file:
+list_add_tail	cmtime.c	/^static inline void list_add_tail(struct work_list *work_list, struct list_head *req)$/;"	f	file:
+list_empty	cmtime.c	/^static inline int list_empty(struct work_list *work_list)$/;"	f	file:
+list_head	cmtime.c	/^struct list_head {$/;"	s	file:
+list_remove_head	cmtime.c	/^static inline struct list_head *list_remove_head(struct work_list *work_list)$/;"	f	file:
+lock	cmtime.c	/^	pthread_mutex_t		lock;$/;"	m	struct:work_list	file:
+main	cmtime.c	/^int main(int argc, char **argv)$/;"	f
+next	cmtime.c	/^	struct list_head	*next;$/;"	m	struct:list_head	typeref:struct:list_head::list_head	file:
+node	cmtime.c	/^struct node {$/;"	s	file:
+nodes	cmtime.c	/^static struct node *nodes;$/;"	v	typeref:struct:node	file:
+port	cmtime.c	/^static char *port = "7471";$/;"	v	file:
+prev	cmtime.c	/^	struct list_head	*prev;$/;"	m	struct:list_head	typeref:struct:list_head::list_head	file:
+process_events	cmtime.c	/^static void *process_events(void *arg)$/;"	f	file:
+rai	cmtime.c	/^static struct rdma_addrinfo hints, *rai;$/;"	v	typeref:struct:	file:
+req_handler_thread	cmtime.c	/^static void *req_handler_thread(void *arg)$/;"	f	file:
+req_work	cmtime.c	/^static struct work_list req_work;$/;"	v	typeref:struct:work_list	file:
+retries	cmtime.c	/^	int retries;$/;"	m	struct:node	file:
+retries	cmtime.c	/^static int retries = 2;$/;"	v	file:
+route_handler	cmtime.c	/^static void route_handler(struct node *n)$/;"	f	file:
+run_client	cmtime.c	/^static int run_client(void)$/;"	f	file:
+run_server	cmtime.c	/^static int run_server(void)$/;"	f	file:
+show_perf	cmtime.c	/^static void show_perf(void)$/;"	f	file:
+src_addr	cmtime.c	/^static char *src_addr;$/;"	v	file:
+start_perf	cmtime.c	111;"	d	file:
+start_time	cmtime.c	113;"	d	file:
+started	cmtime.c	/^static volatile int started[STEP_CNT];$/;"	v	file:
+step	cmtime.c	/^enum step {$/;"	g	file:
+step_str	cmtime.c	/^static char *step_str[] = {$/;"	v	file:
+timeout	cmtime.c	/^static int timeout = 2000;$/;"	v	file:
+times	cmtime.c	/^	struct timeval times[STEP_CNT][2];$/;"	m	struct:node	typeref:struct:node::timeval	file:
+times	cmtime.c	/^static struct timeval times[STEP_CNT][2];$/;"	v	typeref:struct:timeval	file:
+work_list	cmtime.c	/^struct work_list {$/;"	s	file:
+zero_time	cmtime.c	/^static int zero_time(struct timeval *t)$/;"	f	file:
+cnt_str	common.c	/^void cnt_str(char *str, size_t ssize, long long cnt)$/;"	f
+do_poll	common.c	/^int do_poll(struct pollfd *fds, int timeout)$/;"	f
+format_buf	common.c	/^void format_buf(void *buf, int size)$/;"	f
+get_rdma_addr	common.c	/^int get_rdma_addr(char *src, char *dst, char *port,$/;"	f
+size_str	common.c	/^void size_str(char *str, size_t ssize, long long size)$/;"	f
+size_to_count	common.c	/^int size_to_count(int size)$/;"	f
+use_rs	common.c	/^int use_rs = 1;$/;"	v
+verify_buf	common.c	/^int verify_buf(void *buf, int size)$/;"	f
+cpu_to_be32	common.h	/^static inline uint32_t cpu_to_be32(uint32_t x) { return bswap_32(x); }$/;"	f
+cpu_to_be32	common.h	/^static inline uint32_t cpu_to_be32(uint32_t x) { return x; }$/;"	f
+cpu_to_be64	common.h	/^static inline uint64_t cpu_to_be64(uint64_t x) { return bswap_64(x); }$/;"	f
+cpu_to_be64	common.h	/^static inline uint64_t cpu_to_be64(uint64_t x) { return x; }$/;"	f
+opt_bandwidth	common.h	/^	opt_bandwidth$/;"	e	enum:rs_optimization
+opt_latency	common.h	/^	opt_latency,$/;"	e	enum:rs_optimization
+opt_mixed	common.h	/^	opt_mixed,$/;"	e	enum:rs_optimization
+rs_accept	common.h	59;"	d
+rs_bind	common.h	56;"	d
+rs_close	common.h	61;"	d
+rs_connect	common.h	58;"	d
+rs_fcntl	common.h	67;"	d
+rs_getsockopt	common.h	69;"	d
+rs_listen	common.h	57;"	d
+rs_optimization	common.h	/^enum rs_optimization {$/;"	g
+rs_poll	common.h	66;"	d
+rs_recv	common.h	62;"	d
+rs_recvfrom	common.h	64;"	d
+rs_send	common.h	63;"	d
+rs_sendto	common.h	65;"	d
+rs_setsockopt	common.h	68;"	d
+rs_shutdown	common.h	60;"	d
+rs_socket	common.h	55;"	d
+sa	common.h	/^	struct sockaddr		sa;$/;"	m	union:socket_addr	typeref:struct:socket_addr::sockaddr
+sin	common.h	/^	struct sockaddr_in	sin;$/;"	m	union:socket_addr	typeref:struct:socket_addr::sockaddr_in
+sin6	common.h	/^	struct sockaddr_in6	sin6;$/;"	m	union:socket_addr	typeref:struct:socket_addr::sockaddr_in6
+socket_addr	common.h	/^union socket_addr {$/;"	u
+event_name_str	ibverbs_examples\asyncwatch.c	/^static const char *event_name_str(enum ibv_event_type event_type)$/;"	f	file:
+main	ibverbs_examples\asyncwatch.c	/^int main(int argc, char *argv[])$/;"	f
+usage	ibverbs_examples\asyncwatch.c	/^static void usage(const char *argv0)$/;"	f	file:
+main	ibverbs_examples\device_list.c	/^int main(int argc, char *argv[])$/;"	f
+atomic_cap_str	ibverbs_examples\devinfo.c	/^static const char *atomic_cap_str(enum ibv_atomic_cap atom_cap)$/;"	f	file:
+guid_str	ibverbs_examples\devinfo.c	/^static const char *guid_str(uint64_t node_guid, char *str)$/;"	f	file:
+link_layer_str	ibverbs_examples\devinfo.c	/^static const char *link_layer_str(uint8_t link_layer)$/;"	f	file:
+main	ibverbs_examples\devinfo.c	/^int main(int argc, char *argv[])$/;"	f
+mtu_str	ibverbs_examples\devinfo.c	/^static const char *mtu_str(enum ibv_mtu max_mtu)$/;"	f	file:
+null_gid	ibverbs_examples\devinfo.c	/^static int null_gid(union ibv_gid *gid)$/;"	f	file:
+port_phy_state_str	ibverbs_examples\devinfo.c	/^static const char *port_phy_state_str(uint8_t phys_state)$/;"	f	file:
+port_state_str	ibverbs_examples\devinfo.c	/^static const char *port_state_str(enum ibv_port_state pstate)$/;"	f	file:
+print_all_port_gids	ibverbs_examples\devinfo.c	/^static int print_all_port_gids(struct ibv_context *ctx, uint8_t port_num, int tbl_len)$/;"	f	file:
+print_device_cap_flags	ibverbs_examples\devinfo.c	/^static void print_device_cap_flags(uint32_t dev_cap_flags)$/;"	f	file:
+print_device_cap_flags_ex	ibverbs_examples\devinfo.c	/^static void print_device_cap_flags_ex(uint64_t device_cap_flags_ex)$/;"	f	file:
+print_hca_cap	ibverbs_examples\devinfo.c	/^static int print_hca_cap(struct ibv_device *ib_dev, uint8_t ib_port)$/;"	f	file:
+print_odp_caps	ibverbs_examples\devinfo.c	/^void print_odp_caps(const struct ibv_odp_caps *caps)$/;"	f
+print_odp_trans_caps	ibverbs_examples\devinfo.c	/^void print_odp_trans_caps(uint32_t trans)$/;"	f
+print_rss_caps	ibverbs_examples\devinfo.c	/^static void print_rss_caps(const struct ibv_rss_caps *caps)$/;"	f	file:
+print_tso_caps	ibverbs_examples\devinfo.c	/^static void print_tso_caps(const struct ibv_tso_caps *caps)$/;"	f	file:
+speed_str	ibverbs_examples\devinfo.c	/^static const char *speed_str(uint8_t speed)$/;"	f	file:
+transport_str	ibverbs_examples\devinfo.c	/^static const char *transport_str(enum ibv_transport_type transport)$/;"	f	file:
+usage	ibverbs_examples\devinfo.c	/^static void usage(const char *argv0)$/;"	f	file:
+verbose	ibverbs_examples\devinfo.c	/^static int verbose;$/;"	v	file:
+vl_str	ibverbs_examples\devinfo.c	/^static const char *vl_str(uint8_t vl_num)$/;"	f	file:
+width_str	ibverbs_examples\devinfo.c	/^static const char *width_str(uint8_t width)$/;"	f	file:
+gid_to_wire_gid	ibverbs_examples\pingpong.c	/^void gid_to_wire_gid(const union ibv_gid *gid, char wgid[])$/;"	f
+pp_get_port_info	ibverbs_examples\pingpong.c	/^int pp_get_port_info(struct ibv_context *context, int port,$/;"	f
+pp_mtu_to_enum	ibverbs_examples\pingpong.c	/^enum ibv_mtu pp_mtu_to_enum(int mtu)$/;"	f
+wire_gid_to_gid	ibverbs_examples\pingpong.c	/^void wire_gid_to_gid(const char *wgid, union ibv_gid *gid)$/;"	f
+IBV_PINGPONG_H	ibverbs_examples\pingpong.h	34;"	d
+PINGPONG_RECV_WRID	ibverbs_examples\rc_pingpong.c	/^	PINGPONG_RECV_WRID = 1,$/;"	e	enum:__anon1	file:
+PINGPONG_SEND_WRID	ibverbs_examples\rc_pingpong.c	/^	PINGPONG_SEND_WRID = 2,$/;"	e	enum:__anon1	file:
+buf	ibverbs_examples\rc_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+channel	ibverbs_examples\rc_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+comp_recv_max_time_delta	ibverbs_examples\rc_pingpong.c	/^	unsigned int		 comp_recv_max_time_delta;$/;"	m	struct:ts_params	file:
+comp_recv_min_time_delta	ibverbs_examples\rc_pingpong.c	/^	unsigned int		 comp_recv_min_time_delta;$/;"	m	struct:ts_params	file:
+comp_recv_prev_time	ibverbs_examples\rc_pingpong.c	/^	uint64_t		 comp_recv_prev_time;$/;"	m	struct:ts_params	file:
+comp_recv_total_time_delta	ibverbs_examples\rc_pingpong.c	/^	uint64_t		 comp_recv_total_time_delta;$/;"	m	struct:ts_params	file:
+comp_with_time_iters	ibverbs_examples\rc_pingpong.c	/^	unsigned int		 comp_with_time_iters;$/;"	m	struct:ts_params	file:
+completion_timestamp_mask	ibverbs_examples\rc_pingpong.c	/^	uint64_t		 completion_timestamp_mask;$/;"	m	struct:pingpong_context	file:
+context	ibverbs_examples\rc_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+cq	ibverbs_examples\rc_pingpong.c	/^		struct ibv_cq		*cq;$/;"	m	union:pingpong_context::__anon2	typeref:struct:pingpong_context::__anon2::ibv_cq	file:
+cq_ex	ibverbs_examples\rc_pingpong.c	/^		struct ibv_cq_ex	*cq_ex;$/;"	m	union:pingpong_context::__anon2	typeref:struct:pingpong_context::__anon2::ibv_cq_ex	file:
+cq_s	ibverbs_examples\rc_pingpong.c	/^	} cq_s;$/;"	m	struct:pingpong_context	typeref:union:pingpong_context::__anon2	file:
+gid	ibverbs_examples\rc_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+last_comp_with_ts	ibverbs_examples\rc_pingpong.c	/^	int			 last_comp_with_ts;$/;"	m	struct:ts_params	file:
+lid	ibverbs_examples\rc_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+main	ibverbs_examples\rc_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+max	ibverbs_examples\rc_pingpong.c	53;"	d	file:
+min	ibverbs_examples\rc_pingpong.c	57;"	d	file:
+mr	ibverbs_examples\rc_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+page_size	ibverbs_examples\rc_pingpong.c	/^static int page_size;$/;"	v	file:
+parse_single_wc	ibverbs_examples\rc_pingpong.c	/^static inline int parse_single_wc(struct pingpong_context *ctx, int *scnt,$/;"	f	file:
+pd	ibverbs_examples\rc_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pending	ibverbs_examples\rc_pingpong.c	/^	int			 pending;$/;"	m	struct:pingpong_context	file:
+pingpong_context	ibverbs_examples\rc_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_dest	ibverbs_examples\rc_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+portinfo	ibverbs_examples\rc_pingpong.c	/^	struct ibv_port_attr     portinfo;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_port_attr	file:
+pp_client_exch_dest	ibverbs_examples\rc_pingpong.c	/^static struct pingpong_dest *pp_client_exch_dest(const char *servername, int port,$/;"	f	file:
+pp_close_ctx	ibverbs_examples\rc_pingpong.c	/^int pp_close_ctx(struct pingpong_context *ctx)$/;"	f
+pp_connect_ctx	ibverbs_examples\rc_pingpong.c	/^static int pp_connect_ctx(struct pingpong_context *ctx, int port, int my_psn,$/;"	f	file:
+pp_cq	ibverbs_examples\rc_pingpong.c	/^struct ibv_cq *pp_cq(struct pingpong_context *ctx)$/;"	f
+pp_init_ctx	ibverbs_examples\rc_pingpong.c	/^static struct pingpong_context *pp_init_ctx(struct ibv_device *ib_dev, int size,$/;"	f	file:
+pp_post_recv	ibverbs_examples\rc_pingpong.c	/^static int pp_post_recv(struct pingpong_context *ctx, int n)$/;"	f	file:
+pp_post_send	ibverbs_examples\rc_pingpong.c	/^static int pp_post_send(struct pingpong_context *ctx)$/;"	f	file:
+pp_server_exch_dest	ibverbs_examples\rc_pingpong.c	/^static struct pingpong_dest *pp_server_exch_dest(struct pingpong_context *ctx,$/;"	f	file:
+psn	ibverbs_examples\rc_pingpong.c	/^	int psn;$/;"	m	struct:pingpong_dest	file:
+qp	ibverbs_examples\rc_pingpong.c	/^	struct ibv_qp		*qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+qpn	ibverbs_examples\rc_pingpong.c	/^	int qpn;$/;"	m	struct:pingpong_dest	file:
+rx_depth	ibverbs_examples\rc_pingpong.c	/^	int			 rx_depth;$/;"	m	struct:pingpong_context	file:
+send_flags	ibverbs_examples\rc_pingpong.c	/^	int			 send_flags;$/;"	m	struct:pingpong_context	file:
+size	ibverbs_examples\rc_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+ts_params	ibverbs_examples\rc_pingpong.c	/^struct ts_params {$/;"	s	file:
+usage	ibverbs_examples\rc_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+use_odp	ibverbs_examples\rc_pingpong.c	/^static int use_odp;$/;"	v	file:
+use_ts	ibverbs_examples\rc_pingpong.c	/^static int use_ts;$/;"	v	file:
+MAX_QP	ibverbs_examples\srq_pingpong.c	/^	MAX_QP             = 256,$/;"	e	enum:__anon3	file:
+PINGPONG_RECV_WRID	ibverbs_examples\srq_pingpong.c	/^	PINGPONG_RECV_WRID = 1,$/;"	e	enum:__anon3	file:
+PINGPONG_SEND_WRID	ibverbs_examples\srq_pingpong.c	/^	PINGPONG_SEND_WRID = 2,$/;"	e	enum:__anon3	file:
+buf	ibverbs_examples\srq_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+channel	ibverbs_examples\srq_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+context	ibverbs_examples\srq_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+cq	ibverbs_examples\srq_pingpong.c	/^	struct ibv_cq		*cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+find_qp	ibverbs_examples\srq_pingpong.c	/^static int find_qp(int qpn, struct pingpong_context *ctx, int num_qp)$/;"	f	file:
+gid	ibverbs_examples\srq_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+lid	ibverbs_examples\srq_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+main	ibverbs_examples\srq_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+mr	ibverbs_examples\srq_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+num_qp	ibverbs_examples\srq_pingpong.c	/^	int			 num_qp;$/;"	m	struct:pingpong_context	file:
+page_size	ibverbs_examples\srq_pingpong.c	/^static int page_size;$/;"	v	file:
+pd	ibverbs_examples\srq_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pending	ibverbs_examples\srq_pingpong.c	/^	int			 pending[MAX_QP];$/;"	m	struct:pingpong_context	file:
+pingpong_context	ibverbs_examples\srq_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_dest	ibverbs_examples\srq_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+portinfo	ibverbs_examples\srq_pingpong.c	/^	struct ibv_port_attr	 portinfo;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_port_attr	file:
+pp_client_exch_dest	ibverbs_examples\srq_pingpong.c	/^static struct pingpong_dest *pp_client_exch_dest(const char *servername, int port,$/;"	f	file:
+pp_close_ctx	ibverbs_examples\srq_pingpong.c	/^int pp_close_ctx(struct pingpong_context *ctx, int num_qp)$/;"	f
+pp_connect_ctx	ibverbs_examples\srq_pingpong.c	/^static int pp_connect_ctx(struct pingpong_context *ctx, int port, enum ibv_mtu mtu,$/;"	f	file:
+pp_init_ctx	ibverbs_examples\srq_pingpong.c	/^static struct pingpong_context *pp_init_ctx(struct ibv_device *ib_dev, int size,$/;"	f	file:
+pp_post_recv	ibverbs_examples\srq_pingpong.c	/^static int pp_post_recv(struct pingpong_context *ctx, int n)$/;"	f	file:
+pp_post_send	ibverbs_examples\srq_pingpong.c	/^static int pp_post_send(struct pingpong_context *ctx, int qp_index)$/;"	f	file:
+pp_server_exch_dest	ibverbs_examples\srq_pingpong.c	/^static struct pingpong_dest *pp_server_exch_dest(struct pingpong_context *ctx,$/;"	f	file:
+psn	ibverbs_examples\srq_pingpong.c	/^	int psn;$/;"	m	struct:pingpong_dest	file:
+qp	ibverbs_examples\srq_pingpong.c	/^	struct ibv_qp		*qp[MAX_QP];$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+qpn	ibverbs_examples\srq_pingpong.c	/^	int qpn;$/;"	m	struct:pingpong_dest	file:
+rx_depth	ibverbs_examples\srq_pingpong.c	/^	int			 rx_depth;$/;"	m	struct:pingpong_context	file:
+send_flags	ibverbs_examples\srq_pingpong.c	/^	int			 send_flags;$/;"	m	struct:pingpong_context	file:
+size	ibverbs_examples\srq_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+srq	ibverbs_examples\srq_pingpong.c	/^	struct ibv_srq		*srq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_srq	file:
+usage	ibverbs_examples\srq_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+PINGPONG_RECV_WRID	ibverbs_examples\uc_pingpong.c	/^	PINGPONG_RECV_WRID = 1,$/;"	e	enum:__anon4	file:
+PINGPONG_SEND_WRID	ibverbs_examples\uc_pingpong.c	/^	PINGPONG_SEND_WRID = 2,$/;"	e	enum:__anon4	file:
+buf	ibverbs_examples\uc_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+channel	ibverbs_examples\uc_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+context	ibverbs_examples\uc_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+cq	ibverbs_examples\uc_pingpong.c	/^	struct ibv_cq		*cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+gid	ibverbs_examples\uc_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+lid	ibverbs_examples\uc_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+main	ibverbs_examples\uc_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+mr	ibverbs_examples\uc_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+page_size	ibverbs_examples\uc_pingpong.c	/^static int page_size;$/;"	v	file:
+pd	ibverbs_examples\uc_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pending	ibverbs_examples\uc_pingpong.c	/^	int			 pending;$/;"	m	struct:pingpong_context	file:
+pingpong_context	ibverbs_examples\uc_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_dest	ibverbs_examples\uc_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+portinfo	ibverbs_examples\uc_pingpong.c	/^	struct ibv_port_attr     portinfo;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_port_attr	file:
+pp_client_exch_dest	ibverbs_examples\uc_pingpong.c	/^static struct pingpong_dest *pp_client_exch_dest(const char *servername, int port,$/;"	f	file:
+pp_close_ctx	ibverbs_examples\uc_pingpong.c	/^int pp_close_ctx(struct pingpong_context *ctx)$/;"	f
+pp_connect_ctx	ibverbs_examples\uc_pingpong.c	/^static int pp_connect_ctx(struct pingpong_context *ctx, int port, int my_psn,$/;"	f	file:
+pp_init_ctx	ibverbs_examples\uc_pingpong.c	/^static struct pingpong_context *pp_init_ctx(struct ibv_device *ib_dev, int size,$/;"	f	file:
+pp_post_recv	ibverbs_examples\uc_pingpong.c	/^static int pp_post_recv(struct pingpong_context *ctx, int n)$/;"	f	file:
+pp_post_send	ibverbs_examples\uc_pingpong.c	/^static int pp_post_send(struct pingpong_context *ctx)$/;"	f	file:
+pp_server_exch_dest	ibverbs_examples\uc_pingpong.c	/^static struct pingpong_dest *pp_server_exch_dest(struct pingpong_context *ctx,$/;"	f	file:
+psn	ibverbs_examples\uc_pingpong.c	/^	int psn;$/;"	m	struct:pingpong_dest	file:
+qp	ibverbs_examples\uc_pingpong.c	/^	struct ibv_qp		*qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+qpn	ibverbs_examples\uc_pingpong.c	/^	int qpn;$/;"	m	struct:pingpong_dest	file:
+rx_depth	ibverbs_examples\uc_pingpong.c	/^	int			 rx_depth;$/;"	m	struct:pingpong_context	file:
+send_flags	ibverbs_examples\uc_pingpong.c	/^	int			 send_flags;$/;"	m	struct:pingpong_context	file:
+size	ibverbs_examples\uc_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+usage	ibverbs_examples\uc_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+PINGPONG_RECV_WRID	ibverbs_examples\ud_pingpong.c	/^	PINGPONG_RECV_WRID = 1,$/;"	e	enum:__anon5	file:
+PINGPONG_SEND_WRID	ibverbs_examples\ud_pingpong.c	/^	PINGPONG_SEND_WRID = 2,$/;"	e	enum:__anon5	file:
+ah	ibverbs_examples\ud_pingpong.c	/^	struct ibv_ah		*ah;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_ah	file:
+buf	ibverbs_examples\ud_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+channel	ibverbs_examples\ud_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+context	ibverbs_examples\ud_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+cq	ibverbs_examples\ud_pingpong.c	/^	struct ibv_cq		*cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+gid	ibverbs_examples\ud_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+lid	ibverbs_examples\ud_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+main	ibverbs_examples\ud_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+mr	ibverbs_examples\ud_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+page_size	ibverbs_examples\ud_pingpong.c	/^static int page_size;$/;"	v	file:
+pd	ibverbs_examples\ud_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pending	ibverbs_examples\ud_pingpong.c	/^	int			 pending;$/;"	m	struct:pingpong_context	file:
+pingpong_context	ibverbs_examples\ud_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_dest	ibverbs_examples\ud_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+portinfo	ibverbs_examples\ud_pingpong.c	/^	struct ibv_port_attr     portinfo;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_port_attr	file:
+pp_client_exch_dest	ibverbs_examples\ud_pingpong.c	/^static struct pingpong_dest *pp_client_exch_dest(const char *servername, int port,$/;"	f	file:
+pp_close_ctx	ibverbs_examples\ud_pingpong.c	/^int pp_close_ctx(struct pingpong_context *ctx)$/;"	f
+pp_connect_ctx	ibverbs_examples\ud_pingpong.c	/^static int pp_connect_ctx(struct pingpong_context *ctx, int port, int my_psn,$/;"	f	file:
+pp_init_ctx	ibverbs_examples\ud_pingpong.c	/^static struct pingpong_context *pp_init_ctx(struct ibv_device *ib_dev, int size,$/;"	f	file:
+pp_post_recv	ibverbs_examples\ud_pingpong.c	/^static int pp_post_recv(struct pingpong_context *ctx, int n)$/;"	f	file:
+pp_post_send	ibverbs_examples\ud_pingpong.c	/^static int pp_post_send(struct pingpong_context *ctx, uint32_t qpn)$/;"	f	file:
+pp_server_exch_dest	ibverbs_examples\ud_pingpong.c	/^static struct pingpong_dest *pp_server_exch_dest(struct pingpong_context *ctx,$/;"	f	file:
+psn	ibverbs_examples\ud_pingpong.c	/^	int psn;$/;"	m	struct:pingpong_dest	file:
+qp	ibverbs_examples\ud_pingpong.c	/^	struct ibv_qp		*qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+qpn	ibverbs_examples\ud_pingpong.c	/^	int qpn;$/;"	m	struct:pingpong_dest	file:
+rx_depth	ibverbs_examples\ud_pingpong.c	/^	int			 rx_depth;$/;"	m	struct:pingpong_context	file:
+send_flags	ibverbs_examples\ud_pingpong.c	/^	int			 send_flags;$/;"	m	struct:pingpong_context	file:
+size	ibverbs_examples\ud_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+usage	ibverbs_examples\ud_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+ADDR_FORMAT	ibverbs_examples\xsrq_pingpong.c	58;"	d	file:
+MSG_FORMAT	ibverbs_examples\xsrq_pingpong.c	55;"	d	file:
+MSG_SIZE	ibverbs_examples\xsrq_pingpong.c	56;"	d	file:
+MSG_SSCAN	ibverbs_examples\xsrq_pingpong.c	57;"	d	file:
+TERMINATION_FORMAT	ibverbs_examples\xsrq_pingpong.c	60;"	d	file:
+TERMINATION_MSG	ibverbs_examples\xsrq_pingpong.c	62;"	d	file:
+TERMINATION_MSG_SIZE	ibverbs_examples\xsrq_pingpong.c	61;"	d	file:
+buf	ibverbs_examples\xsrq_pingpong.c	/^	void			*buf;$/;"	m	struct:pingpong_context	file:
+channel	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_comp_channel	file:
+connect_qps	ibverbs_examples\xsrq_pingpong.c	/^static int connect_qps(int index)$/;"	f	file:
+context	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_context	*context;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_context	file:
+create_qps	ibverbs_examples\xsrq_pingpong.c	/^static int create_qps(void)$/;"	f	file:
+ctx	ibverbs_examples\xsrq_pingpong.c	/^struct pingpong_context ctx;$/;"	v	typeref:struct:pingpong_context
+fd	ibverbs_examples\xsrq_pingpong.c	/^	int			 fd;$/;"	m	struct:pingpong_context	file:
+find_qp	ibverbs_examples\xsrq_pingpong.c	/^static int find_qp(int qpn)$/;"	f	file:
+get_cq_event	ibverbs_examples\xsrq_pingpong.c	/^static int get_cq_event(void)$/;"	f	file:
+gid	ibverbs_examples\xsrq_pingpong.c	/^	union ibv_gid gid;$/;"	m	struct:pingpong_dest	typeref:union:pingpong_dest::ibv_gid	file:
+gidx	ibverbs_examples\xsrq_pingpong.c	/^	int			 gidx;$/;"	m	struct:pingpong_context	file:
+ib_port	ibverbs_examples\xsrq_pingpong.c	/^	int			 ib_port;$/;"	m	struct:pingpong_context	file:
+init	ibverbs_examples\xsrq_pingpong.c	/^static void init(void)$/;"	f	file:
+lid	ibverbs_examples\xsrq_pingpong.c	/^	int			 lid;$/;"	m	struct:pingpong_context	file:
+lid	ibverbs_examples\xsrq_pingpong.c	/^	int lid;$/;"	m	struct:pingpong_dest	file:
+main	ibverbs_examples\xsrq_pingpong.c	/^int main(int argc, char *argv[])$/;"	f
+mr	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_mr		*mr;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_mr	file:
+mtu	ibverbs_examples\xsrq_pingpong.c	/^	enum ibv_mtu		 mtu;$/;"	m	struct:pingpong_context	typeref:enum:pingpong_context::ibv_mtu	file:
+num_clients	ibverbs_examples\xsrq_pingpong.c	/^	int			 num_clients;$/;"	m	struct:pingpong_context	file:
+num_tests	ibverbs_examples\xsrq_pingpong.c	/^	int			 num_tests;$/;"	m	struct:pingpong_context	file:
+open_device	ibverbs_examples\xsrq_pingpong.c	/^static int open_device(char *ib_devname)$/;"	f	file:
+page_size	ibverbs_examples\xsrq_pingpong.c	/^static int page_size;$/;"	v	file:
+pd	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_pd		*pd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_pd	file:
+pingpong_context	ibverbs_examples\xsrq_pingpong.c	/^struct pingpong_context {$/;"	s	file:
+pingpong_dest	ibverbs_examples\xsrq_pingpong.c	/^struct pingpong_dest {$/;"	s	file:
+pp_client_connect	ibverbs_examples\xsrq_pingpong.c	/^static int pp_client_connect(const char *servername, int port)$/;"	f	file:
+pp_client_termination	ibverbs_examples\xsrq_pingpong.c	/^static int pp_client_termination()$/;"	f	file:
+pp_close_ctx	ibverbs_examples\xsrq_pingpong.c	/^static int pp_close_ctx(void)$/;"	f	file:
+pp_cnt	ibverbs_examples\xsrq_pingpong.c	/^	int pp_cnt;$/;"	m	struct:pingpong_dest	file:
+pp_init_ctx	ibverbs_examples\xsrq_pingpong.c	/^static int pp_init_ctx(char *ib_devname)$/;"	f	file:
+pp_post_recv	ibverbs_examples\xsrq_pingpong.c	/^static int pp_post_recv(int cnt)$/;"	f	file:
+pp_post_send	ibverbs_examples\xsrq_pingpong.c	/^static int pp_post_send(int index)$/;"	f	file:
+pp_server_connect	ibverbs_examples\xsrq_pingpong.c	/^static int pp_server_connect(int port)$/;"	f	file:
+pp_server_termination	ibverbs_examples\xsrq_pingpong.c	/^static int pp_server_termination()$/;"	f	file:
+recv_cq	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_cq		*recv_cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+recv_psn	ibverbs_examples\xsrq_pingpong.c	/^	int recv_psn;$/;"	m	struct:pingpong_dest	file:
+recv_qp	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_qp		**recv_qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+recv_qpn	ibverbs_examples\xsrq_pingpong.c	/^	int recv_qpn;$/;"	m	struct:pingpong_dest	file:
+recv_remote_dest	ibverbs_examples\xsrq_pingpong.c	/^static int recv_remote_dest(int sockfd, int index)$/;"	f	file:
+recv_termination_ack	ibverbs_examples\xsrq_pingpong.c	/^static int recv_termination_ack(int index)$/;"	f	file:
+rem_dest	ibverbs_examples\xsrq_pingpong.c	/^	struct pingpong_dest	*rem_dest;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::pingpong_dest	file:
+send_cq	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_cq		*send_cq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_cq	file:
+send_local_dest	ibverbs_examples\xsrq_pingpong.c	/^static int send_local_dest(int sockfd, int index)$/;"	f	file:
+send_psn	ibverbs_examples\xsrq_pingpong.c	/^	int send_psn;$/;"	m	struct:pingpong_dest	file:
+send_qp	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_qp		**send_qp;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_qp	file:
+send_qpn	ibverbs_examples\xsrq_pingpong.c	/^	int send_qpn;$/;"	m	struct:pingpong_dest	file:
+send_termination_ack	ibverbs_examples\xsrq_pingpong.c	/^static int send_termination_ack(int index)$/;"	f	file:
+set_ah_attr	ibverbs_examples\xsrq_pingpong.c	/^static void set_ah_attr(struct ibv_ah_attr *attr, struct pingpong_context *ctx,$/;"	f	file:
+size	ibverbs_examples\xsrq_pingpong.c	/^	int			 size;$/;"	m	struct:pingpong_context	file:
+sl	ibverbs_examples\xsrq_pingpong.c	/^	int			 sl;$/;"	m	struct:pingpong_context	file:
+sockfd	ibverbs_examples\xsrq_pingpong.c	/^	int sockfd;$/;"	m	struct:pingpong_dest	file:
+srq	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_srq		*srq;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_srq	file:
+srqn	ibverbs_examples\xsrq_pingpong.c	/^	int srqn;$/;"	m	struct:pingpong_dest	file:
+usage	ibverbs_examples\xsrq_pingpong.c	/^static void usage(const char *argv0)$/;"	f	file:
+use_event	ibverbs_examples\xsrq_pingpong.c	/^	int			 use_event;$/;"	m	struct:pingpong_context	file:
+xrcd	ibverbs_examples\xsrq_pingpong.c	/^	struct ibv_xrcd		*xrcd;$/;"	m	struct:pingpong_context	typeref:struct:pingpong_context::ibv_xrcd	file:
+addr_handler	mckey.c	/^static int addr_handler(struct cmatest_node *node)$/;"	f	file:
+ah	mckey.c	/^	struct ibv_ah		*ah;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_ah	file:
+alloc_nodes	mckey.c	/^static int alloc_nodes(void)$/;"	f	file:
+channel	mckey.c	/^	struct rdma_event_channel *channel;$/;"	m	struct:cmatest	typeref:struct:cmatest::rdma_event_channel	file:
+cma_handler	mckey.c	/^static int cma_handler(struct rdma_cm_id *cma_id, struct rdma_cm_event *event)$/;"	f	file:
+cma_id	mckey.c	/^	struct rdma_cm_id	*cma_id;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::rdma_cm_id	file:
+cma_thread	mckey.c	/^static void *cma_thread(void *arg)$/;"	f	file:
+cmatest	mckey.c	/^struct cmatest {$/;"	s	file:
+cmatest_node	mckey.c	/^struct cmatest_node {$/;"	s	file:
+cmathread	mckey.c	/^	pthread_t 		cmathread;$/;"	m	struct:cmatest	file:
+conn_index	mckey.c	/^	int			conn_index;$/;"	m	struct:cmatest	file:
+connect_error	mckey.c	/^static void connect_error(void)$/;"	f	file:
+connect_events	mckey.c	/^static int connect_events(void)$/;"	f	file:
+connected	mckey.c	/^	int			connected;$/;"	m	struct:cmatest_node	file:
+connections	mckey.c	/^static int connections = 1;$/;"	v	file:
+connects_left	mckey.c	/^	int			connects_left;$/;"	m	struct:cmatest	file:
+cq	mckey.c	/^	struct ibv_cq		*cq;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_cq	file:
+create_message	mckey.c	/^static int create_message(struct cmatest_node *node)$/;"	f	file:
+destroy_node	mckey.c	/^static void destroy_node(struct cmatest_node *node)$/;"	f	file:
+destroy_nodes	mckey.c	/^static void destroy_nodes(void)$/;"	f	file:
+dst_addr	mckey.c	/^	struct sockaddr		*dst_addr;$/;"	m	struct:cmatest	typeref:struct:cmatest::sockaddr	file:
+dst_addr	mckey.c	/^static char *dst_addr;$/;"	v	file:
+dst_in	mckey.c	/^	struct sockaddr_storage	dst_in;$/;"	m	struct:cmatest	typeref:struct:cmatest::sockaddr_storage	file:
+get_addr	mckey.c	/^static int get_addr(char *dst, struct sockaddr *addr)$/;"	f	file:
+get_dst_addr	mckey.c	/^static int get_dst_addr(char *dst, struct sockaddr *addr)$/;"	f	file:
+id	mckey.c	/^	int			id;$/;"	m	struct:cmatest_node	file:
+init_node	mckey.c	/^static int init_node(struct cmatest_node *node)$/;"	f	file:
+is_sender	mckey.c	/^static int is_sender;$/;"	v	file:
+join_handler	mckey.c	/^static int join_handler(struct cmatest_node *node,$/;"	f	file:
+main	mckey.c	/^int main(int argc, char **argv)$/;"	f
+mem	mckey.c	/^	void			*mem;$/;"	m	struct:cmatest_node	file:
+message_count	mckey.c	/^static int message_count = 10;$/;"	v	file:
+message_size	mckey.c	/^static int message_size = 100;$/;"	v	file:
+mr	mckey.c	/^	struct ibv_mr		*mr;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_mr	file:
+nodes	mckey.c	/^	struct cmatest_node	*nodes;$/;"	m	struct:cmatest	typeref:struct:cmatest::cmatest_node	file:
+pd	mckey.c	/^	struct ibv_pd		*pd;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_pd	file:
+poll_cqs	mckey.c	/^static int poll_cqs(void)$/;"	f	file:
+port_space	mckey.c	/^static enum rdma_port_space port_space = RDMA_PS_UDP;$/;"	v	typeref:enum:rdma_port_space	file:
+post_recvs	mckey.c	/^static int post_recvs(struct cmatest_node *node)$/;"	f	file:
+post_sends	mckey.c	/^static int post_sends(struct cmatest_node *node, int signal_flag)$/;"	f	file:
+remote_qkey	mckey.c	/^	uint32_t		remote_qkey;$/;"	m	struct:cmatest_node	file:
+remote_qpn	mckey.c	/^	uint32_t		remote_qpn;$/;"	m	struct:cmatest_node	file:
+run	mckey.c	/^static int run(void)$/;"	f	file:
+src_addr	mckey.c	/^	struct sockaddr		*src_addr;$/;"	m	struct:cmatest	typeref:struct:cmatest::sockaddr	file:
+src_addr	mckey.c	/^static char *src_addr;$/;"	v	file:
+src_in	mckey.c	/^	struct sockaddr_storage	src_in;$/;"	m	struct:cmatest	typeref:struct:cmatest::sockaddr_storage	file:
+test	mckey.c	/^static struct cmatest test;$/;"	v	typeref:struct:cmatest	file:
+unmapped_addr	mckey.c	/^static int unmapped_addr;$/;"	v	file:
+verify_test_params	mckey.c	/^static int verify_test_params(struct cmatest_node *node)$/;"	f	file:
+CMD_CLOSE	rcopy.c	/^	CMD_CLOSE,$/;"	e	enum:__anon6	file:
+CMD_NOOP	rcopy.c	/^	CMD_NOOP,$/;"	e	enum:__anon6	file:
+CMD_OPEN	rcopy.c	/^	CMD_OPEN,$/;"	e	enum:__anon6	file:
+CMD_RESP	rcopy.c	/^	CMD_RESP = 0x80,$/;"	e	enum:__anon6	file:
+CMD_WRITE	rcopy.c	/^	CMD_WRITE,$/;"	e	enum:__anon6	file:
+_ntop	rcopy.c	/^static char *_ntop(union rsocket_address *rsa)$/;"	f	file:
+_recv	rcopy.c	/^static size_t _recv(int rs, char *msg, size_t len)$/;"	f	file:
+bytes	rcopy.c	/^static uint64_t bytes;$/;"	v	file:
+client_close	rcopy.c	/^static int client_close(int rs)$/;"	f	file:
+client_connect	rcopy.c	/^static int client_connect(void)$/;"	f	file:
+client_open	rcopy.c	/^static int client_open(int rs)$/;"	f	file:
+client_opts	rcopy.c	/^static void client_opts(int argc, char **argv)$/;"	f	file:
+client_run	rcopy.c	/^static int client_run(void)$/;"	f	file:
+client_start_write	rcopy.c	/^static int client_start_write(int rs)$/;"	f	file:
+command	rcopy.c	/^	uint8_t  command;$/;"	m	struct:msg_hdr	file:
+data	rcopy.c	/^	uint32_t data;$/;"	m	struct:msg_hdr	file:
+dst_addr	rcopy.c	/^static char *dst_addr;$/;"	v	file:
+dst_file	rcopy.c	/^static char *dst_file;$/;"	v	file:
+end	rcopy.c	/^static struct timeval start, end;$/;"	v	typeref:struct:	file:
+fd	rcopy.c	/^int fd;$/;"	v
+file_addr	rcopy.c	/^void *file_addr;$/;"	v
+hdr	rcopy.c	/^	struct msg_hdr hdr;$/;"	m	struct:msg_open	typeref:struct:msg_open::msg_hdr	file:
+hdr	rcopy.c	/^	struct msg_hdr hdr;$/;"	m	struct:msg_write	typeref:struct:msg_write::msg_hdr	file:
+id	rcopy.c	/^	uint64_t id;$/;"	m	struct:msg_hdr	file:
+len	rcopy.c	/^	uint16_t len;$/;"	m	struct:msg_hdr	file:
+main	rcopy.c	/^int main(int argc, char **argv)$/;"	f
+msg_get_resp	rcopy.c	/^static int msg_get_resp(int rs, struct msg_hdr *msg, uint8_t cmd)$/;"	f	file:
+msg_hdr	rcopy.c	/^struct msg_hdr {$/;"	s	file:
+msg_open	rcopy.c	/^struct msg_open {$/;"	s	file:
+msg_recv_hdr	rcopy.c	/^static int msg_recv_hdr(int rs, struct msg_hdr *hdr)$/;"	f	file:
+msg_send_resp	rcopy.c	/^static void msg_send_resp(int rs, struct msg_hdr *msg, uint32_t status)$/;"	f	file:
+msg_write	rcopy.c	/^struct msg_write {$/;"	s	file:
+path	rcopy.c	/^	char path[0];$/;"	m	struct:msg_open	file:
+port	rcopy.c	/^static char *port = "7427";$/;"	v	file:
+rsocket_address	rcopy.c	/^union rsocket_address {$/;"	u	file:
+sa	rcopy.c	/^	struct sockaddr		sa;$/;"	m	union:rsocket_address	typeref:struct:rsocket_address::sockaddr	file:
+server_close	rcopy.c	/^static void server_close(int rs, struct msg_hdr *msg)$/;"	f	file:
+server_listen	rcopy.c	/^static int server_listen(void)$/;"	f	file:
+server_open	rcopy.c	/^static int server_open(int rs, struct msg_hdr *msg)$/;"	f	file:
+server_opts	rcopy.c	/^static void server_opts(int argc, char **argv)$/;"	f	file:
+server_process	rcopy.c	/^static void server_process(int rs)$/;"	f	file:
+server_run	rcopy.c	/^static int server_run(void)$/;"	f	file:
+server_write	rcopy.c	/^static int server_write(int rs, struct msg_hdr *msg)$/;"	f	file:
+show_perf	rcopy.c	/^static void show_perf(void)$/;"	f	file:
+show_usage	rcopy.c	/^static void show_usage(char *program)$/;"	f	file:
+sin	rcopy.c	/^	struct sockaddr_in	sin;$/;"	m	union:rsocket_address	typeref:struct:rsocket_address::sockaddr_in	file:
+sin6	rcopy.c	/^	struct sockaddr_in6	sin6;$/;"	m	union:rsocket_address	typeref:struct:rsocket_address::sockaddr_in6	file:
+size	rcopy.c	/^	uint64_t size;$/;"	m	struct:msg_write	file:
+src_file	rcopy.c	/^static char *src_file;$/;"	v	file:
+start	rcopy.c	/^static struct timeval start, end;$/;"	v	typeref:struct:timeval	file:
+storage	rcopy.c	/^	struct sockaddr_storage storage;$/;"	m	union:rsocket_address	typeref:struct:rsocket_address::sockaddr_storage	file:
+version	rcopy.c	/^	uint8_t  version;$/;"	m	struct:msg_hdr	file:
+id	rdma_client.c	/^struct rdma_cm_id *id;$/;"	v	typeref:struct:rdma_cm_id
+main	rdma_client.c	/^int main(int argc, char **argv)$/;"	f
+mr	rdma_client.c	/^struct ibv_mr *mr, *send_mr;$/;"	v	typeref:struct:ibv_mr
+port	rdma_client.c	/^static char *port = "7471";$/;"	v	file:
+recv_msg	rdma_client.c	/^uint8_t recv_msg[16];$/;"	v
+run	rdma_client.c	/^static int run(void)$/;"	f	file:
+send_flags	rdma_client.c	/^int send_flags;$/;"	v
+send_mr	rdma_client.c	/^struct ibv_mr *mr, *send_mr;$/;"	v	typeref:struct:
+send_msg	rdma_client.c	/^uint8_t send_msg[16];$/;"	v
+server	rdma_client.c	/^static char *server = "127.0.0.1";$/;"	v	file:
+id	rdma_server.c	/^struct rdma_cm_id *listen_id, *id;$/;"	v	typeref:struct:
+listen_id	rdma_server.c	/^struct rdma_cm_id *listen_id, *id;$/;"	v	typeref:struct:rdma_cm_id
+main	rdma_server.c	/^int main(int argc, char **argv)$/;"	f
+mr	rdma_server.c	/^struct ibv_mr *mr, *send_mr;$/;"	v	typeref:struct:ibv_mr
+port	rdma_server.c	/^static char *port = "7471";$/;"	v	file:
+recv_msg	rdma_server.c	/^uint8_t recv_msg[16];$/;"	v
+run	rdma_server.c	/^static int run(void)$/;"	f	file:
+send_flags	rdma_server.c	/^int send_flags;$/;"	v
+send_mr	rdma_server.c	/^struct ibv_mr *mr, *send_mr;$/;"	v	typeref:struct:
+send_msg	rdma_server.c	/^uint8_t send_msg[16];$/;"	v
+hints	rdma_xclient.c	/^struct rdma_addrinfo hints;$/;"	v	typeref:struct:rdma_addrinfo
+id	rdma_xclient.c	/^struct rdma_cm_id *id;$/;"	v	typeref:struct:rdma_cm_id
+main	rdma_xclient.c	/^int main(int argc, char **argv)$/;"	f
+mr	rdma_xclient.c	/^struct ibv_mr *mr;$/;"	v	typeref:struct:ibv_mr
+port	rdma_xclient.c	/^static char port[6] = "7471";$/;"	v	file:
+post_send	rdma_xclient.c	/^static int post_send(void)$/;"	f	file:
+send_msg	rdma_xclient.c	/^uint8_t send_msg[16];$/;"	v
+server	rdma_xclient.c	/^static char *server = "127.0.0.1";$/;"	v	file:
+srqn	rdma_xclient.c	/^uint32_t srqn;$/;"	v
+test	rdma_xclient.c	/^static int test(void)$/;"	f	file:
+create_srq	rdma_xserver.c	/^static int create_srq(void)$/;"	f	file:
+hints	rdma_xserver.c	/^struct rdma_addrinfo hints;$/;"	v	typeref:struct:rdma_addrinfo
+id	rdma_xserver.c	/^struct rdma_cm_id *listen_id, *id;$/;"	v	typeref:struct:
+listen_id	rdma_xserver.c	/^struct rdma_cm_id *listen_id, *id;$/;"	v	typeref:struct:rdma_cm_id
+main	rdma_xserver.c	/^int main(int argc, char **argv)$/;"	f
+mr	rdma_xserver.c	/^struct ibv_mr *mr;$/;"	v	typeref:struct:ibv_mr
+port	rdma_xserver.c	/^static char *port = "7471";$/;"	v	file:
+recv_msg	rdma_xserver.c	/^uint8_t recv_msg[16];$/;"	v
+srqn	rdma_xserver.c	/^uint32_t srqn;$/;"	v
+test	rdma_xserver.c	/^static int test(void)$/;"	f	file:
+TEST_CNT	riostream.c	75;"	d	file:
+ai_hints	riostream.c	/^static struct addrinfo ai_hints;$/;"	v	typeref:struct:addrinfo	file:
+buf	riostream.c	/^static void *buf;$/;"	v	file:
+buffer_size	riostream.c	/^static int buffer_size, inline_size = 64;$/;"	v	file:
+client_connect	riostream.c	/^static int client_connect(void)$/;"	f	file:
+custom	riostream.c	/^static int custom;$/;"	v	file:
+dst_addr	riostream.c	/^static char *dst_addr;$/;"	v	file:
+end	riostream.c	/^static struct timeval start, end;$/;"	v	typeref:struct:	file:
+flags	riostream.c	/^static int flags = MSG_DONTWAIT;$/;"	v	file:
+init_bandwidth_test	riostream.c	/^static void init_bandwidth_test(int size)$/;"	f	file:
+init_latency_test	riostream.c	/^static void init_latency_test(int size)$/;"	f	file:
+inline_size	riostream.c	/^static int buffer_size, inline_size = 64;$/;"	v	file:
+iterations	riostream.c	/^static int iterations = 1;$/;"	v	file:
+lrs	riostream.c	/^static int rs, lrs;$/;"	v	file:
+main	riostream.c	/^int main(int argc, char **argv)$/;"	f
+optimization	riostream.c	/^static enum rs_optimization optimization;$/;"	v	typeref:enum:rs_optimization	file:
+option	riostream.c	/^	int option;$/;"	m	struct:test_size_param	file:
+poll_byte	riostream.c	/^static volatile uint8_t *poll_byte;$/;"	v	file:
+poll_timeout	riostream.c	/^static int poll_timeout = 0;$/;"	v	file:
+port	riostream.c	/^static char *port = "7471";$/;"	v	file:
+rai_hints	riostream.c	/^static struct rdma_addrinfo rai_hints;$/;"	v	typeref:struct:rdma_addrinfo	file:
+recv_msg	riostream.c	/^static int recv_msg(int size)$/;"	f	file:
+recv_xfer	riostream.c	/^static int recv_xfer(int size, uint8_t marker)$/;"	f	file:
+rs	riostream.c	/^static int rs, lrs;$/;"	v	file:
+run	riostream.c	/^static int run(void)$/;"	f	file:
+run_test	riostream.c	/^static int run_test(void)$/;"	f	file:
+send_msg	riostream.c	/^static int send_msg(int size)$/;"	f	file:
+send_xfer	riostream.c	/^static int send_xfer(int size)$/;"	f	file:
+server_connect	riostream.c	/^static int server_connect(void)$/;"	f	file:
+server_listen	riostream.c	/^static int server_listen(void)$/;"	f	file:
+set_options	riostream.c	/^static void set_options(int rs)$/;"	f	file:
+set_test_opt	riostream.c	/^static int set_test_opt(char *optarg)$/;"	f	file:
+show_perf	riostream.c	/^static void show_perf(void)$/;"	f	file:
+size	riostream.c	/^	int size;$/;"	m	struct:test_size_param	file:
+size_option	riostream.c	/^static int size_option;$/;"	v	file:
+src_addr	riostream.c	/^static char *src_addr;$/;"	v	file:
+start	riostream.c	/^static struct timeval start, end;$/;"	v	typeref:struct:timeval	file:
+sync_test	riostream.c	/^static int sync_test(void)$/;"	f	file:
+test_name	riostream.c	/^static char test_name[10] = "custom";$/;"	v	file:
+test_size	riostream.c	/^static struct test_size_param test_size[] = {$/;"	v	typeref:struct:test_size_param	file:
+test_size_param	riostream.c	/^struct test_size_param {$/;"	s	file:
+transfer_count	riostream.c	/^static int transfer_count = 1000;$/;"	v	file:
+transfer_size	riostream.c	/^static int transfer_size = 1000;$/;"	v	file:
+use_async	riostream.c	/^static int use_async;$/;"	v	file:
+use_rgai	riostream.c	/^static int use_rgai;$/;"	v	file:
+verify	riostream.c	/^static int verify;$/;"	v	file:
+ADDR_RESOLVED	rping.c	/^	ADDR_RESOLVED,$/;"	e	enum:test_state	file:
+CONNECTED	rping.c	/^	CONNECTED,$/;"	e	enum:test_state	file:
+CONNECT_REQUEST	rping.c	/^	CONNECT_REQUEST,$/;"	e	enum:test_state	file:
+DEBUG_LOG	rping.c	53;"	d	file:
+DISCONNECTED	rping.c	/^	DISCONNECTED,$/;"	e	enum:test_state	file:
+ERROR	rping.c	/^	ERROR$/;"	e	enum:test_state	file:
+IDLE	rping.c	/^	IDLE = 1,$/;"	e	enum:test_state	file:
+RDMA_READ_ADV	rping.c	/^	RDMA_READ_ADV,$/;"	e	enum:test_state	file:
+RDMA_READ_COMPLETE	rping.c	/^	RDMA_READ_COMPLETE,$/;"	e	enum:test_state	file:
+RDMA_WRITE_ADV	rping.c	/^	RDMA_WRITE_ADV,$/;"	e	enum:test_state	file:
+RDMA_WRITE_COMPLETE	rping.c	/^	RDMA_WRITE_COMPLETE,$/;"	e	enum:test_state	file:
+ROUTE_RESOLVED	rping.c	/^	ROUTE_RESOLVED,$/;"	e	enum:test_state	file:
+RPING_BUFSIZE	rping.c	98;"	d	file:
+RPING_MIN_BUFSIZE	rping.c	108;"	d	file:
+RPING_MSG_FMT	rping.c	107;"	d	file:
+RPING_SQ_DEPTH	rping.c	99;"	d	file:
+_stringify	rping.c	104;"	d	file:
+buf	rping.c	/^	uint64_t buf;$/;"	m	struct:rping_rdma_info	file:
+channel	rping.c	/^	struct ibv_comp_channel *channel;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_comp_channel	file:
+child_cm_id	rping.c	/^	struct rdma_cm_id *child_cm_id;	\/* connection on server side *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::rdma_cm_id	file:
+client_recv	rping.c	/^static int client_recv(struct rping_cb *cb, struct ibv_wc *wc)$/;"	f	file:
+clone_cb	rping.c	/^static struct rping_cb *clone_cb(struct rping_cb *listening_cb)$/;"	f	file:
+cm_channel	rping.c	/^	struct rdma_event_channel *cm_channel;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::rdma_event_channel	file:
+cm_id	rping.c	/^	struct rdma_cm_id *cm_id;	\/* connection on client side,*\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::rdma_cm_id	file:
+cm_thread	rping.c	/^static void *cm_thread(void *arg)$/;"	f	file:
+cmthread	rping.c	/^	pthread_t cmthread;$/;"	m	struct:rping_cb	file:
+count	rping.c	/^	int count;			\/* ping count *\/$/;"	m	struct:rping_cb	file:
+cq	rping.c	/^	struct ibv_cq *cq;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_cq	file:
+cq_thread	rping.c	/^static void *cq_thread(void *arg)$/;"	f	file:
+cqthread	rping.c	/^	pthread_t cqthread;$/;"	m	struct:rping_cb	file:
+debug	rping.c	/^static int debug = 0;$/;"	v	file:
+free_cb	rping.c	/^static void free_cb(struct rping_cb *cb)$/;"	f	file:
+get_addr	rping.c	/^static int get_addr(char *dst, struct sockaddr *addr)$/;"	f	file:
+main	rping.c	/^int main(int argc, char *argv[])$/;"	f
+pd	rping.c	/^	struct ibv_pd *pd;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_pd	file:
+persistent_server_thread	rping.c	/^	pthread_t persistent_server_thread;$/;"	m	struct:rping_cb	file:
+port	rping.c	/^	uint16_t port;			\/* dst port in NBO *\/$/;"	m	struct:rping_cb	file:
+qp	rping.c	/^	struct ibv_qp *qp;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_qp	file:
+rdma_buf	rping.c	/^	char *rdma_buf;			\/* used as rdma sink *\/$/;"	m	struct:rping_cb	file:
+rdma_mr	rping.c	/^	struct ibv_mr *rdma_mr;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_mr	file:
+rdma_sgl	rping.c	/^	struct ibv_sge rdma_sgl;	\/* rdma single SGE *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_sge	file:
+rdma_sq_wr	rping.c	/^	struct ibv_send_wr rdma_sq_wr;	\/* rdma work request record *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_send_wr	file:
+recv_buf	rping.c	/^	struct rping_rdma_info recv_buf;\/* malloc'd buffer *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::rping_rdma_info	file:
+recv_mr	rping.c	/^	struct ibv_mr *recv_mr;		\/* MR associated with this buffer *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_mr	file:
+recv_sgl	rping.c	/^	struct ibv_sge recv_sgl;	\/* recv single SGE *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_sge	file:
+remote_addr	rping.c	/^	uint64_t remote_addr;		\/* remote guys TO *\/$/;"	m	struct:rping_cb	file:
+remote_len	rping.c	/^	uint32_t remote_len;		\/* remote guys LEN *\/$/;"	m	struct:rping_cb	file:
+remote_rkey	rping.c	/^	uint32_t remote_rkey;		\/* remote guys RKEY *\/$/;"	m	struct:rping_cb	file:
+rkey	rping.c	/^	uint32_t rkey;$/;"	m	struct:rping_rdma_info	file:
+rping_accept	rping.c	/^static int rping_accept(struct rping_cb *cb)$/;"	f	file:
+rping_bind_client	rping.c	/^static int rping_bind_client(struct rping_cb *cb)$/;"	f	file:
+rping_bind_server	rping.c	/^static int rping_bind_server(struct rping_cb *cb)$/;"	f	file:
+rping_cb	rping.c	/^struct rping_cb {$/;"	s	file:
+rping_cma_event_handler	rping.c	/^static int rping_cma_event_handler(struct rdma_cm_id *cma_id,$/;"	f	file:
+rping_connect_client	rping.c	/^static int rping_connect_client(struct rping_cb *cb)$/;"	f	file:
+rping_cq_event_handler	rping.c	/^static int rping_cq_event_handler(struct rping_cb *cb)$/;"	f	file:
+rping_create_qp	rping.c	/^static int rping_create_qp(struct rping_cb *cb)$/;"	f	file:
+rping_format_send	rping.c	/^static void rping_format_send(struct rping_cb *cb, char *buf, struct ibv_mr *mr)$/;"	f	file:
+rping_free_buffers	rping.c	/^static void rping_free_buffers(struct rping_cb *cb)$/;"	f	file:
+rping_free_qp	rping.c	/^static void rping_free_qp(struct rping_cb *cb)$/;"	f	file:
+rping_persistent_server_thread	rping.c	/^static void *rping_persistent_server_thread(void *arg)$/;"	f	file:
+rping_rdma_info	rping.c	/^struct rping_rdma_info {$/;"	s	file:
+rping_run_client	rping.c	/^static int rping_run_client(struct rping_cb *cb)$/;"	f	file:
+rping_run_persistent_server	rping.c	/^static int rping_run_persistent_server(struct rping_cb *listening_cb)$/;"	f	file:
+rping_run_server	rping.c	/^static int rping_run_server(struct rping_cb *cb)$/;"	f	file:
+rping_setup_buffers	rping.c	/^static int rping_setup_buffers(struct rping_cb *cb)$/;"	f	file:
+rping_setup_qp	rping.c	/^static int rping_setup_qp(struct rping_cb *cb, struct rdma_cm_id *cm_id)$/;"	f	file:
+rping_setup_wr	rping.c	/^static void rping_setup_wr(struct rping_cb *cb)$/;"	f	file:
+rping_test_client	rping.c	/^static int rping_test_client(struct rping_cb *cb)$/;"	f	file:
+rping_test_server	rping.c	/^static int rping_test_server(struct rping_cb *cb)$/;"	f	file:
+rq_wr	rping.c	/^	struct ibv_recv_wr rq_wr;	\/* recv work request record *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_recv_wr	file:
+sem	rping.c	/^	sem_t sem;$/;"	m	struct:rping_cb	file:
+send_buf	rping.c	/^	struct rping_rdma_info send_buf;\/* single send buf *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::rping_rdma_info	file:
+send_mr	rping.c	/^	struct ibv_mr *send_mr;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_mr	file:
+send_sgl	rping.c	/^	struct ibv_sge send_sgl;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_sge	file:
+server	rping.c	/^	int server;			\/* 0 iff client *\/$/;"	m	struct:rping_cb	file:
+server_recv	rping.c	/^static int server_recv(struct rping_cb *cb, struct ibv_wc *wc)$/;"	f	file:
+sin	rping.c	/^	struct sockaddr_storage sin;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::sockaddr_storage	file:
+size	rping.c	/^	int size;			\/* ping data size *\/$/;"	m	struct:rping_cb	file:
+size	rping.c	/^	uint32_t size;$/;"	m	struct:rping_rdma_info	file:
+sq_wr	rping.c	/^	struct ibv_send_wr sq_wr;	\/* send work request record *\/$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_send_wr	file:
+start_buf	rping.c	/^	char *start_buf;		\/* rdma read src *\/$/;"	m	struct:rping_cb	file:
+start_mr	rping.c	/^	struct ibv_mr *start_mr;$/;"	m	struct:rping_cb	typeref:struct:rping_cb::ibv_mr	file:
+state	rping.c	/^	enum test_state state;		\/* used for cond\/signalling *\/$/;"	m	struct:rping_cb	typeref:enum:rping_cb::test_state	file:
+stringify	rping.c	105;"	d	file:
+test_state	rping.c	/^enum test_state {$/;"	g	file:
+usage	rping.c	/^static void usage(char *name)$/;"	f	file:
+validate	rping.c	/^	int validate;			\/* validate ping data *\/$/;"	m	struct:rping_cb	file:
+verbose	rping.c	/^	int verbose;			\/* verbose logging *\/$/;"	m	struct:rping_cb	file:
+TEST_CNT	rstream.c	76;"	d	file:
+ai_hints	rstream.c	/^static struct addrinfo ai_hints;$/;"	v	typeref:struct:addrinfo	file:
+buf	rstream.c	/^static void *buf;$/;"	v	file:
+buffer_size	rstream.c	/^static int buffer_size, inline_size = 64;$/;"	v	file:
+client_connect	rstream.c	/^static int client_connect(void)$/;"	f	file:
+custom	rstream.c	/^static int custom; \/\/ 是否定制发送数据$/;"	v	file:
+dst_addr	rstream.c	/^static char *dst_addr; \/\/client ip . if dst_addr = NULL, then start as server , the src_addr is the server ip$/;"	v	file:
+end	rstream.c	/^static struct timeval start, end;$/;"	v	typeref:struct:	file:
+flags	rstream.c	/^static int flags = MSG_DONTWAIT;$/;"	v	file:
+fork_pid	rstream.c	/^static pid_t fork_pid;$/;"	v	file:
+init_bandwidth_test	rstream.c	/^static void init_bandwidth_test(int size)$/;"	f	file:
+init_latency_test	rstream.c	/^static void init_latency_test(int size)$/;"	f	file:
+inline_size	rstream.c	/^static int buffer_size, inline_size = 64;$/;"	v	file:
+iterations	rstream.c	/^static int iterations = 1;$/;"	v	file:
+keepalive	rstream.c	/^static int keepalive;$/;"	v	file:
+lrs	rstream.c	/^static int rs, lrs;  \/\/ rs client_socket_fd, lrs server_socket_fd$/;"	v	file:
+main	rstream.c	/^int main(int argc, char **argv)$/;"	f
+optimization	rstream.c	/^static enum rs_optimization optimization;$/;"	v	typeref:enum:rs_optimization	file:
+option	rstream.c	/^	int option; \/\/ 级别$/;"	m	struct:test_size_param	file:
+poll_timeout	rstream.c	/^static int poll_timeout = 0;$/;"	v	file:
+port	rstream.c	/^static char *port = "7471";$/;"	v	file:
+rai_hints	rstream.c	/^static struct rdma_addrinfo rai_hints;$/;"	v	typeref:struct:rdma_addrinfo	file:
+recv_xfer	rstream.c	/^static int recv_xfer(int size)$/;"	f	file:
+rs	rstream.c	/^static int rs, lrs;  \/\/ rs client_socket_fd, lrs server_socket_fd$/;"	v	file:
+run	rstream.c	/^static int run(void)$/;"	f	file:
+run_test	rstream.c	/^static int run_test(void)$/;"	f	file:
+send_xfer	rstream.c	/^static int send_xfer(int size)$/;"	f	file:
+server_connect	rstream.c	/^static int server_connect(void)$/;"	f	file:
+server_listen	rstream.c	/^static int server_listen(void)$/;"	f	file:
+set_keepalive	rstream.c	/^static void set_keepalive(int rs)$/;"	f	file:
+set_options	rstream.c	/^static void set_options(int rs)$/;"	f	file:
+set_test_opt	rstream.c	/^static int set_test_opt(char *optarg)$/;"	f	file:
+show_perf	rstream.c	/^static void show_perf(void)$/;"	f	file:
+size	rstream.c	/^	int size;$/;"	m	struct:test_size_param	file:
+size_option	rstream.c	/^static int size_option; \/\/ 级别$/;"	v	file:
+src_addr	rstream.c	/^static char *src_addr; \/\/ server ip$/;"	v	file:
+start	rstream.c	/^static struct timeval start, end;$/;"	v	typeref:struct:timeval	file:
+sync_test	rstream.c	/^static int sync_test(void)$/;"	f	file:
+test_name	rstream.c	/^static char test_name[10] = "custom";$/;"	v	file:
+test_size	rstream.c	/^static struct test_size_param test_size[] = {$/;"	v	typeref:struct:test_size_param	file:
+test_size_param	rstream.c	/^struct test_size_param {$/;"	s	file:
+transfer_count	rstream.c	/^static int transfer_count = 1000;$/;"	v	file:
+transfer_size	rstream.c	/^static int transfer_size = 1000;$/;"	v	file:
+use_async	rstream.c	/^static int use_async;$/;"	v	file:
+use_fork	rstream.c	/^static int use_fork;$/;"	v	file:
+use_rgai	rstream.c	/^static int use_rgai; \/\/ no-zero means use rdma , 0 means use tcp\/ip $/;"	v	file:
+verify	rstream.c	/^static int verify;$/;"	v	file:
+addr_handler	udaddy.c	/^static int addr_handler(struct cmatest_node *node)$/;"	f	file:
+ah	udaddy.c	/^	struct ibv_ah		*ah;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_ah	file:
+alloc_nodes	udaddy.c	/^static int alloc_nodes(void)$/;"	f	file:
+channel	udaddy.c	/^	struct rdma_event_channel *channel;$/;"	m	struct:cmatest	typeref:struct:cmatest::rdma_event_channel	file:
+cma_handler	udaddy.c	/^static int cma_handler(struct rdma_cm_id *cma_id, struct rdma_cm_event *event)$/;"	f	file:
+cma_id	udaddy.c	/^	struct rdma_cm_id	*cma_id;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::rdma_cm_id	file:
+cmatest	udaddy.c	/^struct cmatest {$/;"	s	file:
+cmatest_node	udaddy.c	/^struct cmatest_node {$/;"	s	file:
+conn_index	udaddy.c	/^	int			conn_index;$/;"	m	struct:cmatest	file:
+connect_error	udaddy.c	/^static void connect_error(void)$/;"	f	file:
+connect_events	udaddy.c	/^static int connect_events(void)$/;"	f	file:
+connect_handler	udaddy.c	/^static int connect_handler(struct rdma_cm_id *cma_id)$/;"	f	file:
+connected	udaddy.c	/^	int			connected;$/;"	m	struct:cmatest_node	file:
+connections	udaddy.c	/^static int connections = 1;$/;"	v	file:
+connects_left	udaddy.c	/^	int			connects_left;$/;"	m	struct:cmatest	file:
+cq	udaddy.c	/^	struct ibv_cq		*cq;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_cq	file:
+create_message	udaddy.c	/^static int create_message(struct cmatest_node *node)$/;"	f	file:
+create_reply_ah	udaddy.c	/^static void create_reply_ah(struct cmatest_node *node, struct ibv_wc *wc)$/;"	f	file:
+destroy_node	udaddy.c	/^static void destroy_node(struct cmatest_node *node)$/;"	f	file:
+destroy_nodes	udaddy.c	/^static void destroy_nodes(void)$/;"	f	file:
+dst_addr	udaddy.c	/^static char *dst_addr;$/;"	v	file:
+hints	udaddy.c	/^static struct rdma_addrinfo hints;$/;"	v	typeref:struct:rdma_addrinfo	file:
+id	udaddy.c	/^	int			id;$/;"	m	struct:cmatest_node	file:
+init_node	udaddy.c	/^static int init_node(struct cmatest_node *node)$/;"	f	file:
+main	udaddy.c	/^int main(int argc, char **argv)$/;"	f
+mem	udaddy.c	/^	void			*mem;$/;"	m	struct:cmatest_node	file:
+message_count	udaddy.c	/^static int message_count = 10;$/;"	v	file:
+message_size	udaddy.c	/^static int message_size = 100;$/;"	v	file:
+mr	udaddy.c	/^	struct ibv_mr		*mr;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_mr	file:
+nodes	udaddy.c	/^	struct cmatest_node	*nodes;$/;"	m	struct:cmatest	typeref:struct:cmatest::cmatest_node	file:
+pd	udaddy.c	/^	struct ibv_pd		*pd;$/;"	m	struct:cmatest_node	typeref:struct:cmatest_node::ibv_pd	file:
+poll_cqs	udaddy.c	/^static int poll_cqs(void)$/;"	f	file:
+port	udaddy.c	/^static char *port = "7174";$/;"	v	file:
+post_recvs	udaddy.c	/^static int post_recvs(struct cmatest_node *node)$/;"	f	file:
+post_sends	udaddy.c	/^static int post_sends(struct cmatest_node *node, int signal_flag)$/;"	f	file:
+rai	udaddy.c	/^	struct rdma_addrinfo	*rai;$/;"	m	struct:cmatest	typeref:struct:cmatest::rdma_addrinfo	file:
+remote_qkey	udaddy.c	/^	uint32_t		remote_qkey;$/;"	m	struct:cmatest_node	file:
+remote_qpn	udaddy.c	/^	uint32_t		remote_qpn;$/;"	m	struct:cmatest_node	file:
+resolved_handler	udaddy.c	/^static int resolved_handler(struct cmatest_node *node,$/;"	f	file:
+route_handler	udaddy.c	/^static int route_handler(struct cmatest_node *node)$/;"	f	file:
+run_client	udaddy.c	/^static int run_client(void)$/;"	f	file:
+run_server	udaddy.c	/^static int run_server(void)$/;"	f	file:
+set_tos	udaddy.c	/^static uint8_t set_tos = 0;$/;"	v	file:
+src_addr	udaddy.c	/^static char *src_addr;$/;"	v	file:
+test	udaddy.c	/^static struct cmatest test;$/;"	v	typeref:struct:cmatest	file:
+tos	udaddy.c	/^static uint8_t tos;$/;"	v	file:
+verify_test_params	udaddy.c	/^static int verify_test_params(struct cmatest_node *node)$/;"	f	file:
+CTRL_MSG_SIZE	udpong.c	77;"	d	file:
+TEST_CNT	udpong.c	58;"	d	file:
+addr	udpong.c	/^static union socket_addr addr;$/;"	v	typeref:union:socket_addr	file:
+addrlen	udpong.c	/^static socklen_t addrlen;$/;"	v	file:
+buf	udpong.c	/^	uint8_t  buf[2048];$/;"	m	struct:message	file:
+buffer_size	udpong.c	/^static int buffer_size;$/;"	v	file:
+client	udpong.c	/^struct client {$/;"	s	file:
+client_connect	udpong.c	/^static int client_connect(void)$/;"	f	file:
+client_recv	udpong.c	/^static ssize_t client_recv(struct message *msg, size_t size, int timeout)$/;"	f	file:
+client_run	udpong.c	/^static int client_run(void)$/;"	f	file:
+client_send	udpong.c	/^static ssize_t client_send(struct message *msg, size_t size)$/;"	f	file:
+client_send_recv	udpong.c	/^static int client_send_recv(struct message *msg, size_t size, int timeout)$/;"	f	file:
+clients	udpong.c	/^static struct client clients[256];$/;"	v	typeref:struct:client	file:
+custom	udpong.c	/^static int custom;$/;"	v	file:
+data	udpong.c	/^	uint32_t data;$/;"	m	struct:message	file:
+dst_addr	udpong.c	/^static char *dst_addr;$/;"	v	file:
+echo	udpong.c	/^static int echo;$/;"	v	file:
+end	udpong.c	/^static struct timeval start, end;$/;"	v	typeref:struct:	file:
+flags	udpong.c	/^static int flags = MSG_DONTWAIT;$/;"	v	file:
+id	udpong.c	/^	uint8_t id;$/;"	m	struct:message	file:
+id	udpong.c	/^static uint8_t id;$/;"	v	file:
+init_bandwidth_test	udpong.c	/^static void init_bandwidth_test(int size)$/;"	f	file:
+init_latency_test	udpong.c	/^static void init_latency_test(int size)$/;"	f	file:
+main	udpong.c	/^int main(int argc, char **argv)$/;"	f
+message	udpong.c	/^struct message {$/;"	s	file:
+msg	udpong.c	/^static struct message msg;$/;"	v	typeref:struct:message	file:
+msg_op_data	udpong.c	/^	msg_op_data,$/;"	e	enum:__anon7	file:
+msg_op_echo	udpong.c	/^	msg_op_echo,$/;"	e	enum:__anon7	file:
+msg_op_end	udpong.c	/^	msg_op_end$/;"	e	enum:__anon7	file:
+msg_op_login	udpong.c	/^	msg_op_login,$/;"	e	enum:__anon7	file:
+msg_op_start	udpong.c	/^	msg_op_start,$/;"	e	enum:__anon7	file:
+op	udpong.c	/^	uint8_t op;$/;"	m	struct:message	file:
+poll_timeout	udpong.c	/^static int poll_timeout;$/;"	v	file:
+port	udpong.c	/^static char *port = "7174";$/;"	v	file:
+recvcnt	udpong.c	/^	uint64_t recvcnt;$/;"	m	struct:client	file:
+reserved	udpong.c	/^	uint8_t reserved;$/;"	m	struct:message	file:
+rs	udpong.c	/^static int rs;$/;"	v	file:
+run_test	udpong.c	/^static int run_test(void)$/;"	f	file:
+seqno	udpong.c	/^	uint8_t seqno;$/;"	m	struct:message	file:
+set_options	udpong.c	/^static void set_options(int rs)$/;"	f	file:
+set_test_opt	udpong.c	/^static int set_test_opt(char *optarg)$/;"	f	file:
+show_perf	udpong.c	/^static void show_perf(void)$/;"	f	file:
+src_addr	udpong.c	/^static char *src_addr;$/;"	v	file:
+start	udpong.c	/^static struct timeval start, end;$/;"	v	typeref:struct:timeval	file:
+svr_bind	udpong.c	/^static int svr_bind(void)$/;"	f	file:
+svr_process	udpong.c	/^static int svr_process(struct message *msg, size_t size,$/;"	f	file:
+svr_recv	udpong.c	/^static ssize_t svr_recv(struct message *msg, size_t size,$/;"	f	file:
+svr_run	udpong.c	/^static int svr_run(void)$/;"	f	file:
+svr_send	udpong.c	/^static ssize_t svr_send(struct message *msg, size_t size,$/;"	f	file:
+test_name	udpong.c	/^static char test_name[10] = "custom";$/;"	v	file:
+test_size	udpong.c	/^static int test_size[] = {$/;"	v	file:
+transfer_count	udpong.c	/^static int transfer_count = 1000;$/;"	v	file:
+transfer_size	udpong.c	/^static int transfer_size = 1000;$/;"	v	file:
+use_async	udpong.c	/^static int use_async;$/;"	v	file:
+!_TAG_FILE_SORTED	1	/0=unsorted, 1=sorted, 2=foldcase/
+!_TAG_FILE_FORMAT	2	/extended format; --format=1 will not append ;" to lines/
+!_TAG_PROGRAM_VERSION	5.8	//
+!_TAG_PROGRAM_AUTHOR	Darren Hiebert	/dhiebert@users.sourceforge.net/
+!_TAG_PROGRAM_NAME	Exuberant Ctags	//
+!_TAG_PROGRAM_URL	http://ctags.sourceforge.net	/official site/
